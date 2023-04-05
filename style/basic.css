@@ -1,0 +1,20 @@
+.container {
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.link {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2C2C2C;
+  transition: 0.6s;
+  text-transform: uppercase;
+}
+.link:hover {
+  color: #9A2C31;
+}/*# sourceMappingURL=basic.css.map */
