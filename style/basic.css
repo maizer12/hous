@@ -4,6 +4,32 @@
   padding: 0 15px;
 }
 
+.min-container {
+  max-width: 1622px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text {
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+.name {
+  font-family: Days One;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2f2f2f;
+}
+
 .link {
   font-family: Montserrat;
   font-size: 14px;
@@ -11,10 +37,82 @@
   line-height: 1.4;
   letter-spacing: 0em;
   text-align: left;
-  color: #2C2C2C;
+  color: #2c2c2c;
   transition: 0.6s;
   text-transform: uppercase;
 }
 .link:hover {
-  color: #9A2C31;
+  color: #9a2c31;
+}
+
+.btn-slider {
+  width: 50px;
+  height: 50px;
+  background-color: #9a2c31;
+  transition: 0.6s;
+  position: relative;
+}
+.btn-slider::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/arrow-slider.svg");
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-repeat: no-repeat;
+  transform: translate(-25%, -50%);
+}
+.btn-slider__arrow {
+  width: 32px;
+  height: 32px;
+}
+.btn-slider:hover {
+  opacity: 0.7;
+}
+.btn-slider_next {
+  transform: rotate(180deg);
+  background-color: rgba(47, 47, 47, 0.6);
+}
+
+.name-item {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2f2f2f;
+}
+
+.btn-detail {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 85px;
+       column-gap: 85px;
+  border: 2px solid #9a2c31;
+  padding: 16px 30px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: center;
+  transition: 0.6s;
+  color: #2f2f2f;
+}
+.btn-detail::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/detail.svg");
+  background-size: contain;
+  transition: 0.6s;
+}
+.btn-detail:hover {
+  color: #9a2c31;
+}
+.btn-detail:hover::after {
+  transform: translateX(12px);
 }/*# sourceMappingURL=basic.css.map */
