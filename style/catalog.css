@@ -1,0 +1,133 @@
+.banner {
+  position: relative;
+  overflow: hidden;
+  height: 418px;
+  width: 100%;
+}
+.banner::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner__name {
+  position: absolute;
+  bottom: 0;
+  left: 165px;
+  bottom: 47px;
+  color: #fff;
+}
+
+.breadcrumbs {
+  position: absolute;
+  top: 0;
+  padding: 16px 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  display: flex;
+  -moz-column-gap: 29px;
+       column-gap: 29px;
+}
+.breadcrumbs__item {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+  color: #fff;
+}
+.breadcrumbs__item::before {
+  content: "/";
+  position: absolute;
+  left: -15px;
+}
+.breadcrumbs__item:first-child::before {
+  content: "";
+}
+.breadcrumbs__link {
+  color: #fff;
+  transition: 0.6s;
+}
+.breadcrumbs__link:hover {
+  color: red;
+}
+
+.catalog {
+  padding: 75px 0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  -moz-column-gap: 38px;
+       column-gap: 38px;
+}
+
+.catalog-item {
+  max-width: 369px;
+  width: 100%;
+  display: block;
+  border: 2px solid rgba(154, 44, 49, 0.4);
+  border-radius: 9px;
+  overflow: hidden;
+}
+.catalog-item__image {
+  width: 100%;
+  height: 282px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 12px;
+}
+.catalog-item__image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.catalog-item__img {
+  width: 100%;
+  height: 100%;
+}
+.catalog-item__name {
+  position: absolute;
+  z-index: 2;
+  bottom: 15px;
+  left: 20px;
+  color: #fff;
+}
+.catalog-item__list {
+  margin-left: 22px;
+  margin-right: 22px;
+  margin-bottom: 39px;
+}
+.catalog-item__list-item {
+  color: #2f2f2f;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.catalog-item__button {
+  margin-left: auto;
+  -moz-column-gap: 39px;
+       column-gap: 39px;
+  border: 1px solid #9a2c31;
+  border-right: none;
+  border-bottom: none;
+}/*# sourceMappingURL=catalog.css.map */

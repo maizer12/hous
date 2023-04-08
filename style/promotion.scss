@@ -1,0 +1,138 @@
+.banner {
+	position: relative;
+	overflow: hidden;
+	height: 322px;
+	width: 100%;
+	&::before {
+		content: '';
+		background-color: rgba(#000000, 0.4);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&__image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	&__name {
+		position: absolute;
+		bottom: 0;
+		left: 165px;
+		bottom: 17px;
+		color: #fff;
+	}
+}
+.breadcrumbs {
+	position: absolute;
+	top: 0;
+	padding: 16px 30px;
+	background-color: rgba(black, 0.6);
+	width: 100%;
+	display: flex;
+	column-gap: 29px;
+	&__item {
+		font-family: Montserrat;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 1.3;
+		letter-spacing: 0em;
+		text-align: left;
+		position: relative;
+		color: #fff;
+		&::before {
+			content: '/';
+			position: absolute;
+			left: -15px;
+		}
+		&:first-child {
+			&::before {
+				content: '';
+			}
+		}
+	}
+	&__link {
+		color: #fff;
+		transition: 0.6s;
+		&:hover {
+			color: red;
+		}
+	}
+}
+.promotion {
+	padding-top: 75px;
+	&__title {
+		font-family: Montserrat;
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #9a2c31;
+		margin-bottom: 75px;
+	}
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		row-gap: 40px;
+		flex-wrap: wrap;
+		margin-bottom: 75px;
+		column-gap: 20px;
+	}
+}
+.promotion-item {
+	max-width: 512px;
+	overflow: hidden;
+	border-radius: 9px;
+	border: rgba(#9a2c31, 0.4) 2px solid;
+	cursor: pointer;
+	transition: 0.6s;
+	display: block;
+	margin: 0 auto;
+	&__image {
+		width: 100%;
+		height: 296px;
+		overflow: hidden;
+		position: relative;
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	&__type {
+		position: absolute;
+		font-family: Montserrat;
+		font-size: 11px;
+		font-weight: 700;
+		line-height: 17px;
+		letter-spacing: 0em;
+		text-align: left;
+		padding: 6px 19px;
+		color: #fff;
+		top: 10px;
+		left: -2px;
+		background-color: #9a2c31;
+	}
+	&__name {
+		padding: 28px 18px 64px;
+		color: #2f2f2f;
+	}
+}
+.promotion-footer {
+	padding-bottom: 61px;
+	&__pagination {
+		margin-bottom: 79px;
+	}
+	&__text {
+		font-family: Montserrat;
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 1.6;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #888888;
+	}
+}

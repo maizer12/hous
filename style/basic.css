@@ -1,3 +1,16 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: "Days One";
+  src: url("../fonts/DaysOne-Regular.ttf") format("truetype");
+}
+.main {
+  flex: 1 1;
+}
+
 .container {
   max-width: 1900px;
   margin: 0 auto;
@@ -80,7 +93,7 @@
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1.4;
   letter-spacing: 0em;
   text-align: left;
   color: #2f2f2f;
@@ -114,5 +127,80 @@
   color: #9a2c31;
 }
 .btn-detail:hover::after {
-  transform: translateX(12px);
+  transform: translateX(10px);
+}
+
+.footer-name {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0d0b0b;
+  cursor: default;
+}
+
+.item-hover {
+  transition: 0.6s;
+}
+.item-hover:hover {
+  transform: translate(-8px, -8px);
+}
+
+.pagination-adapt {
+  margin-left: 15px;
+  margin-top: 24px;
+  display: none;
+}
+.pagination-adapt span {
+  width: 6px;
+  height: 6px;
+  background-color: #9a2c31;
+  opacity: 1;
+  transition: 0.6s;
+}
+.pagination-adapt .swiper-pagination-bullet-active {
+  width: 43px;
+  border-radius: 50px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pagination__btn {
+  padding: 8px 15px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+.pagination__prev {
+  transform: rotate(180deg);
+}
+.pagination__prev span {
+  transform: rotate(180deg);
+}
+
+.pagination-number {
+  display: flex;
+  -moz-column-gap: 59px;
+       column-gap: 59px;
+}
+.pagination-number__num {
+  cursor: pointer;
+  transition: 0.4s;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2f2f2f;
+}
+.pagination-number__num:hover {
+  color: #9a2c31;
+}
+.pagination-number .pagination-number-active {
+  color: #9a2c31;
 }/*# sourceMappingURL=basic.css.map */

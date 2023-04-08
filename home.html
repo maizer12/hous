@@ -5,10 +5,16 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./style/null.css">
 	<link rel="stylesheet" href="./style/basic.css">
 	<link rel="stylesheet" href="./style/home.css">
+	<link rel="stylesheet" href="./style/header-footer.css">
+	<link rel="stylesheet" href="./style/adaptive-home.css">
 	<title>Головна</title>
 </head>
 
@@ -22,14 +28,14 @@
 					<a href="tel:+38098396–04–49" class="header-top__item">+38 (098) 396–04–49</a>
 					<a href="mailto:Info@dim-interior.com" class="header-top__item">Info@dim-interior.com</a>
 				</div>
-				<p class="header-top__item">Графік роботи: з 10:00 до 19:00/ без перерв і вихідних</p>
+				<p class="header-top__item header-top__item_display">Графік роботи: з 10:00 до 19:00/ без перерв і вихідних</p>
 				<ul class="header-top__items  header-top__items_gap">
 					<button class="header-top__item header-item-active">UK</button>
 					<button class="header-top__item">RU</button>
 				</ul>
 			</div>
 		</div>
-		<div class="header-content container">
+		<!-- 	<div class="header-content container">
 			<a href="/" class="logo"> <img src="./img/logo.svg" alt="logo" class="logo__icon"></a>
 			<button class="header-content__btn link">Каталог товарів</button>
 			<nav class="menu">
@@ -149,8 +155,7 @@
 					</svg>
 				</button>
 			</label>
-		</div>
-
+		</div> 
 	</header>
 	<main class='main'>
 		<section class="home-slider">
@@ -282,7 +287,7 @@
 					Двері</a>
 				<button class="sidebar-slider__item sidebar-slider__btn">всі категорії</button>
 			</div>
-		</section>
+		</section>-->
 		<ul class="advantages min-container">
 			<li class="advantages__item">
 				<div class="advantages__text">
@@ -306,7 +311,7 @@
 				<img src="./img/advantages/3.svg" alt="advantages-icon" class="advantages__icon">
 			</li>
 		</ul>
-		<section class="action">
+		<section class="promotion">
 			<div class="min-container slider-header">
 				<div class="slider-header__content">
 					<h2 class="slider-header__title name">Акції</h2>
@@ -318,55 +323,56 @@
 				<a href='/' class="slider-header__btn btn-detail">Дивитися всі
 				</a>
 			</div>
-			<div class="action__swiper">
+			<div class="promotion__swiper">
 				<div class="swiper-wrapper">
-					<a href='/' class="swiper-slide action-item">
-						<div class="action-item__img">
-							<img src="./img/actions/1.jpg" alt="product" class="action-item__image">
-							<p class="action-item__type">Залишився 1 день</p>
+					<a href='/' class="swiper-slide promotion-item item-hover">
+						<div class="promotion-item__img">
+							<img src="./img/promotion/1.jpg" alt="product" class="promotion-item__image">
+							<p class="promotion-item__type">Залишився 1 день</p>
 						</div>
-						<h5 class="action-item__name name-item">Весняний цінопад</h5>
+						<h5 class="promotion-item__name name-item">Весняний цінопад</h5>
 					</a>
-					<a href='/' class="swiper-slide action-item">
-						<div class="action-item__img">
-							<img src="./img/actions/1.jpg" alt="product" class="action-item__image">
-							<p class="action-item__type">Залишився 1 день</p>
+					<a href='/' class="swiper-slide promotion-item item-hover">
+						<div class="promotion-item__img">
+							<img src="./img/promotion/1.jpg" alt="product" class="promotion-item__image">
+							<p class="promotion-item__type">Залишився 1 день</p>
 						</div>
-						<h5 class="action-item__name name-item">Весняний цінопад</h5>
+						<h5 class="promotion-item__name name-item">Весняний цінопад</h5>
 					</a>
-					<a href='/' class="swiper-slide action-item">
-						<div class="action-item__img">
-							<img src="./img/actions/1.jpg" alt="product" class="action-item__image">
-							<p class="action-item__type">Залишився 1 день</p>
+					<a href='/' class="swiper-slide promotion-item item-hover">
+						<div class="promotion-item__img">
+							<img src="./img/promotion/1.jpg" alt="product" class="promotion-item__image">
+							<p class="promotion-item__type">Залишився 1 день</p>
 						</div>
-						<h5 class="action-item__name name-item">Весняний цінопад</h5>
+						<h5 class="promotion-item__name name-item">Весняний цінопад</h5>
 					</a>
-					<a href='/' class="swiper-slide action-item">
-						<div class="action-item__img">
-							<img src="./img/actions/1.jpg" alt="product" class="action-item__image">
-							<p class="action-item__type">Залишився 1 день</p>
+					<a href='/' class="swiper-slide promotion-item item-hover">
+						<div class="promotion-item__img">
+							<img src="./img/promotion/1.jpg" alt="product" class="promotion-item__image">
+							<p class="promotion-item__type">Залишився 1 день</p>
 						</div>
-						<h5 class="action-item__name name-item">Весняний цінопад</h5>
+						<h5 class="promotion-item__name name-item">Весняний цінопад</h5>
 					</a>
-					<a href='/' class="swiper-slide action-item">
-						<div class="action-item__img">
-							<img src="./img/actions/1.jpg" alt="product" class="action-item__image">
-							<p class="action-item__type">Залишився 1 день</p>
+					<a href='/' class="swiper-slide promotion-item item-hover">
+						<div class="promotion-item__img">
+							<img src="./img/promotion/1.jpg" alt="product" class="promotion-item__image">
+							<p class="promotion-item__type">Залишився 1 день</p>
 						</div>
-						<h5 class="action-item__name name-item">Весняний цінопад</h5>
+						<h5 class="promotion-item__name name-item">Весняний цінопад</h5>
 					</a>
-					<a href='/' class="swiper-slide action-item">
-						<div class="action-item__img">
-							<img src="./img/actions/1.jpg" alt="product" class="action-item__image">
-							<p class="action-item__type">Залишився 1 день</p>
+					<a href='/' class="swiper-slide promotion-item item-hover">
+						<div class="promotion-item__img">
+							<img src="./img/promotion/1.jpg" alt="product" class="promotion-item__image">
+							<p class="promotion-item__type">Залишився 1 день</p>
 						</div>
-						<h5 class="action-item__name name-item">Весняний цінопад</h5>
+						<h5 class="promotion-item__name name-item">Весняний цінопад</h5>
 					</a>
 
 				</div>
 			</div>
+			<div class="pagination-adapt promotion-pagination"></div>
 		</section>
-		<section class="recommendation">
+		<!-- <section class="recommendation">
 			<div class="min-container slider-header">
 				<div class="slider-header__content">
 					<h2 class="slider-header__title name">Рекомендації</h2>
@@ -375,196 +381,470 @@
 				</a>
 			</div>
 			<ul class="recommendation__items min-container">
-				<li href='/' class="recommendation-item">
-					<a href='/' class="recommendation-item__img">
-						<img src="./img/reacomendation/1.jpg" alt="recommendation" class="recommendation-item__icon">
+				<li class="recommendation-item item-hover">
+					<a href="/">
+						<div class="recommendation-item__img">
+							<img src="./img/reacomendation/1.jpg" alt="recommendation" class="recommendation-item__icon">
+						</div>
+						<div class="recommendation-item__text">
+							<h5 class="recommendation-item__name name-item">Двері Берислав</h5>
+							<p class="recommendation-item__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+								accusantium doloremque laudantium</p>
+							<div class="recommendation-item__footer">
+								<img src="./img/logo-recomendation.svg" alt="logo" class="recommendation-item__logo">
+								<a href='/' class="btn-detail">Детальніше</a>
+							</div>
+						</div>
 					</a>
-					<div class="recommendation-item__text">
-						<h5 class="recommendation-item__name name-item">Двері Берислав</h5>
-						<p class="recommendation-item__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-							accusantium doloremque laudantium</p>
-						<div class="recommendation-item__footer">
-							<img src="./img/logo-recomendation.svg" alt="logo" class="recommendation-item__logo">
-							<a href='/' class="btn-detail">Детальніше</a>
+				</li>
+				<li class="recommendation-item item-hover">
+					<a href="/">
+						<div class="recommendation-item__img">
+							<img src="./img/reacomendation/1.jpg" alt="recommendation" class="recommendation-item__icon">
+						</div>
+						<div class="recommendation-item__text">
+							<h5 class="recommendation-item__name name-item">Двері Берислав</h5>
+							<p class="recommendation-item__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+								accusantium doloremque laudantium</p>
+							<div class="recommendation-item__footer">
+								<img src="./img/logo-recomendation.svg" alt="logo" class="recommendation-item__logo">
+								<a href='/' class="btn-detail">Детальніше</a>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="recommendation-item item-hover">
+					<a href="/">
+						<div class="recommendation-item__img">
+							<img src="./img/reacomendation/1.jpg" alt="recommendation" class="recommendation-item__icon">
+						</div>
+						<div class="recommendation-item__text">
+							<h5 class="recommendation-item__name name-item">Двері Берислав</h5>
+							<p class="recommendation-item__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+								accusantium doloremque laudantium</p>
+							<div class="recommendation-item__footer">
+								<img src="./img/logo-recomendation.svg" alt="logo" class="recommendation-item__logo">
+								<a href='/' class="btn-detail">Детальніше</a>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="recommendation-item item-hover">
+					<a href="/">
+						<div class="recommendation-item__img">
+							<img src="./img/reacomendation/1.jpg" alt="recommendation" class="recommendation-item__icon">
+						</div>
+						<div class="recommendation-item__text">
+							<h5 class="recommendation-item__name name-item">Двері Берислав</h5>
+							<p class="recommendation-item__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+								accusantium doloremque laudantium</p>
+							<div class="recommendation-item__footer">
+								<img src="./img/logo-recomendation.svg" alt="logo" class="recommendation-item__logo">
+								<a href='/' class="btn-detail">Детальніше</a>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</section> -->
+		<section class="new-articles">
+			<div class="min-container slider-header">
+				<div class="slider-header__content">
+					<h2 class="slider-header__title name name_font">Рекомендаціі</h2>
+					<div class="slider-header__buttons">
+						<button class="new-banners__button_prev btn-slider"></button>
+						<button class="new-banners__button_next btn-slider btn-slider_next"></button>
+					</div>
+				</div>
+				<a href='/' class="slider-header__btn btn-detail">Дивитися всі
+				</a>
+			</div>
+			<div class="new-articles__inner">
+				<div class="new-banners-white">
+					<div class="new-banners">
+						<div class="new-banners__image">
+							<img src="./img/banner-news.jpg" alt="banner" class="new-banners__bg">
+						</div>
+						<div class="new-banners__content">
+							<div class="new-banners__buttons">
+								<button class="new-banners__button_prev btn-slider"></button>
+								<button class="new-banners__button_next btn-slider btn-slider_next"></button>
+							</div>
+							<h3 class="new-banners__title name">Свіжі <br>
+								<span>статті</span>
+							</h3>
+							<a href="/" class="new-banners__btn">Перейти до новин <img src="./img/arrow-white.svg" alt="arrow"
+									class="new-banners__arrow"></a>
 						</div>
 					</div>
-				</li>
-				<li href='/' class="recommendation-item">
-					<a href='/' class="recommendation-item__img">
-						<img src="./img/reacomendation/1.jpg" alt="recommendation" class="recommendation-item__icon">
-					</a>
-					<div class="recommendation-item__text">
-						<h5 class="recommendation-item__name name-item">Двері Берислав</h5>
-						<p class="recommendation-item__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-							accusantium doloremque laudantium</p>
-						<div class="recommendation-item__footer">
-							<img src="./img/logo-recomendation.svg" alt="logo" class="recommendation-item__logo">
-							<a href='/' class="btn-detail">Детальніше</a>
+					<div class="new-banners-white__bg"></div>
+				</div>
+				<div class="articles-slider">
+					<div class="swiper-wrapper">
+						<a href='/' class="swiper-slide articles-item item-hover">
+							<div class="articles-item__image">
+								<div class="articles-item__image-container">
+									<img src="./img/promotion/1.jpg" alt="article-image" class="articles-item__img">
+								</div>
+								<img src="./img/artical-logo.svg" alt="logo" class="articles-item__logo">
+								<ul class="articles-item__tags">
+									<li class="articles-item__tag text">Новина</li>
+									<li class="articles-item__tag text">Новини торгівельного центру</li>
+								</ul>
+							</div>
+							<div class="articles-item__content">
+								<h4 class="articles-item__name name-item">Тут буде ваша назва новини</h4>
+								<div class="articles-item__footer">
+									<p class="articles-item__date">08.03.2023</p>
+									<button class="btn-detail">Детальніше</button>
+								</div>
+							</div>
+						</a>
+						<a href='/' class="swiper-slide articles-item item-hover">
+							<div class="articles-item__image">
+								<div class="articles-item__image-container">
+									<img src="./img/promotion/1.jpg" alt="article-image" class="articles-item__img">
+								</div>
+								<img src="./img/artical-logo.svg" alt="logo" class="articles-item__logo">
+								<ul class="articles-item__tags">
+									<li class="articles-item__tag text">Новина</li>
+									<li class="articles-item__tag text">Новини торгівельного центру</li>
+								</ul>
+							</div>
+							<div class="articles-item__content">
+								<h4 class="articles-item__name name-item">Тут буде ваша назва новини</h4>
+								<div class="articles-item__footer">
+									<p class="articles-item__date">08.03.2023</p>
+									<button class="btn-detail">Детальніше</button>
+								</div>
+							</div>
+						</a>
+						<a href='/' class="swiper-slide articles-item item-hover">
+							<div class="articles-item__image">
+								<div class="articles-item__image-container">
+									<img src="./img/promotion/1.jpg" alt="article-image" class="articles-item__img">
+								</div>
+								<img src="./img/artical-logo.svg" alt="logo" class="articles-item__logo">
+								<ul class="articles-item__tags">
+									<li class="articles-item__tag text">Новина</li>
+									<li class="articles-item__tag text">Новини торгівельного центру</li>
+								</ul>
+							</div>
+							<div class="articles-item__content">
+								<h4 class="articles-item__name name-item">Тут буде ваша назва новини</h4>
+								<div class="articles-item__footer">
+									<p class="articles-item__date">08.03.2023</p>
+									<button class="btn-detail">Детальніше</button>
+								</div>
+							</div>
+						</a>
+						<a href='/' class="swiper-slide articles-item item-hover">
+							<div class="articles-item__image">
+								<div class="articles-item__image-container">
+									<img src="./img/promotion/1.jpg" alt="article-image" class="articles-item__img">
+								</div>
+								<img src="./img/artical-logo.svg" alt="logo" class="articles-item__logo">
+								<ul class="articles-item__tags">
+									<li class="articles-item__tag text">Новина</li>
+									<li class="articles-item__tag text">Новини торгівельного центру</li>
+								</ul>
+							</div>
+							<div class="articles-item__content">
+								<h4 class="articles-item__name name-item">Тут буде ваша назва новини</h4>
+								<div class="articles-item__footer">
+									<p class="articles-item__date">08.03.2023</p>
+									<button class="btn-detail">Детальніше</button>
+								</div>
+							</div>
+						</a>
+						<a href='/' class="swiper-slide articles-item item-hover">
+							<div class="articles-item__image">
+								<div class="articles-item__image-container">
+									<img src="./img/promotion/1.jpg" alt="article-image" class="articles-item__img">
+								</div>
+								<img src="./img/artical-logo.svg" alt="logo" class="articles-item__logo">
+								<ul class="articles-item__tags">
+									<li class="articles-item__tag text">Новина</li>
+									<li class="articles-item__tag text">Новини торгівельного центру</li>
+								</ul>
+							</div>
+							<div class="articles-item__content">
+								<h4 class="articles-item__name name-item">Тут буде ваша назва новини</h4>
+								<div class="articles-item__footer">
+									<p class="articles-item__date">08.03.2023</p>
+									<button class="btn-detail">Детальніше</button>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="pagination-adapt new-pagination"></div>
+		</section>
+		<!--<section class="shops">
+			<div class="min-container slider-header">
+				<h2 class="slider-header__title name">Магазини нашого ТЦ</h2>
+				<div class="slider-header__buttons">
+					<button class="shops-btn-prev btn-slider"></button>
+					<button class="shops-btn-next btn-slider btn-slider_next"></button>
+				</div>
+			</div>
+			<div class="shops-swiper min-container">
+				<div class="swiper-wrapper  ">
+					<div class="swiper-slide">
+						<div class="shop-link">
+							<img src="./img/shops/1.png" alt="shop" class="shop-link__icon">
 						</div>
 					</div>
-				</li>
-				<li href='/' class="recommendation-item">
-					<a href='/' class="recommendation-item__img">
-						<img src="./img/reacomendation/1.jpg" alt="recommendation" class="recommendation-item__icon">
-					</a>
-					<div class="recommendation-item__text">
-						<h5 class="recommendation-item__name name-item">Двері Берислав</h5>
-						<p class="recommendation-item__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-							accusantium doloremque laudantium</p>
-						<div class="recommendation-item__footer">
-							<img src="./img/logo-recomendation.svg" alt="logo" class="recommendation-item__logo">
-							<a href='/' class="btn-detail">Детальніше</a>
-						</div>
+					<div class="swiper-slide">
+						<a href="/" class="shop-link">
+							<img src="./img/shops/2.png" alt="shop" class="shop-link__icon">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="/" class="shop-link">
+							<img src="./img/shops/3.png" alt="shop" class="shop-link__icon">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="/" class="shop-link">
+							<img src="./img/shops/4.png" alt="shop" class="shop-link__icon">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="/" class="shop-link">
+							<img src="./img/shops/5.png" alt="shop" class="shop-link__icon">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="/" class="shop-link">
+							<img src="./img/shops/6.png" alt="shop" class="shop-link__icon">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="/" class="shop-link">
+							<img src="./img/shops/7.png" alt="shop" class="shop-link__icon">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="/" class="shop-link">
+							<img src="./img/shops/1.png" alt="shop" class="shop-link__icon">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="/" class="shop-link">
+							<img src="./img/shops/1.png" alt="shop" class="shop-link__icon">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="/" class="shop-link">
+							<img src="./img/shops/1.png" alt="shop" class="shop-link__icon">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about-us min-container">
+			<h3 class="about-us__name name">Дім Інтер’єру - це:</h3>
+			<ul class="about-us__items">
+				<li class="about-item">
+					<div class="about-item__image">
+						<img src="./img/about-us/1.jpg" alt="about-us-icon" class="about-item__img">
+					</div>
+					<div class="about-item__content">
+						<h5 class="about-item__name name-item">Великий вибір меблів</h5>
+						<p class="about-item__desc">Дім інтер’єру пропонує великий вибір меблів: понад 500 варіантів диванів, шафи,
+							гардеробні, столи, дитячі, меблі з ротангу та багато інших. Хочете чогось особливого? Є можливість
+							виготовити меблі за індивідуальним проектом в експертів своєї справи.</p>
 					</div>
 				</li>
-				<li href='/' class="recommendation-item">
-					<a href='/' class="recommendation-item__img">
-						<img src="./img/reacomendation/1.jpg" alt="recommendation" class="recommendation-item__icon">
-					</a>
-					<div class="recommendation-item__text">
-						<h5 class="recommendation-item__name name-item">Двері Берислав</h5>
-						<p class="recommendation-item__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-							accusantium doloremque laudantium</p>
-						<div class="recommendation-item__footer">
-							<img src="./img/logo-recomendation.svg" alt="logo" class="recommendation-item__logo">
-							<a href='/' class="btn-detail">Детальніше</a>
-						</div>
+				<li class="about-item">
+					<div class="about-item__image">
+						<img src="./img/about-us/2.jpg" alt="about-us-icon" class="about-item__img">
+					</div>
+					<div class="about-item__content">
+						<h5 class="about-item__name name-item">Кожна думка - важлива</h5>
+						<p class="about-item__desc">ДКожна оцінка, кожен коментар, побажання від клієнтів є для нас дуже важливими.
+							Ми детально вивчаємо Ваші побажання і намагаємося їх втілювати для поліпшення сервісу ТЦ Дім інтер’єру.
+							Ми завжди прислухаємося до наших клієнтів, вивчаємо їхні потреби та рухаємось у ногу з часом.</p>
+					</div>
+				</li>
+				<li class="about-item">
+					<div class="about-item__content">
+						<h5 class="about-item__name name-item">Великий вибір меблів</h5>
+						<p class="about-item__desc">Дім інтер’єру пропонує великий вибір меблів: понад 500 варіантів диванів, шафи,
+							гардеробні, столи, дитячі, меблі з ротангу та багато інших. Хочете чогось особливого? Є можливість
+							виготовити меблі за індивідуальним проектом в експертів своєї справи.</p>
+					</div>
+					<div class="about-item__image">
+						<img src="./img/about-us/1.jpg" alt="about-us-icon" class="about-item__img">
+					</div>
+				</li>
+				<li class="about-item">
+					<div class="about-item__content">
+						<h5 class="about-item__name name-item">Кожна думка - важлива</h5>
+						<p class="about-item__desc">ДКожна оцінка, кожен коментар, побажання від клієнтів є для нас дуже важливими.
+							Ми детально вивчаємо Ваші побажання і намагаємося їх втілювати для поліпшення сервісу ТЦ Дім інтер’єру.
+							Ми завжди прислухаємося до наших клієнтів, вивчаємо їхні потреби та рухаємось у ногу з часом.</p>
+					</div>
+					<div class="about-item__image">
+						<img src="./img/about-us/2.jpg" alt="about-us-icon" class="about-item__img">
 					</div>
 				</li>
 			</ul>
 		</section>
-		<section class="new-articles">
-			<div class="new-banners-white">
-				<div class="new-banners">
-					<div class="new-banners__image">
-						<img src="./img/banner-news.jpg" alt="banner" class="new-banners__bg">
+	</main>
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="footer__content min-container">
+				<div class="footer__inner">
+					<div class="footer-item">
+						<img src="./img/logo.svg" alt="logo" class="footer-item__logo">
+						<p class="footer-item__sub-title">СТВОРИ СВІЙ ОСОБЛИВИЙ ПРОСТІР</p>
+						<ul class="footer-item__items">
+							<li class="footer-item__item">
+								<h5 class="footer-item__name footer-name">Наша адреса</h5>
+								<p class="footer-item__text">м. Львів, с. Скнилів, вул. Окружна, 38</p>
+							</li>
+							<li class="footer-item__item">
+								<h5 class="footer-item__name footer-name">Графік роботи:</h5>
+								<p class="footer-item__text">з 10:00 до 19:00/ без перерв і вихідних</p>
+							</li>
+						</ul>
 					</div>
-					<div class="new-banners__content">
-						<div class="new-banners__buttons">
-							<button class="new-banners__button_prev btn-slider"></button>
-							<button class="new-banners__button_next btn-slider btn-slider_next"></button>
+					<div class="footer-socials ">
+						<h5 class="footer-socials__name footer-name">Ми в соц. мережах</h5>
+						<div class="footer-socials__items">
+							<a href="/" class="footer-socials__link">
+								<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_3_4949)">
+										<path
+											d="M33.6328 24.0625C34.388 24.0625 35 23.4505 35 22.6953V5.46875C35 2.45319 32.5468 0 29.5312 0H5.46875C2.45319 0 0 2.45319 0 5.46875V29.5312C0 32.5468 2.45319 35 5.46875 35H29.5312C32.5468 35 35 32.5468 35 29.5312C35 28.7761 34.388 28.1641 33.6328 28.1641C32.8777 28.1641 32.2656 28.7761 32.2656 29.5312C32.2656 31.0389 31.0389 32.2656 29.5312 32.2656H22.832V22.2852H25.9963C26.6882 22.2852 27.2711 21.7682 27.3539 21.0814L27.5349 19.5775C27.6327 18.7636 26.9974 18.0469 26.1774 18.0469H22.832V13.4668C22.832 12.3341 23.7501 11.416 24.8828 11.416H26.5918C27.347 11.416 27.959 10.804 27.959 10.0488V8.66589C27.959 7.96547 27.43 7.37694 26.7331 7.30591C26.0398 7.23541 25.3063 7.17773 24.8828 7.17773C23.2884 7.17773 21.6902 7.85038 20.4982 9.0229C19.2701 10.2309 18.5938 11.8134 18.5938 13.4788V18.0469H15.5176C14.7624 18.0469 14.1504 18.6589 14.1504 19.4141V20.918C14.1504 21.6731 14.7624 22.2852 15.5176 22.2852H18.5938V32.2656H5.46875C3.96111 32.2656 2.73438 31.0389 2.73438 29.5312V5.46875C2.73438 3.96111 3.96111 2.73438 5.46875 2.73438H29.5312C31.0389 2.73438 32.2656 3.96111 32.2656 5.46875V22.6953C32.2656 23.4505 32.8777 24.0625 33.6328 24.0625Z"
+											fill="#0D0B0B" />
+									</g>
+									<defs>
+										<clipPath id="clip0_3_4949">
+											<rect width="35" height="35" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</a>
+							<a href="/" class="footer-socials__link">
+								<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_3_4953)">
+										<path
+											d="M17.4988 35C17.4958 35 17.4926 35 17.4894 35C16.4333 34.99 7.0969 34.8721 4.45171 33.8822C2.60307 33.1945 1.14375 31.1773 0.645476 28.6188C-0.0466636 25.023 -0.00260372 18.1001 0.00220281 17.5473C-0.00233668 16.9971 -0.0469306 10.0169 0.64334 6.39155C0.644141 6.38823 0.644675 6.38453 0.645476 6.38121C1.13815 3.85186 2.63031 1.77221 4.44717 1.08269C4.45171 1.08084 4.45652 1.07936 4.46106 1.07751C7.07634 0.126375 16.4312 0.00997701 17.4894 0H17.5084C18.5671 0.00997701 27.9284 0.127853 30.5493 1.11927C32.3945 1.80583 33.8538 3.82266 34.352 6.38121C35.0693 10.0021 35.0023 17.0015 34.9953 17.5891C34.9964 17.7191 34.9999 18.2501 34.9937 19.0339C34.9854 20.0718 34.375 20.9055 33.6268 20.9055C33.6217 20.9055 33.6169 20.9055 33.6118 20.9051C32.8567 20.894 32.2513 20.0378 32.2593 18.9932C32.266 18.1552 32.2609 17.6146 32.2609 17.609C32.2607 17.5894 32.2609 17.5695 32.2609 17.5495C32.286 15.6155 32.2369 10.0162 31.7135 7.37373C31.4663 6.10518 30.7466 5.1108 29.8336 4.77122C27.9012 4.03994 20.2844 3.81084 17.4988 3.78386C14.7139 3.81084 7.10598 4.03403 5.16281 4.73463C4.26746 5.07829 3.53153 6.10813 3.28613 7.36191C2.67837 10.5619 2.73578 17.4534 2.73632 17.5225V17.5724C2.71816 19.4836 2.78198 25.0182 3.2864 27.6396C3.53099 28.8948 4.25064 29.8892 5.16334 30.2292C7.11506 30.9597 14.7193 31.1892 17.4985 31.2161C20.2849 31.1892 27.9004 30.966 29.8377 30.2643C30.7485 29.9232 31.4665 28.9299 31.7119 27.6706C31.9085 26.6618 32.6588 26.0643 33.3878 26.3367C34.1168 26.6086 34.5486 27.6466 34.352 28.6557C33.8535 31.2139 32.3945 33.2311 30.5437 33.9199C30.5413 33.9206 30.5386 33.9217 30.5362 33.9225C27.9212 34.8736 18.5661 34.99 17.5081 35C17.5052 35 17.502 35 17.4988 35ZM15.9511 24.5449L22.9347 18.9662C23.3363 18.6451 23.5841 18.0498 23.5841 17.4054C23.5841 16.761 23.3363 16.1657 22.9347 15.8446L15.9511 10.2659C15.5508 9.94631 15.0584 9.94742 14.6592 10.2693C14.2597 10.5908 14.0138 11.1842 14.0138 11.8264V22.984C14.0138 23.6262 14.2597 24.2197 14.6592 24.5415C14.8594 24.703 15.0832 24.7839 15.307 24.7839C15.5294 24.7839 15.7516 24.7041 15.9511 24.5449Z"
+											fill="#0D0B0B" />
+									</g>
+									<defs>
+										<clipPath id="clip0_3_4953">
+											<rect width="35" height="35" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+
+							</a>
+							<a href="/" class="footer-socials__link">
+								<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_3_4951)">
+										<path
+											d="M17.8445 35.0001C17.7286 35.0001 17.6127 35.0001 17.496 34.9996C14.7525 35.0063 12.2176 34.9366 9.75242 34.7865C7.49229 34.649 5.42923 33.8679 3.78593 32.528C2.20032 31.235 1.11752 29.4868 0.567703 27.3324C0.0891877 25.4568 0.0638199 23.6156 0.0395203 21.8348C0.0218963 20.5571 0.0037384 19.043 0 17.5033C0.0037384 15.9572 0.0218963 14.4432 0.0395203 13.1654C0.0638199 11.3849 0.0891877 9.54373 0.567703 7.66785C1.11752 5.51347 2.20032 3.76523 3.78593 2.47228C5.42923 1.13232 7.49229 0.351266 9.75269 0.213746C12.2179 0.063943 14.7533 -0.0060186 17.5027 0.00065712C20.2469 -0.00521751 22.781 0.063943 25.2462 0.213746C27.5064 0.351266 29.5694 1.13232 31.2127 2.47228C32.7986 3.76523 33.8811 5.51347 34.431 7.66785C34.9095 9.54346 34.9348 11.3849 34.9591 13.1654C34.9768 14.4432 34.9952 15.9572 34.9987 17.4969C34.9952 19.043 34.9768 20.5571 34.9591 21.8348C34.949 22.59 34.3252 23.1934 33.5735 23.1833C32.8184 23.1729 32.2149 22.5523 32.225 21.7974C32.2424 20.5272 32.2608 19.023 32.2643 17.4969C32.2608 15.9773 32.2424 14.4731 32.225 13.2028C32.2029 11.5817 32.1799 9.90529 31.7815 8.34397C31.3796 6.76904 30.6068 5.50652 29.4848 4.59142C28.2711 3.60154 26.7891 3.04692 25.0801 2.94305C22.6729 2.79672 20.1949 2.72916 17.5027 2.73476C14.8041 2.72836 12.3258 2.79672 9.91852 2.94305C8.20953 3.04692 6.72779 3.60154 5.51388 4.59115C4.39182 5.50626 3.61904 6.76877 3.21716 8.34397C2.81876 9.90529 2.79579 11.5817 2.77363 13.2028C2.75627 14.4731 2.73811 15.9773 2.73437 17.5033C2.73811 19.023 2.75627 20.5272 2.77363 21.7974C2.79579 23.4185 2.81876 25.095 3.21716 26.6563C3.61904 28.2312 4.39182 29.4937 5.51388 30.4088C6.72779 31.3987 8.20953 31.9533 9.91852 32.0572C12.3258 32.2035 14.8046 32.2719 17.4963 32.2652C20.1951 32.2716 22.6729 32.2035 25.0801 32.0572C26.7891 31.9533 28.2709 31.3987 29.4848 30.4088C30.2931 29.7495 30.9246 28.9036 31.3617 27.8942C31.6619 27.2015 32.4667 26.883 33.1596 27.1831C33.8526 27.4833 34.1709 28.2881 33.871 28.981C33.2582 30.396 32.3639 31.5894 31.2127 32.528C29.5694 33.8682 27.5064 34.649 25.2462 34.7865C22.8854 34.9302 20.4603 35.0001 17.8445 35.0001ZM25.9758 17.5001C25.9758 12.7884 22.1426 8.9552 17.4308 8.9552C12.7194 8.9552 8.88592 12.7884 8.88592 17.5001C8.88592 22.2118 12.7194 26.045 17.4308 26.045C22.1426 26.045 25.9758 22.2118 25.9758 17.5001ZM23.2414 17.5001C23.2414 20.7039 20.6349 23.3107 17.4308 23.3107C14.227 23.3107 11.6203 20.7039 11.6203 17.5001C11.6203 14.2963 14.227 11.6896 17.4308 11.6896C20.6349 11.6896 23.2414 14.2963 23.2414 17.5001ZM26.9328 6.22083C25.8003 6.22083 24.882 7.13887 24.882 8.27161C24.882 9.40434 25.8003 10.3224 26.9328 10.3224C28.0655 10.3224 28.9836 9.40434 28.9836 8.27161C28.9836 7.13887 28.0655 6.22083 26.9328 6.22083Z"
+											fill="#0D0B0B" />
+									</g>
+									<defs>
+										<clipPath id="clip0_3_4951">
+											<rect width="35" height="35" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</a>
 						</div>
-						<h3 class="new-banners__title name">Свіжі <br>
-							<span>статті</span>
-						</h3>
-						<a href="/" class="new-banners__btn">Перейти до новин <img src="./img/arrow-white.svg" alt="arrow"
-								class="new-banners__arrow"></a>
 					</div>
 				</div>
-				<div class="new-banners-white__bg"></div>
-			</div>
-			<div class="articles-slider">
-				<ul class="swiper-wrapper">
-					<a href='/' class="swiper-slide articles-item">
-						<div class="articles-item__image">
-							<div class="articles-item__image-container">
-								<img src="./img/actions/1.jpg" alt="article-image" class="articles-item__img">
-							</div>
-							<img src="./img/artical-logo.svg" alt="logo" class="articles-item__logo">
-							<ul class="articles-item__tags">
-								<li class="articles-item__tag text">Новина</li>
-								<li class="articles-item__tag text">Новини торгівельного центру</li>
-							</ul>
-						</div>
-						<div class="articles-item__content">
-							<h4 class="articles-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="articles-item__footer">
-								<p class="articles-item__date">08.03.2023</p>
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
-					</a>
-					<a href='/' class="swiper-slide articles-item">
-						<div class="articles-item__image">
-							<div class="articles-item__image-container">
-								<img src="./img/actions/1.jpg" alt="article-image" class="articles-item__img">
-							</div>
-							<img src="./img/artical-logo.svg" alt="logo" class="articles-item__logo">
-							<ul class="articles-item__tags">
-								<li class="articles-item__tag text">Новина</li>
-								<li class="articles-item__tag text">Новини торгівельного центру</li>
-							</ul>
-						</div>
-						<div class="articles-item__content">
-							<h4 class="articles-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="articles-item__footer">
-								<p class="articles-item__date">08.03.2023</p>
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
-					</a>
-					<a href='/' class="swiper-slide articles-item">
-						<div class="articles-item__image">
-							<div class="articles-item__image-container">
-								<img src="./img/actions/1.jpg" alt="article-image" class="articles-item__img">
-							</div>
-							<img src="./img/artical-logo.svg" alt="logo" class="articles-item__logo">
-							<ul class="articles-item__tags">
-								<li class="articles-item__tag text">Новина</li>
-								<li class="articles-item__tag text">Новини торгівельного центру</li>
-							</ul>
-						</div>
-						<div class="articles-item__content">
-							<h4 class="articles-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="articles-item__footer">
-								<p class="articles-item__date">08.03.2023</p>
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
-					</a>
-					<a href='/' class="swiper-slide articles-item">
-						<div class="articles-item__image">
-							<div class="articles-item__image-container">
-								<img src="./img/actions/1.jpg" alt="article-image" class="articles-item__img">
-							</div>
-							<img src="./img/artical-logo.svg" alt="logo" class="articles-item__logo">
-							<ul class="articles-item__tags">
-								<li class="articles-item__tag text">Новина</li>
-								<li class="articles-item__tag text">Новини торгівельного центру</li>
-							</ul>
-						</div>
-						<div class="articles-item__content">
-							<h4 class="articles-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="articles-item__footer">
-								<p class="articles-item__date">08.03.2023</p>
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
-					</a>
-					<a href='/' class="swiper-slide articles-item">
-						<div class="articles-item__image">
-							<div class="articles-item__image-container">
-								<img src="./img/actions/1.jpg" alt="article-image" class="articles-item__img">
-							</div>
-							<img src="./img/artical-logo.svg" alt="logo" class="articles-item__logo">
-							<ul class="articles-item__tags">
-								<li class="articles-item__tag text">Новина</li>
-								<li class="articles-item__tag text">Новини торгівельного центру</li>
-							</ul>
-						</div>
-						<div class="articles-item__content">
-							<h4 class="articles-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="articles-item__footer">
-								<p class="articles-item__date">08.03.2023</p>
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
-					</a>
+				<ul class="footer__columns">
+					<li class="footer__column">
+						<h5 class="footer-name">Про нас</h5>
+						<ul class="footer-columns">
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">Схема ТЦ</a>
+							</li>
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">Правила сайту</a>
+							</li>
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">Про торговий центр</a>
+							</li>
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">Контакти</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__column">
+						<h5 class="footer-name">Партнерам</h5>
+						<ul class="footer-columns">
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">Вакансії</a>
+							</li>
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">Орендарям</a>
+							</li>
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">Дизайнерам</a>
+							</li>
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">Статті</a>
+							</li>
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">FAQ</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__column">
+						<h5 class="footer-name">Клієнтам</h5>
+						<ul class="footer-columns">
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">Послуги</a>
+							</li>
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">Акції</a>
+							</li>
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">Магазини</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__column">
+						<h5 class="footer-name">Категорії</h5>
+						<ul class="footer-columns">
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">Підлогові покриття</a>
+							</li>
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">Меблі для дому</a>
+							</li>
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">Сантехніка</a>
+							</li>
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">Столи</a>
+							</li>
+							<li class="footer-columns__item">
+								<a href="/" class="footer-columns__link">Двері</a>
+							</li>
+						</ul>
+					</li>
 				</ul>
 			</div>
-		</section>
-		<section class="shops">
-			<div class="min-container slider-header">
-				<h2 class="slider-header__title name">Магазини нашого ТЦ</h2>
-				<div class="slider-header__buttons">
-					<button class="slider-header__button_prev btn-slider"></button>
-					<button class="slider-header__button_next btn-slider btn-slider_next"></button>
-				</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="footer-bottom__inner min-container">
+				<a href='/' class="footer-bottom__text">Політика конфіденційності</a>
+				<p class="footer-bottom__text">Створено в <a href="/">MAXOPEN</a></p>
 			</div>
-		</section>
-	</main>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-	<script src='./js/main.js'></script>
+		</div>
+	</footer> -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src='./js/main.js'></script>
 </body>
 
 </html>
