@@ -1,6 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 
 @font-face {
@@ -203,4 +204,14 @@ body {
 }
 .pagination-number .pagination-number-active {
   color: #9a2c31;
+}
+
+.footer-text {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #888888;
 }/*# sourceMappingURL=basic.css.map */

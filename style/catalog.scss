@@ -3,7 +3,7 @@
 	overflow: hidden;
 	height: 418px;
 	width: 100%;
-	&::before{
+	&::before {
 		content: '';
 		background-color: rgba(#000000, 0.4);
 		width: 100%;
@@ -19,20 +19,21 @@
 	}
 	&__name {
 		position: absolute;
-		bottom: 0;
-		left: 165px;
 		bottom: 47px;
 		color: #fff;
+		max-width: 980px;
 	}
 }
 .breadcrumbs {
-	position: absolute;
 	top: 0;
-	padding: 16px 30px;
-	background-color: rgba(black, 0.6);
+	padding: 16px 0;
+	position: absolute;
+	background-color: rgba(#000000, 0.4);
 	width: 100%;
-	display: flex;
-	column-gap: 29px;
+	&__inner {
+		display: flex;
+		column-gap: 29px;
+	}
 	&__item {
 		font-family: Montserrat;
 		font-size: 14px;

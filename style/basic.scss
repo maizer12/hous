@@ -1,6 +1,7 @@
 body {
 	display: flex;
 	flex-direction: column;
+	background-color: #fff;
 }
 @font-face {
 	font-family: 'Days One';
@@ -156,13 +157,13 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	&__btn{
+	&__btn {
 		padding: 8px 15px;
 		column-gap: 25px;
 	}
-	&__prev{
+	&__prev {
 		transform: rotate(180deg);
-		span{
+		span {
 			transform: rotate(180deg);
 		}
 	}
@@ -187,4 +188,13 @@ body {
 	.pagination-number-active {
 		color: #9a2c31;
 	}
+}
+.footer-text {
+	font-family: Montserrat;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 2;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #888888;
 }

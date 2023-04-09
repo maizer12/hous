@@ -19,20 +19,21 @@
 	}
 	&__name {
 		position: absolute;
-		bottom: 0;
-		left: 165px;
-		bottom: 17px;
+		bottom: 40px;
 		color: #fff;
+		max-width: 980px;
 	}
 }
 .breadcrumbs {
-	position: absolute;
 	top: 0;
-	padding: 16px 30px;
-	background-color: rgba(black, 0.6);
+	padding: 16px 0;
+	position: absolute;
+	background-color: rgba(#000000, 0.4);
 	width: 100%;
-	display: flex;
-	column-gap: 29px;
+	&__inner {
+		display: flex;
+		column-gap: 29px;
+	}
 	&__item {
 		font-family: Montserrat;
 		font-size: 14px;
@@ -125,14 +126,5 @@
 	padding-bottom: 61px;
 	&__pagination {
 		margin-bottom: 79px;
-	}
-	&__text {
-		font-family: Montserrat;
-		font-size: 12px;
-		font-weight: 600;
-		line-height: 1.6;
-		letter-spacing: 0em;
-		text-align: left;
-		color: #888888;
 	}
 }

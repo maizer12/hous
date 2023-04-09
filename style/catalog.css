@@ -21,18 +21,19 @@
 }
 .banner__name {
   position: absolute;
-  bottom: 0;
-  left: 165px;
   bottom: 47px;
   color: #fff;
+  max-width: 980px;
 }
 
 .breadcrumbs {
-  position: absolute;
   top: 0;
-  padding: 16px 30px;
-  background-color: rgba(0, 0, 0, 0.6);
+  padding: 16px 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
+}
+.breadcrumbs__inner {
   display: flex;
   -moz-column-gap: 29px;
        column-gap: 29px;

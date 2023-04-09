@@ -21,18 +21,19 @@
 }
 .banner__name {
   position: absolute;
-  bottom: 0;
-  left: 165px;
-  bottom: 17px;
+  bottom: 40px;
   color: #fff;
+  max-width: 980px;
 }
 
 .breadcrumbs {
-  position: absolute;
   top: 0;
-  padding: 16px 30px;
-  background-color: rgba(0, 0, 0, 0.6);
+  padding: 16px 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
+}
+.breadcrumbs__inner {
   display: flex;
   -moz-column-gap: 29px;
        column-gap: 29px;
@@ -132,13 +133,4 @@
 }
 .promotion-footer__pagination {
   margin-bottom: 79px;
-}
-.promotion-footer__text {
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.6;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #888888;
 }/*# sourceMappingURL=promotion.css.map */

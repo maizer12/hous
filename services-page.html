@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Послуги</title>
+	<title>Сторінка Послуг</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./style/library/lightbox.css">
 	<link rel="stylesheet" href="./style/null.css">
 	<link rel="stylesheet" href="./style/basic.css">
 	<link rel="stylesheet" href="./style/header-footer.css">
-	<link rel="stylesheet" href="./style/services.css">
+	<link rel="stylesheet" href="./style/services-page.css">
 </head>
+
 <body>
 	<header class="header">
 		<div class="header__inner">
@@ -154,177 +158,338 @@
 		</div>
 	</header>
 	<main class="main">
-		<div class="breadcrumbs">
-			<ul class="breadcrumbs__inner container">
-				<li class="breadcrumbs__item">
-					<a href="/" class="breadcrumbs__link">Головна сторінка</a>
-				</li>
-				<li class="breadcrumbs__item">
-					<a href="/" class="breadcrumbs__link">Послуги</a>
-				</li>
-			</ul>
-		</div>
-		<section class="services container">
-			<h2 class="services__name">Послуги</h2>
-			<ul class="services__items">
-				<li class="services-item item-hover">
-					<a href='/' class="">
-						<div class="services-item__image">
-							<img src="./img/promotion/1.jpg" alt="article-image" class="services-item__img">
-						</div>
-						<div class="services-item__content">
-							<h4 class="services-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="services-item__footer">
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
+		<section class="banner">
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs__inner container">
+					<li class="breadcrumbs__item">
+						<a href="/" class="breadcrumbs__link">Головна сторінка</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="/" class="breadcrumbs__link">Послуги</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="/" class="breadcrumbs__link">Індивідуальне виготовлення сантехнічних виробів</a>
+					</li>
+				</ul>
+			</div>
+			<img src="./img/banners/3.jpg" alt="banner" class="banner__image">
+			<div class="banner__container min-container">
+				<h1 class="banner__name name">Індивідуальне виготовлення сантехнічних виробів</h1>
+			</div>
+		</section>
+		<ul class="services-questions min-container">
+			<li class="questions-item">
+				<h4 class="questions-item__name">Що це за послуга?</h4>
+				<p class="questions-item__text">Послуги "під ключ" від провідних спеціалістів галузі за для створення
+					бездоганної сантехніки!</p>
+			</li>
+			<li class="questions-item">
+				<h4 class="questions-item__name">Що найчастіше входить в цю послугу?</h4>
+				<p class="questions-item__text">Збір особистих побажань, експертні рекомендації з максимально зручної
+					організації простору з врахуванням ергономіки, виїзд спеціаліста для замірів, підготовка проєкту.</p>
+			</li>
+			<li class="questions-item">
+				<h4 class="questions-item__name">Для кого ця послуга?</h4>
+				<p class="questions-item__text">Для тих, хто має необхідність створити зручні меблі за індивідуальним розміром,
+					або/та дизайном.</p>
+			</li>
+		</ul>
+		<section class="services-gallery">
+			<h2 class="services-gallery__name name min-container">Галерея</h2>
+			<ul class="services-gallery__items">
+				<li class="services-gallery__item">
+					<a href="./img/gallery/1.jpg" class='lightbox-image' data-lightbox="gallery">
+						<img src="./img/gallery/1.jpg" alt="services-gallery-image" class="services-gallery__img">
 					</a>
 				</li>
-				<li class="services-item item-hover">
-					<a href='/' class="">
-						<div class="services-item__image">
-							<img src="./img/promotion/1.jpg" alt="article-image" class="services-item__img">
-						</div>
-						<div class="services-item__content">
-							<h4 class="services-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="services-item__footer">
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
+				<li class="services-gallery__item">
+					<a href="./img/gallery/2.jpg" data-lightbox="gallery">
+						<img src="./img/gallery/2.jpg" alt="services-gallery-image" class="services-gallery__img">
 					</a>
 				</li>
-				<li class="services-item item-hover">
-					<a href='/' class="">
-						<div class="services-item__image">
-							<img src="./img/promotion/1.jpg" alt="article-image" class="services-item__img">
-						</div>
-						<div class="services-item__content">
-							<h4 class="services-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="services-item__footer">
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
+				<li class="services-gallery__item">
+					<a href="./img/gallery/3.jpg" data-lightbox="gallery">
+						<img src="./img/gallery/3.jpg" alt="services-gallery-image" class="services-gallery__img">
 					</a>
 				</li>
-				<li class="services-item item-hover">
-					<a href='/' class="">
-						<div class="services-item__image">
-							<img src="./img/promotion/1.jpg" alt="article-image" class="services-item__img">
-						</div>
-						<div class="services-item__content">
-							<h4 class="services-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="services-item__footer">
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
+				<li class="services-gallery__item">
+					<a href="./img/gallery/4.jpg" data-lightbox="gallery">
+						<img src="./img/gallery/4.jpg" alt="services-gallery-image" class="services-gallery__img">
 					</a>
 				</li>
-				<li class="services-item item-hover">
-					<a href='/' class="">
-						<div class="services-item__image">
-							<img src="./img/promotion/1.jpg" alt="article-image" class="services-item__img">
-						</div>
-						<div class="services-item__content">
-							<h4 class="services-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="services-item__footer">
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
+				<li class="services-gallery__item">
+					<a href="./img/gallery/5.jpg" data-lightbox="gallery">
+						<img src="./img/gallery/5.jpg" alt="services-gallery-image" class="services-gallery__img">
 					</a>
 				</li>
-				<li class="services-item item-hover">
-					<a href='/' class="">
-						<div class="services-item__image">
-							<img src="./img/promotion/1.jpg" alt="article-image" class="services-item__img">
-						</div>
-						<div class="services-item__content">
-							<h4 class="services-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="services-item__footer">
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
+				<li class="services-gallery__item">
+					<a href="./img/gallery/6.jpg" data-lightbox="gallery">
+						<img src="./img/gallery/6.jpg" alt="services-gallery-image" class="services-gallery__img">
 					</a>
 				</li>
-				<li class="services-item item-hover">
-					<a href='/' class="">
-						<div class="services-item__image">
-							<img src="./img/promotion/1.jpg" alt="article-image" class="services-item__img">
-						</div>
-						<div class="services-item__content">
-							<h4 class="services-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="services-item__footer">
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="services-item item-hover">
-					<a href='/' class="">
-						<div class="services-item__image">
-							<img src="./img/promotion/1.jpg" alt="article-image" class="services-item__img">
-						</div>
-						<div class="services-item__content">
-							<h4 class="services-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="services-item__footer">
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="services-item item-hover">
-					<a href='/' class="">
-						<div class="services-item__image">
-							<img src="./img/promotion/1.jpg" alt="article-image" class="services-item__img">
-						</div>
-						<div class="services-item__content">
-							<h4 class="services-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="services-item__footer">
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="services-item item-hover">
-					<a href='/' class="">
-						<div class="services-item__image">
-							<img src="./img/promotion/1.jpg" alt="article-image" class="services-item__img">
-						</div>
-						<div class="services-item__content">
-							<h4 class="services-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="services-item__footer">
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="services-item item-hover">
-					<a href='/' class="">
-						<div class="services-item__image">
-							<img src="./img/promotion/1.jpg" alt="article-image" class="services-item__img">
-						</div>
-						<div class="services-item__content">
-							<h4 class="services-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="services-item__footer">
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="services-item item-hover">
-					<a href='/' class="">
-						<div class="services-item__image">
-							<img src="./img/promotion/1.jpg" alt="article-image" class="services-item__img">
-						</div>
-						<div class="services-item__content">
-							<h4 class="services-item__name name-item">Тут буде ваша назва новини</h4>
-							<div class="services-item__footer">
-								<button class="btn-detail">Детальніше</button>
-							</div>
-						</div>
+				<li class="services-gallery__item">
+					<a href="./img/gallery/7.jpg" data-lightbox="gallery">
+						<img src="./img/gallery/7.jpg" alt="services-gallery-image" class="services-gallery__img">
 					</a>
 				</li>
 			</ul>
-			<p class="services__text footer-text">Послуги магазинів і майстрів торгової мережі "АРАКС". Індивідуальні пропозиції наших партнерів з виготовлення меблів на замовлення, монтажу терас, навчання і багато чому іншому. Ми працюємо тільки з перевіреними професіоналами. Всі послуги та пропозиції перевірені і пройшли суворий відбір команди торгової мережі "АРАКС"</p>
+			<div class="lightbox-nav">
+				<a href="#" class="lb-prev">Prev</a>
+				<a href="#" class="lb-next">Next</a>
+			</div>
+		</section>
+		<section class="order-from min-container">
+			<h3 class="order-from__name name">У кого замовити</h3>
+			<ul class="order-from__items">
+				<li class="order-item">
+					<div class="order-item__text">
+						<div class="order-item__content">
+							<h4 class="order-item__name order-item-name">Виготовлення кам'яних стільниць з вмивальником</h4>
+							<p class="order-item__desc order-item-desc">Виготовлення індивідуальних кам'яних умивальників з кварцу.
+								Будь-яка
+								конфігурація. Контактний номер телефону спеціаліста: 0984455805</p>
+							
+							</a>
+						</div>
+						<div class="order-inner">
+							<h4 class='order-inner__name order-item-name'>Чому в нас</h4>
+							<ul class="order-inner__list">
+								<li class="order-inner__item order-item-desc">Індивідуальне виготовлення</li>
+								<li class="order-inner__item order-item-desc">Комплексний підхід</li>
+								<li class="order-inner__item order-item-desc">Виклик спеціаліста додому</li>
+							</ul>
+						</div>
+					</div>
+					<div class="order-item-inner">
+						<div class="order-item-inner__order">
+							<div class="order-brand">
+								<div class="order-brand__image">
+									<img src="./img/shops/7.png" alt="brand" class="order-brand__img">
+								</div>
+								<div class="order-brand__content">
+									<h5 class="order-brand__name order-item-name">Назва бренду</h5>
+									<div class="order-brand__stars">
+										<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+											<path
+												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+											<defs>
+												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+													gradientUnits="userSpaceOnUse">
+													<stop offset="1" stop-color="#FFC700" />
+												</linearGradient>
+											</defs>
+										</svg>
+										<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+											<path
+												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+											<defs>
+												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+													gradientUnits="userSpaceOnUse">
+													<stop offset="1" stop-color="#FFC700" />
+												</linearGradient>
+											</defs>
+										</svg>
+										<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+											<path
+												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+											<defs>
+												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+													gradientUnits="userSpaceOnUse">
+													<stop offset="1" stop-color="#FFC700" />
+												</linearGradient>
+											</defs>
+										</svg>
+										<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+											<path
+												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+											<defs>
+												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+													gradientUnits="userSpaceOnUse">
+													<stop offset="1" stop-color="#FFC700" />
+												</linearGradient>
+											</defs>
+										</svg>
+										<svg width="17" height="20" viewBox="0 0 17 20" fill="rgb(172, 172, 172)"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+											<path
+												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+											<defs>
+												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+													gradientUnits="userSpaceOnUse">
+													<stop offset="1" stop-color="#FFC700" />
+												</linearGradient>
+											</defs>
+										</svg>
+										<p class="order-brand__rating">4.0</p>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="order-item-inner__swiper">
+							<div class="order-swiper">
+								<div class="order-swiper__buttons">
+									<button class="btn-slider btn-slider-prev"></button>
+									<button class="btn-slider btn-slider-next btn-slider_next"></button>
+								</div>
+								<div class="order-swiper__slider">
+									<div class="swiper-wrapper ">
+										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
+										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
+										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
+										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
+										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
+										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="order-item__buttons">
+						<a href="/" class="order-item__btn order-item__btn_rotate  btn-detail">
+							<span>Перейти до магазину</span>
+						</a>
+							<a href="/" class="order-item__btn  btn-detail">
+								<span>Відправити запит</span>
+							</a>
+					</div>
+				</li>
+				<li class="order-item">
+					<div class="order-item__text">
+						<div class="order-item__content">
+							<h4 class="order-item__name order-item-name">Виготовлення кам'яних стільниць з вмивальником</h4>
+							<p class="order-item__desc order-item-desc">Виготовлення індивідуальних кам'яних умивальників з кварцу.
+								Будь-яка
+								конфігурація. Контактний номер телефону спеціаліста: 0984455805</p>
+							
+							</a>
+						</div>
+						<div class="order-inner">
+							<h4 class='order-inner__name order-item-name'>Чому в нас</h4>
+							<ul class="order-inner__list">
+								<li class="order-inner__item order-item-desc">Індивідуальне виготовлення</li>
+								<li class="order-inner__item order-item-desc">Комплексний підхід</li>
+								<li class="order-inner__item order-item-desc">Виклик спеціаліста додому</li>
+							</ul>
+						</div>
+					</div>
+					<div class="order-item-inner">
+						<div class="order-item-inner__order">
+							<div class="order-brand">
+								<div class="order-brand__image">
+									<img src="./img/shops/7.png" alt="brand" class="order-brand__img">
+								</div>
+								<div class="order-brand__content">
+									<h5 class="order-brand__name order-item-name">Назва бренду</h5>
+									<div class="order-brand__stars">
+										<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+											<path
+												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+											<defs>
+												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+													gradientUnits="userSpaceOnUse">
+													<stop offset="1" stop-color="#FFC700" />
+												</linearGradient>
+											</defs>
+										</svg>
+										<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+											<path
+												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+											<defs>
+												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+													gradientUnits="userSpaceOnUse">
+													<stop offset="1" stop-color="#FFC700" />
+												</linearGradient>
+											</defs>
+										</svg>
+										<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+											<path
+												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+											<defs>
+												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+													gradientUnits="userSpaceOnUse">
+													<stop offset="1" stop-color="#FFC700" />
+												</linearGradient>
+											</defs>
+										</svg>
+										<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+											<path
+												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+											<defs>
+												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+													gradientUnits="userSpaceOnUse">
+													<stop offset="1" stop-color="#FFC700" />
+												</linearGradient>
+											</defs>
+										</svg>
+										<svg width="17" height="20" viewBox="0 0 17 20" fill="rgb(172, 172, 172)"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+											<path
+												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+											<defs>
+												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+													gradientUnits="userSpaceOnUse">
+													<stop offset="1" stop-color="#FFC700" />
+												</linearGradient>
+											</defs>
+										</svg>
+										<p class="order-brand__rating">4.0</p>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="order-item-inner__swiper ">
+							<div class="order-swiper">
+								<div class="order-swiper__buttons">
+									<button class="btn-slider btn-slider-prev-two"></button>
+									<button class="btn-slider btn-slider-next-two btn-slider_next"></button>
+								</div>
+								<div class=" order-swiper__slider-two">
+									<div class="swiper-wrapper ">
+										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
+										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
+										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
+										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
+										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
+										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="order-item__buttons">
+						<a href="/" class="order-item__btn order-item__btn_rotate  btn-detail">
+							<span>Перейти до магазину</span>
+						</a>
+							<a href="/" class="order-item__btn  btn-detail">
+								<span>Відправити запит</span>
+							</a>
+					</div>
+				</li>
+			</ul>
 		</section>
 	</main>
 	<footer class="footer">
@@ -476,6 +641,10 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src='./js/library/lightbox.js'></script>
+	<script src='./js/services-page.js'></script>
 </body>
 
 </html>
