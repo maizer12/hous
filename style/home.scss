@@ -1,6 +1,7 @@
 .home-slider {
 	position: relative;
-	margin-bottom: 81px;
+	padding-bottom: 81px;
+	overflow: hidden;
 }
 .sidebar-slider {
 	position: absolute;
@@ -51,7 +52,14 @@
 }
 
 .swiper-home {
+	overflow: hidden;
 	&__image {
+		position: relative;
+		max-width: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+	&__img {
 		object-fit: cover;
 		max-width: 100%;
 		width: 100%;
@@ -110,7 +118,7 @@
 	}
 	&_next {
 		right: 123px;
-		.swiper-home-btn__arrow {
+		.swiper-home-btn__arrows {
 			transform: translate(-50%, -50%) rotate(180deg);
 		}
 	}
@@ -156,18 +164,38 @@
 			left: 0;
 		}
 	}
-	&__img {
-		object-fit: contain;
+
+	&__image-text {
+		display: none;
+		font-family: Montserrat;
+		font-size: 10px;
+		font-weight: 700;
+		line-height: 20px;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #fff;
 	}
-	&__arrow {
+	&__img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+	&__arrows{
+		display: flex;
+		align-items: center;
+		column-gap: 20px;
 		position: absolute;
-		z-index: 3;
 		top: 50%;
 		left: 50%;
+		z-index: 3;
 		transform: translate(-50%, -50%);
+	}
+	&__arrow {
 		width: 66px;
 		height: 66px;
-		padding: 18px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		border: 2px solid #fff;
 		border-radius: 50%;
 	}
@@ -278,12 +306,14 @@
 }
 
 .recommendation {
+	width: 100%;
+	overflow: hidden;
 	padding-bottom: 87px;
-
-	&__items {
-		display: flex;
-		row-gap: 40px;
-		column-gap: 40px;
+	.slider-header__buttons{
+		display: none;
+	}
+	&__swiper{
+		overflow: hidden;
 	}
 }
 .recommendation-item {
@@ -335,7 +365,7 @@
 }
 .new-articles {
 	padding-bottom: 79px;
-	.slider-header{
+	.slider-header {
 		display: none;
 	}
 	&__inner {
@@ -446,7 +476,7 @@
 			width: 100%;
 			height: 297px;
 		}
-		&::before{
+		&::before {
 			content: '';
 			width: 100%;
 			height: 100%;
@@ -514,6 +544,8 @@
 }
 .shops {
 	padding-bottom: 82px;
+	//width: 100%;
+	//overflow: hidden;
 	.swiper-wrapper {
 		align-items: center;
 	}

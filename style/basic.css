@@ -131,17 +131,6 @@ body {
   transform: translateX(10px);
 }
 
-.footer-name {
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 25px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #0d0b0b;
-  cursor: default;
-}
-
 .item-hover {
   transition: 0.6s;
 }
