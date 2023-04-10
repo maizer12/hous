@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./style/null.css">
+	<link rel="stylesheet" href="./style/basic.css">
+	<link rel="stylesheet" href="./style/header-footer.css">
+	<link rel="stylesheet" href="./style/categories-goods.css">
+	<title>Категорії товарів</title>
+</head>
+
+<body>
+	
+	<main class="main categories">
+		<div class="breadcrumbs">
+			<ul class="breadcrumbs__inner container">
+				<li class="breadcrumbs__item">
+					<a href="/" class="breadcrumbs__link">Головна сторінка</a>
+				</li>
+				<li class="breadcrumbs__item">
+					<a href="/" class="breadcrumbs__link">Підлогові покриття</a>
+				</li>
+				<li class="breadcrumbs__item">
+					<a href="/" class="breadcrumbs__link">Покриття для будинку</a>
+				</li>
+			</ul>
+		</div>
+		<section class="banner" class='fii'>
+			<img src="./img/banners/1.jpg" alt="banner" class="banner__image">
+			<div class="banner__container min-container">
+				<h1 class="banner__name name">Покриття для будинку</h1>
+			</div>
+		</section>
+		<div class="categories__inner min-container">
+			<div class="categories-adapt">
+				<div class="categories-adapt__buttons">
+					<button id='test' class="categories-adapt__button">Фільтр
+						<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_10_4465)">
+							<path d="M19.8711 1.58125e-06H1.14853C0.818315 -0.000623041 0.515583 0.183848 0.364634 0.477627C0.211602 0.775362 0.238461 1.13389 0.433966 1.40581L7.29312 11.0683C7.29541 11.0716 7.29791 11.0747 7.3002 11.078C7.54942 11.4145 7.68413 11.822 7.68496 12.2409V20.1186C7.68351 20.352 7.77512 20.576 7.9396 20.7415C8.10408 20.907 8.3277 20.9999 8.56089 20.9999C8.67957 20.9999 8.79679 20.9762 8.9063 20.9308L12.7606 19.4611C13.106 19.3557 13.3353 19.0299 13.3353 18.6374V12.2409C13.3359 11.8222 13.4708 11.4145 13.7198 11.078C13.7221 11.0747 13.7246 11.0716 13.7269 11.0683L20.5858 1.40539C20.7814 1.13369 20.8082 0.775362 20.6552 0.477627C20.5042 0.183848 20.2015 -0.000623041 19.8711 1.58125e-06ZM12.8604 10.4465C12.4773 10.9664 12.2701 11.595 12.2688 12.2409V18.5079L8.75098 19.8491V12.2409C8.74973 11.595 8.54257 10.9664 8.15926 10.4465L1.50019 1.06602H19.5196L12.8604 10.4465Z" fill="#9A2C31"/>
+							</g>
+							<defs>
+							<clipPath id="clip0_10_4465">
+							<rect width="21" height="21" fill="white"/>
+							</clipPath>
+							</defs>
+							</svg>
+							
+						</button>
+					<button class="categories-adapt__button">Пошук товарів
+						<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M19.7663 19.5889L14.7962 14.6188C16.1506 12.9623 16.8165 10.8487 16.6562 8.71497C16.4959 6.58128 15.5216 4.59083 13.9349 3.15534C12.3482 1.71984 10.2704 0.949126 8.13136 1.00261C5.99233 1.05609 3.95568 1.92968 2.44268 3.44268C0.929679 4.95568 0.0560909 6.99233 0.00260835 9.13136C-0.0508742 11.2704 0.719841 13.3482 2.15534 14.9349C3.59083 16.5216 5.58128 17.4959 7.71497 17.6562C9.84866 17.8165 11.9623 17.1506 13.6188 15.7962L18.5889 20.7663C18.7459 20.9179 18.9563 21.0019 19.1746 21C19.3929 20.9981 19.6017 20.9105 19.7561 20.7561C19.9105 20.6017 19.9981 20.3929 20 20.1746C20.0019 19.9563 19.9179 19.7459 19.7663 19.5889ZM8.35314 16.0143C7.03568 16.0143 5.74781 15.6237 4.65238 14.8917C3.55695 14.1598 2.70317 13.1194 2.199 11.9023C1.69483 10.6851 1.56292 9.34575 1.81994 8.05361C2.07697 6.76146 2.71138 5.57455 3.64297 4.64297C4.57455 3.71138 5.76146 3.07697 7.05361 2.81994C8.34575 2.56292 9.6851 2.69483 10.9023 3.199C12.1194 3.70317 13.1598 4.55695 13.8917 5.65238C14.6237 6.74781 15.0143 8.03568 15.0143 9.35314C15.0124 11.1192 14.3099 12.8123 13.0611 14.0611C11.8123 15.3099 10.1192 16.0124 8.35314 16.0143Z" fill="#9A2C31"/>
+							</svg>
+							
+					</button>
+				</div>
+				<h4 class="categories-adapt__name">Виберіть підкатегорію</h4>
+			</div>
+			<section class="categories-swiper">
+				<div class="categories-swiper__inner">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="/" class="categories-type item-hover">
+								<div class="categories-type__image">
+									<img src="./img/categori-link.jpg" alt="categories-type" class="categories-type__img">
+								</div>
+								<p class="categories-type__text">Плінтус та фурнітура</p>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="/" class="categories-type item-hover">
+								<div class="categories-type__image">
+									<img src="./img/categori-link.jpg" alt="categories-type" class="categories-type__img">
+								</div>
+								<p class="categories-type__text">Плінтус та фурнітура</p>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="/" class="categories-type item-hover">
+								<div class="categories-type__image">
+									<img src="./img/categori-link.jpg" alt="categories-type" class="categories-type__img">
+								</div>
+								<p class="categories-type__text">Плінтус та фурнітура</p>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="/" class="categories-type item-hover">
+								<div class="categories-type__image">
+									<img src="./img/categori-link.jpg" alt="categories-type" class="categories-type__img">
+								</div>
+								<p class="categories-type__text">Плінтус та фурнітура</p>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="/" class="categories-type item-hover">
+								<div class="categories-type__image">
+									<img src="./img/categori-link.jpg" alt="categories-type" class="categories-type__img">
+								</div>
+								<p class="categories-type__text">Плінтус та фурнітура</p>
+							</a>
+						</div>
+
+					</div>
+				</div>
+				<div class="pagination-adapt categories-pagination"></div>
+			</section>
+			<section class="categories-header">
+				<h1 class="categories-header__title">Покриття для будинку</h1>
+				<div class="categories-header__search">
+					<h5 class="categories-header__name">Знайдено товарів 756</h5>
+					<label for="" class="search">
+						<input type="text" class="search__input" placeholder='Введіть пошуковий запит'>
+						<button class="search__btn"><svg width="28" height="26" viewBox="0 0 28 26" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M27.6728 23.506L20.7147 17.2212C22.6108 15.1266 23.5431 12.4538 23.3187 9.7557C23.0942 7.05762 21.7302 4.54067 19.5088 2.72546C17.2874 0.910251 14.3786 -0.0643313 11.3839 0.0032983C8.38926 0.0709279 5.53795 1.17559 3.41975 3.08881C1.30155 5.00202 0.0785273 7.57739 0.00365169 10.2822C-0.0712239 12.9871 1.00778 15.6144 3.01747 17.6209C5.02716 19.6273 7.81379 20.8593 10.801 21.062C13.7881 21.2647 16.7473 20.4227 19.0663 18.71L26.0245 24.9948C26.2443 25.1866 26.5388 25.2927 26.8444 25.2903C27.1501 25.2879 27.4424 25.1772 27.6586 24.9819C27.8747 24.7867 27.9973 24.5226 28 24.2466C28.0026 23.9705 27.8851 23.7045 27.6728 23.506ZM11.6944 18.9859C9.84996 18.9859 8.04693 18.4919 6.51334 17.5663C4.97974 16.6408 3.78444 15.3252 3.0786 13.7861C2.37277 12.247 2.18809 10.5533 2.54792 8.9194C2.90775 7.28546 3.79594 5.7846 5.10016 4.60659C6.40437 3.42859 8.06605 2.62636 9.87505 2.30135C11.6841 1.97634 13.5591 2.14314 15.2632 2.78067C16.9672 3.41821 18.4237 4.49783 19.4484 5.88301C20.4731 7.2682 21.0201 8.89674 21.0201 10.5627C21.0173 12.7959 20.0339 14.9369 18.2856 16.516C16.5373 18.0951 14.1669 18.9834 11.6944 18.9859Z"
+									fill="#757575" />
+							</svg>
+						</button>
+					</label>
+				</div>
+			</section>
+			<div class="categories-content">
+				<sidebar class="categories-sidebar">
+					<form action="" class="categories-sidebar__form">
+						<div id="accordion-categories" class="categories-sidebar__accordion">
+							<h5 class="categories-sidebar__name accordion-header">Виробник
+								<span></span>
+							</h5>
+							<div class="accordion-content">
+								<label class="categories-sidebar__label">
+									<input type="checkbox" class="categories-sidebar__input">
+									<p class="categories-sidebar__text">32 класс</p>
+								</label>
+								<label class="categories-sidebar__label">
+									<input type="checkbox" class="categories-sidebar__input">
+									<p class="categories-sidebar__text">33 класс</p>
+								</label>
+								<label class="categories-sidebar__label">
+									<input type="checkbox" class="categories-sidebar__input">
+									<p class="categories-sidebar__text">34 класс</p>
+								</label>
+							</div>
+							<h5 class="categories-sidebar__name accordion-header">Бренд
+								<span></span>
+							</h5>
+							<div class="accordion-content">
+								<label class="categories-sidebar__label">
+									<input type="checkbox" class="categories-sidebar__input">
+									<p class="categories-sidebar__text">32 класс</p>
+								</label>
+								<label class="categories-sidebar__label">
+									<input type="checkbox" class="categories-sidebar__input">
+									<p class="categories-sidebar__text">33 класс</p>
+								</label>
+								<label class="categories-sidebar__label">
+									<input type="checkbox" class="categories-sidebar__input">
+									<p class="categories-sidebar__text">34 класс</p>
+								</label>
+							</div>
+							<h5 class="categories-sidebar__name accordion-header">Країна виробник
+								<span></span>
+							</h5>
+							<div class="accordion-content">
+								<label class="categories-sidebar__label">
+									<input type="checkbox" class="categories-sidebar__input">
+									<p class="categories-sidebar__text">32 класс</p>
+								</label>
+								<label class="categories-sidebar__label">
+									<input type="checkbox" class="categories-sidebar__input">
+									<p class="categories-sidebar__text">33 класс</p>
+								</label>
+								<label class="categories-sidebar__label">
+									<input type="checkbox" class="categories-sidebar__input">
+									<p class="categories-sidebar__text">34 класс</p>
+								</label>
+							</div>
+						</div>
+						<div class="categories-sidebar__buttons">
+							<button type='reset' class="categories-sidebar__btn categories-sidebar__reset ">Скинути</button>
+							<button class="categories-sidebar__btn categories-sidebar__submit">Показати позиції 756</button>
+						</div>
+					</form>
+				</sidebar>
+				<section class="categories-products">
+					<ul class="categories-products__items">
+						<li class="recommendation-item item-hover">
+							<a href="/">
+								<div class="recommendation-item__img">
+									<img src="./img/reacomendation/1.jpg" alt="recommendation" class="recommendation-item__icon">
+								</div>
+								<div class="recommendation-item__text">
+									<h5 class="recommendation-item__name name-item">Двері Берислав</h5>
+									<p class="recommendation-item__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+										accusantium doloremque laudantium</p>
+									<div class="recommendation-item__footer">
+										<img src="./img/logo-recomendation.svg" alt="logo" class="recommendation-item__logo">
+										<a href='/' class="btn-detail">Детальніше</a>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="recommendation-item item-hover">
+							<a href="/">
+								<div class="recommendation-item__img">
+									<img src="./img/reacomendation/1.jpg" alt="recommendation" class="recommendation-item__icon">
+								</div>
+								<div class="recommendation-item__text">
+									<h5 class="recommendation-item__name name-item">Двері Берислав</h5>
+									<p class="recommendation-item__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+										accusantium doloremque laudantium</p>
+									<div class="recommendation-item__footer">
+										<img src="./img/logo-recomendation.svg" alt="logo" class="recommendation-item__logo">
+										<a href='/' class="btn-detail">Детальніше</a>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="recommendation-item item-hover">
+							<a href="/">
+								<div class="recommendation-item__img">
+									<img src="./img/reacomendation/1.jpg" alt="recommendation" class="recommendation-item__icon">
+								</div>
+								<div class="recommendation-item__text">
+									<h5 class="recommendation-item__name name-item">Двері Берислав</h5>
+									<p class="recommendation-item__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+										accusantium doloremque laudantium</p>
+									<div class="recommendation-item__footer">
+										<img src="./img/logo-recomendation.svg" alt="logo" class="recommendation-item__logo">
+										<a href='/' class="btn-detail">Детальніше</a>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="recommendation-item item-hover">
+							<a href="/">
+								<div class="recommendation-item__img">
+									<img src="./img/reacomendation/1.jpg" alt="recommendation" class="recommendation-item__icon">
+								</div>
+								<div class="recommendation-item__text">
+									<h5 class="recommendation-item__name name-item">Двері Берислав</h5>
+									<p class="recommendation-item__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+										accusantium doloremque laudantium</p>
+									<div class="recommendation-item__footer">
+										<img src="./img/logo-recomendation.svg" alt="logo" class="recommendation-item__logo">
+										<a href='/' class="btn-detail">Детальніше</a>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="recommendation-item item-hover">
+							<a href="/">
+								<div class="recommendation-item__img">
+									<img src="./img/reacomendation/1.jpg" alt="recommendation" class="recommendation-item__icon">
+								</div>
+								<div class="recommendation-item__text">
+									<h5 class="recommendation-item__name name-item">Двері Берислав</h5>
+									<p class="recommendation-item__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+										accusantium doloremque laudantium</p>
+									<div class="recommendation-item__footer">
+										<img src="./img/logo-recomendation.svg" alt="logo" class="recommendation-item__logo">
+										<a href='/' class="btn-detail">Детальніше</a>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="recommendation-item item-hover">
+							<a href="/">
+								<div class="recommendation-item__img">
+									<img src="./img/reacomendation/1.jpg" alt="recommendation" class="recommendation-item__icon">
+								</div>
+								<div class="recommendation-item__text">
+									<h5 class="recommendation-item__name name-item">Двері Берислав</h5>
+									<p class="recommendation-item__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+										accusantium doloremque laudantium</p>
+									<div class="recommendation-item__footer">
+										<img src="./img/logo-recomendation.svg" alt="logo" class="recommendation-item__logo">
+										<a href='/' class="btn-detail">Детальніше</a>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<div class="promotion-footer__pagination  pagination">
+						<button class="pagination__btn pagination__prev btn-detail"><span>Попередня</span></button>
+						<ul class="pagination-number">
+							<li class="pagination-number__num pagination-number-active">1</li>
+							<li class="pagination-number__num">2</li>
+							<li class="pagination-number__num">3</li>
+							<li class="pagination-number__num">..</li>
+							<li class="pagination-number__num">28</li>
+						</ul>
+						<button class="pagination__btn btn-detail">Наступна</button>
+					</div>
+					<a href="/" class="categories-products__link">Завантажити ще</a>
+				</section>
+			</div>
+		</div>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src='./js/categories-goods.js'></script>
+</body>
+
+</html>

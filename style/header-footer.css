@@ -396,6 +396,10 @@
   .header-top__items {
     display: none;
   }
+  .footer-columns {
+    padding: 0 15px;
+    padding-top: 10px;
+  }
   .header-top__items_gap {
     display: flex;
   }

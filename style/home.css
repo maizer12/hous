@@ -331,13 +331,14 @@
 }
 .recommendation-item__img {
   height: 282px;
-  width: 370px;
+  width: 100%;
   overflow: hidden;
 }
 .recommendation-item__icon {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .recommendation-item__text {
   padding: 14px 14px 0;
