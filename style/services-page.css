@@ -126,6 +126,7 @@
 
 .services-gallery {
   padding-bottom: 75px;
+  overflow: hidden;
 }
 .services-gallery__name {
   margin-bottom: 60px;
@@ -458,10 +459,6 @@
     max-width: 100%;
   }
 }
-.services-gallery {
-  overflow: hidden;
-}
-
 @media (max-width: 480px) {
   .order-from {
     padding-bottom: 26px;

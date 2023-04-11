@@ -10,8 +10,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
 		rel="stylesheet">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-		<link rel="stylesheet" href="./style/library/lightbox.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./style/library/lightbox.css">
 	<link rel="stylesheet" href="./style/null.css">
 	<link rel="stylesheet" href="./style/basic.css">
 	<link rel="stylesheet" href="./style/header-footer.css">
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-	<header class="header">
+	<!-- <header class="header">
 		<div class="header__inner">
 			<div class="header-top container">
 				<p class="header-top__item">м. Львів, с. Скнилів, вул. Окружна, 38</p>
@@ -156,7 +156,7 @@
 				</button>
 			</label>
 		</div>
-	</header>
+	</header> -->
 	<main class="main">
 		<div class="breadcrumbs">
 			<ul class="breadcrumbs__inner container">
@@ -176,7 +176,18 @@
 				<h2 class="product__title name">Дивани BLANCHE</h2>
 				<div class="about-product">
 					<div class="about-product__image">
-						<img src="./img/product.jpg" alt="product" class="about-product__img">
+						<img id='favorite-img' src="./img/product.jpg" alt="product" class="about-product__img">
+					</div>
+					<div class="about-images">
+						<div class="about-images__images about-images-active">
+							<img src="./img/product.jpg" alt="product"  class="about-images__img">
+						</div>
+						<div class="about-images__images">
+							<img src="./img/product.jpg" alt="product"  class="about-images__img">
+						</div>
+						<div class="about-images__images">
+							<img src="./img/product.jpg" alt="product"  class="about-images__img">
+						</div>
 					</div>
 					<div class="about-product__content">
 						<div class="about-product__brand">
@@ -184,7 +195,7 @@
 								<img src="./img/shops/1.png" alt="brand" class="about-product__brand-img item-hover">
 							</a>
 							<a href="/">
-								<img src="./img/shops/5.png" alt="brand" class="about-product__brand-img item-hover" >
+								<img src="./img/shops/5.png" alt="brand" class="about-product__brand-img item-hover">
 							</a>
 						</div>
 						<p class="about-product__desc">
@@ -282,43 +293,46 @@
 			</section>
 			<section class="services-gallery">
 				<h2 class="services-gallery__name name min-container">Галерея</h2>
-				<ul class="services-gallery__items">
-					<li class="services-gallery__item">
-						<a href="./img/gallery/1.jpg" class='lightbox-image' data-lightbox="gallery">
-							<img src="./img/gallery/1.jpg" alt="services-gallery-image" class="services-gallery__img">
-						</a>
-					</li>
-					<li class="services-gallery__item">
-						<a href="./img/gallery/2.jpg" data-lightbox="gallery">
-							<img src="./img/gallery/2.jpg" alt="services-gallery-image" class="services-gallery__img">
-						</a>
-					</li>
-					<li class="services-gallery__item">
-						<a href="./img/gallery/3.jpg" data-lightbox="gallery">
-							<img src="./img/gallery/3.jpg" alt="services-gallery-image" class="services-gallery__img">
-						</a>
-					</li>
-					<li class="services-gallery__item">
-						<a href="./img/gallery/4.jpg" data-lightbox="gallery">
-							<img src="./img/gallery/4.jpg" alt="services-gallery-image" class="services-gallery__img">
-						</a>
-					</li>
-					<li class="services-gallery__item">
-						<a href="./img/gallery/5.jpg" data-lightbox="gallery">
-							<img src="./img/gallery/5.jpg" alt="services-gallery-image" class="services-gallery__img">
-						</a>
-					</li>
-					<li class="services-gallery__item">
-						<a href="./img/gallery/6.jpg" data-lightbox="gallery">
-							<img src="./img/gallery/6.jpg" alt="services-gallery-image" class="services-gallery__img">
-						</a>
-					</li>
-					<li class="services-gallery__item">
-						<a href="./img/gallery/7.jpg" data-lightbox="gallery">
-							<img src="./img/gallery/7.jpg" alt="services-gallery-image" class="services-gallery__img">
-						</a>
-					</li>
-				</ul>
+				<div class="services-gallery__swiper">
+					<ul class="services-gallery__items swiper-wrapper">
+						<li class="services-gallery__item">
+							<a href="./img/gallery/1.jpg" class='lightbox-image' data-lightbox="gallery">
+								<img src="./img/gallery/1.jpg" alt="services-gallery-image" class="services-gallery__img">
+							</a>
+						</li>
+						<li class="services-gallery__item swiper-slide">
+							<a href="./img/gallery/2.jpg" data-lightbox="gallery">
+								<img src="./img/gallery/2.jpg" alt="services-gallery-image" class="services-gallery__img">
+							</a>
+						</li>
+						<li class="services-gallery__item swiper-slide">
+							<a href="./img/gallery/3.jpg" data-lightbox="gallery">
+								<img src="./img/gallery/3.jpg" alt="services-gallery-image" class="services-gallery__img">
+							</a>
+						</li>
+						<li class="services-gallery__item swiper-slide">
+							<a href="./img/gallery/4.jpg" data-lightbox="gallery">
+								<img src="./img/gallery/4.jpg" alt="services-gallery-image" class="services-gallery__img">
+							</a>
+						</li>
+						<li class="services-gallery__item swiper-slide">
+							<a href="./img/gallery/5.jpg" data-lightbox="gallery">
+								<img src="./img/gallery/5.jpg" alt="services-gallery-image" class="services-gallery__img">
+							</a>
+						</li>
+						<li class="services-gallery__item swiper-slide">
+							<a href="./img/gallery/6.jpg" data-lightbox="gallery">
+								<img src="./img/gallery/6.jpg" alt="services-gallery-image" class="services-gallery__img">
+							</a>
+						</li>
+						<li class="services-gallery__item swiper-slide">
+							<a href="./img/gallery/7.jpg" data-lightbox="gallery">
+								<img src="./img/gallery/7.jpg" alt="services-gallery-image" class="services-gallery__img">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="pagination-adapt gallery-pagination"></div>
 				<div class="lightbox-nav">
 					<a href="#" class="lb-prev">Prev</a>
 					<a href="#" class="lb-next">Next</a>
@@ -327,7 +341,7 @@
 			<section class="promotion">
 				<div class="min-container slider-header">
 					<div class="slider-header__content">
-						<h2 class="slider-header__title name">Акції Blanche</h2>
+						<h2 class="slider-header__title name">Акції</h2>
 						<div class="slider-header__buttons">
 							<button class="slider-header__button_prev btn-slider"></button>
 							<button class="slider-header__button_next btn-slider btn-slider_next"></button>
@@ -336,7 +350,7 @@
 					<a href='/' class="slider-header__btn btn-detail">Дивитися всі
 					</a>
 				</div>
-				<div class="promotion__swiper swiper-container">
+				<div class="promotion__swiper">
 					<div class="swiper-wrapper">
 						<a href='/' class="swiper-slide promotion-item item-hover">
 							<div class="promotion-item__img">
@@ -387,7 +401,7 @@
 			</section>
 		</div>
 	</main>
-	<footer class="footer">
+	<!-- <footer class="footer">
 		<div class="footer__top">
 			<div class="footer__content min-container">
 				<div class="footer__inner">
@@ -535,11 +549,11 @@
 				<p class="footer-bottom__text">Створено в <a href="/">MAXOPEN</a></p>
 			</div>
 		</div>
-	</footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-	<script src='./js/library/lightbox.js'></script>
-	<script src='./js/product-page.js'></script>
+	</footer>  -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+			<script src='./js/library/lightbox.js'></script>
+			<script src='./js/product-page.js'></script>
 </body>
 
 </html>

@@ -21,3 +21,15 @@ $(function () {
   mq.addListener(checkBreakpoint);
   checkBreakpoint(mq);
 });
+const labelSearch = document.querySelector('.header-content__label')
+
+labelSearch?.addEventListener('click', ()=>{
+  document.querySelector('.header-search')?.classList.toggle('header-search-open')
+})
+
+const burger = document.querySelector('.burger-menu')
+
+
+burger?.addEventListener('click', ()=>{
+  
+})
