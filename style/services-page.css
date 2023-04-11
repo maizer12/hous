@@ -64,6 +64,30 @@
   color: red;
 }
 
+@media (max-width: 1024px) {
+  .banner__name {
+    font-size: 40px;
+  }
+  .banner {
+    height: 400px;
+  }
+}
+@media (max-width: 780px) {
+  .breadcrumbs {
+    display: none;
+  }
+}
+@media (max-width: 481px) {
+  .banner__name {
+    font-size: 24px;
+    bottom: 50%;
+    text-align: center;
+    transform: translateY(50%);
+  }
+  .banner {
+    height: 234px;
+  }
+}
 .services-questions {
   display: flex;
   justify-content: space-between;
@@ -75,6 +99,7 @@
 }
 
 .questions-item {
+  margin: 0 auto;
   max-width: 509px;
   border: 1px solid rgba(154, 44, 49, 0.4);
   padding: 50px;
@@ -136,21 +161,18 @@
   opacity: 0;
 }
 .services-gallery__item:nth-child(1) {
-  background-color: red;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 .services-gallery__item:nth-child(2) {
-  background-color: rgb(72, 255, 0);
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 .services-gallery__item:nth-child(3) {
-  background-color: rgb(212, 0, 255);
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 4;
@@ -158,22 +180,16 @@
   height: 700px;
 }
 .services-gallery__item:nth-child(4) {
-  background-color: rgb(76, 0, 255);
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 5;
   grid-column-end: 6;
 }
-.services-gallery__item:nth-child(5) {
-  background-color: rgb(24, 26, 24);
-}
 .services-gallery__item:nth-child(6) {
-  background-color: rgb(0, 195, 255);
   grid-column-start: 2;
   grid-column-end: 4;
 }
 .services-gallery__item:nth-child(7) {
-  background-color: rgb(113, 78, 117);
   grid-column-start: 5;
   grid-column-end: 6;
 }
@@ -195,7 +211,6 @@
 }
 .order-from__items {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   -moz-column-gap: 10px;
        column-gap: 10px;
@@ -361,4 +376,114 @@
 .order-swiper .order-swiper__slider-two {
   max-width: 280px;
   overflow: hidden;
+}
+
+@media (max-width: 1550px) {
+  .order-from__items {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1200px) {
+  .services-gallery__name, .order-from__name {
+    font-size: 45px;
+    margin-bottom: 50px;
+  }
+  .services-gallery__items {
+    display: flex;
+  }
+  .services-gallery__swiper {
+    overflow: hidden;
+  }
+  .services-gallery__item {
+    max-width: 400px;
+    height: 400px;
+  }
+  .services-gallery__item:nth-child(3) {
+    height: 400px;
+  }
+}
+@media (max-width: 1025px) {
+  .services-questions {
+    padding: 50px 15px;
+  }
+}
+.order-from {
+  overflow: hidden;
+}
+
+.order-from__footer {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  .services-gallery__name, .order-from__name {
+    margin-bottom: 49px;
+    font-size: 35px;
+  }
+  .order-from__items {
+    flex-wrap: nowrap;
+  }
+  .order-from__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  .order-from__footer-buttons {
+    display: flex;
+  }
+  .order-from {
+    padding-bottom: 55px;
+  }
+  .order-inner {
+    display: none;
+  }
+  .order-item-inner__swiper {
+    display: none;
+  }
+  .order-item__btn {
+    display: none;
+  }
+  .order-item__btn_rotate {
+    margin: 0 auto;
+    display: flex;
+    transform: translate(0);
+    border: 1px solid #9a2c31;
+    margin-bottom: 16px;
+  }
+  .order-item__btn_rotate span {
+    transform: rotate(0);
+  }
+  .order-item__content {
+    max-width: 100%;
+  }
+}
+.services-gallery {
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .order-from {
+    padding-bottom: 26px;
+  }
+  .services-questions {
+    padding: 31px 15px 40px;
+  }
+  .services-questions {
+    row-gap: 23px;
+  }
+  .questions-item {
+    padding: 50px 9px;
+  }
+  .questions-item__name {
+    margin-bottom: 8px;
+  }
+  .services-gallery__name, .order-from__name {
+    margin-bottom: 39px;
+    font-size: 30px;
+  }
+  .services-gallery__item, .services-gallery__item:nth-child(3) {
+    height: 332px;
+    width: 310px;
+  }
 }/*# sourceMappingURL=services-page.css.map */

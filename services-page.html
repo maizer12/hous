@@ -19,7 +19,7 @@
 </head>
 
 <body>
-	<header class="header">
+	<!-- <header class="header">
 		<div class="header__inner">
 			<div class="header-top container">
 				<p class="header-top__item">м. Львів, с. Скнилів, вул. Окружна, 38</p>
@@ -156,7 +156,7 @@
 				</button>
 			</label>
 		</div>
-	</header>
+	</header> -->
 	<main class="main">
 		<section class="banner">
 			<div class="breadcrumbs">
@@ -196,43 +196,46 @@
 		</ul>
 		<section class="services-gallery">
 			<h2 class="services-gallery__name name min-container">Галерея</h2>
-			<ul class="services-gallery__items">
-				<li class="services-gallery__item">
-					<a href="./img/gallery/1.jpg" class='lightbox-image' data-lightbox="gallery">
-						<img src="./img/gallery/1.jpg" alt="services-gallery-image" class="services-gallery__img">
-					</a>
-				</li>
-				<li class="services-gallery__item">
-					<a href="./img/gallery/2.jpg" data-lightbox="gallery">
-						<img src="./img/gallery/2.jpg" alt="services-gallery-image" class="services-gallery__img">
-					</a>
-				</li>
-				<li class="services-gallery__item">
-					<a href="./img/gallery/3.jpg" data-lightbox="gallery">
-						<img src="./img/gallery/3.jpg" alt="services-gallery-image" class="services-gallery__img">
-					</a>
-				</li>
-				<li class="services-gallery__item">
-					<a href="./img/gallery/4.jpg" data-lightbox="gallery">
-						<img src="./img/gallery/4.jpg" alt="services-gallery-image" class="services-gallery__img">
-					</a>
-				</li>
-				<li class="services-gallery__item">
-					<a href="./img/gallery/5.jpg" data-lightbox="gallery">
-						<img src="./img/gallery/5.jpg" alt="services-gallery-image" class="services-gallery__img">
-					</a>
-				</li>
-				<li class="services-gallery__item">
-					<a href="./img/gallery/6.jpg" data-lightbox="gallery">
-						<img src="./img/gallery/6.jpg" alt="services-gallery-image" class="services-gallery__img">
-					</a>
-				</li>
-				<li class="services-gallery__item">
-					<a href="./img/gallery/7.jpg" data-lightbox="gallery">
-						<img src="./img/gallery/7.jpg" alt="services-gallery-image" class="services-gallery__img">
-					</a>
-				</li>
-			</ul>
+			<div class="services-gallery__swiper">
+				<ul class="services-gallery__items swiper-wrapper">
+					<li class="services-gallery__item">
+						<a href="./img/gallery/1.jpg" class='lightbox-image' data-lightbox="gallery">
+							<img src="./img/gallery/1.jpg" alt="services-gallery-image" class="services-gallery__img">
+						</a>
+					</li>
+					<li class="services-gallery__item swiper-slide">
+						<a href="./img/gallery/2.jpg" data-lightbox="gallery">
+							<img src="./img/gallery/2.jpg" alt="services-gallery-image" class="services-gallery__img">
+						</a>
+					</li>
+					<li class="services-gallery__item swiper-slide">
+						<a href="./img/gallery/3.jpg" data-lightbox="gallery">
+							<img src="./img/gallery/3.jpg" alt="services-gallery-image" class="services-gallery__img">
+						</a>
+					</li>
+					<li class="services-gallery__item swiper-slide">
+						<a href="./img/gallery/4.jpg" data-lightbox="gallery">
+							<img src="./img/gallery/4.jpg" alt="services-gallery-image" class="services-gallery__img">
+						</a>
+					</li>
+					<li class="services-gallery__item swiper-slide">
+						<a href="./img/gallery/5.jpg" data-lightbox="gallery">
+							<img src="./img/gallery/5.jpg" alt="services-gallery-image" class="services-gallery__img">
+						</a>
+					</li>
+					<li class="services-gallery__item swiper-slide">
+						<a href="./img/gallery/6.jpg" data-lightbox="gallery">
+							<img src="./img/gallery/6.jpg" alt="services-gallery-image" class="services-gallery__img">
+						</a>
+					</li>
+					<li class="services-gallery__item swiper-slide">
+						<a href="./img/gallery/7.jpg" data-lightbox="gallery">
+							<img src="./img/gallery/7.jpg" alt="services-gallery-image" class="services-gallery__img">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="pagination-adapt gallery-pagination"></div>
 			<div class="lightbox-nav">
 				<a href="#" class="lb-prev">Prev</a>
 				<a href="#" class="lb-next">Next</a>
@@ -240,259 +243,280 @@
 		</section>
 		<section class="order-from min-container">
 			<h3 class="order-from__name name">У кого замовити</h3>
-			<ul class="order-from__items">
-				<li class="order-item">
-					<div class="order-item__text">
-						<div class="order-item__content">
-							<h4 class="order-item__name order-item-name">Виготовлення кам'яних стільниць з вмивальником</h4>
-							<p class="order-item__desc order-item-desc">Виготовлення індивідуальних кам'яних умивальників з кварцу.
-								Будь-яка
-								конфігурація. Контактний номер телефону спеціаліста: 0984455805</p>
-							
+			<div class="order-from__swiper">
+				<ul class="order-from__items swiper-wrapper">
+					<li class="order-item swiper-slide">
+						<div class="order-item__text">
+							<div class="order-item__content">
+								<h4 class="order-item__name order-item-name">Виготовлення кам'яних стільниць з вмивальником</h4>
+								<p class="order-item__desc order-item-desc">Виготовлення індивідуальних кам'яних умивальників з кварцу.
+									Будь-яка
+									конфігурація. Контактний номер телефону спеціаліста: 0984455805</p>
+
+								</a>
+							</div>
+							<div class="order-inner">
+								<h4 class='order-inner__name order-item-name'>Чому в нас</h4>
+								<ul class="order-inner__list">
+									<li class="order-inner__item order-item-desc">Індивідуальне виготовлення</li>
+									<li class="order-inner__item order-item-desc">Комплексний підхід</li>
+									<li class="order-inner__item order-item-desc">Виклик спеціаліста додому</li>
+								</ul>
+							</div>
+						</div>
+						<div class="order-item-inner">
+							<div class="order-item-inner__order">
+								<div class="order-brand">
+									<div class="order-brand__image">
+										<img src="./img/shops/7.png" alt="brand" class="order-brand__img">
+									</div>
+									<div class="order-brand__content">
+										<h5 class="order-brand__name order-item-name">Назва бренду</h5>
+										<div class="order-brand__stars">
+											<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+												<path
+													d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+													stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+												<defs>
+													<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+														gradientUnits="userSpaceOnUse">
+														<stop offset="1" stop-color="#FFC700" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+												<path
+													d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+													stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+												<defs>
+													<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+														gradientUnits="userSpaceOnUse">
+														<stop offset="1" stop-color="#FFC700" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+												<path
+													d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+													stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+												<defs>
+													<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+														gradientUnits="userSpaceOnUse">
+														<stop offset="1" stop-color="#FFC700" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+												<path
+													d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+													stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+												<defs>
+													<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+														gradientUnits="userSpaceOnUse">
+														<stop offset="1" stop-color="#FFC700" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg width="17" height="20" viewBox="0 0 17 20" fill="rgb(172, 172, 172)"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+												<path
+													d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+													stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+												<defs>
+													<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+														gradientUnits="userSpaceOnUse">
+														<stop offset="1" stop-color="#FFC700" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<p class="order-brand__rating">4.0</p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="order-item-inner__swiper">
+								<div class="order-swiper">
+									<div class="order-swiper__buttons">
+										<button class="btn-slider btn-slider-prev"></button>
+										<button class="btn-slider btn-slider-next btn-slider_next"></button>
+									</div>
+									<div class="order-swiper__slider">
+										<div class="swiper-wrapper ">
+											<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from"
+													class="swiper-slide__img"></div>
+											<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from"
+													class="swiper-slide__img"></div>
+											<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from"
+													class="swiper-slide__img"></div>
+											<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from"
+													class="swiper-slide__img"></div>
+											<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from"
+													class="swiper-slide__img"></div>
+											<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from"
+													class="swiper-slide__img"></div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="order-item__buttons">
+							<a href="/" class="order-item__btn order-item__btn_rotate  btn-detail">
+								<span>Перейти до магазину</span>
 							</a>
-						</div>
-						<div class="order-inner">
-							<h4 class='order-inner__name order-item-name'>Чому в нас</h4>
-							<ul class="order-inner__list">
-								<li class="order-inner__item order-item-desc">Індивідуальне виготовлення</li>
-								<li class="order-inner__item order-item-desc">Комплексний підхід</li>
-								<li class="order-inner__item order-item-desc">Виклик спеціаліста додому</li>
-							</ul>
-						</div>
-					</div>
-					<div class="order-item-inner">
-						<div class="order-item-inner__order">
-							<div class="order-brand">
-								<div class="order-brand__image">
-									<img src="./img/shops/7.png" alt="brand" class="order-brand__img">
-								</div>
-								<div class="order-brand__content">
-									<h5 class="order-brand__name order-item-name">Назва бренду</h5>
-									<div class="order-brand__stars">
-										<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
-											<path
-												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
-												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
-											<defs>
-												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
-													gradientUnits="userSpaceOnUse">
-													<stop offset="1" stop-color="#FFC700" />
-												</linearGradient>
-											</defs>
-										</svg>
-										<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
-											<path
-												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
-												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
-											<defs>
-												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
-													gradientUnits="userSpaceOnUse">
-													<stop offset="1" stop-color="#FFC700" />
-												</linearGradient>
-											</defs>
-										</svg>
-										<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
-											<path
-												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
-												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
-											<defs>
-												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
-													gradientUnits="userSpaceOnUse">
-													<stop offset="1" stop-color="#FFC700" />
-												</linearGradient>
-											</defs>
-										</svg>
-										<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
-											<path
-												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
-												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
-											<defs>
-												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
-													gradientUnits="userSpaceOnUse">
-													<stop offset="1" stop-color="#FFC700" />
-												</linearGradient>
-											</defs>
-										</svg>
-										<svg width="17" height="20" viewBox="0 0 17 20" fill="rgb(172, 172, 172)"
-											xmlns="http://www.w3.org/2000/svg">
-											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
-											<path
-												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
-												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
-											<defs>
-												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
-													gradientUnits="userSpaceOnUse">
-													<stop offset="1" stop-color="#FFC700" />
-												</linearGradient>
-											</defs>
-										</svg>
-										<p class="order-brand__rating">4.0</p>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-						<div class="order-item-inner__swiper">
-							<div class="order-swiper">
-								<div class="order-swiper__buttons">
-									<button class="btn-slider btn-slider-prev"></button>
-									<button class="btn-slider btn-slider-next btn-slider_next"></button>
-								</div>
-								<div class="order-swiper__slider">
-									<div class="swiper-wrapper ">
-										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
-										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
-										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
-										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
-										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
-										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-					<div class="order-item__buttons">
-						<a href="/" class="order-item__btn order-item__btn_rotate  btn-detail">
-							<span>Перейти до магазину</span>
-						</a>
 							<a href="/" class="order-item__btn  btn-detail">
 								<span>Відправити запит</span>
 							</a>
-					</div>
-				</li>
-				<li class="order-item">
-					<div class="order-item__text">
-						<div class="order-item__content">
-							<h4 class="order-item__name order-item-name">Виготовлення кам'яних стільниць з вмивальником</h4>
-							<p class="order-item__desc order-item-desc">Виготовлення індивідуальних кам'яних умивальників з кварцу.
-								Будь-яка
-								конфігурація. Контактний номер телефону спеціаліста: 0984455805</p>
-							
+						</div>
+					</li>
+					<li class="order-item swiper-slide">
+						<div class="order-item__text">
+							<div class="order-item__content">
+								<h4 class="order-item__name order-item-name">Виготовлення кам'яних стільниць з вмивальником</h4>
+								<p class="order-item__desc order-item-desc">Виготовлення індивідуальних кам'яних умивальників з кварцу.
+									Будь-яка
+									конфігурація. Контактний номер телефону спеціаліста: 0984455805</p>
+
+								</a>
+							</div>
+							<div class="order-inner">
+								<h4 class='order-inner__name order-item-name'>Чому в нас</h4>
+								<ul class="order-inner__list">
+									<li class="order-inner__item order-item-desc">Індивідуальне виготовлення</li>
+									<li class="order-inner__item order-item-desc">Комплексний підхід</li>
+									<li class="order-inner__item order-item-desc">Виклик спеціаліста додому</li>
+								</ul>
+							</div>
+						</div>
+						<div class="order-item-inner">
+							<div class="order-item-inner__order">
+								<div class="order-brand">
+									<div class="order-brand__image">
+										<img src="./img/shops/7.png" alt="brand" class="order-brand__img">
+									</div>
+									<div class="order-brand__content">
+										<h5 class="order-brand__name order-item-name">Назва бренду</h5>
+										<div class="order-brand__stars">
+											<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+												<path
+													d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+													stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+												<defs>
+													<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+														gradientUnits="userSpaceOnUse">
+														<stop offset="1" stop-color="#FFC700" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+												<path
+													d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+													stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+												<defs>
+													<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+														gradientUnits="userSpaceOnUse">
+														<stop offset="1" stop-color="#FFC700" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+												<path
+													d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+													stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+												<defs>
+													<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+														gradientUnits="userSpaceOnUse">
+														<stop offset="1" stop-color="#FFC700" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+												<path
+													d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+													stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+												<defs>
+													<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+														gradientUnits="userSpaceOnUse">
+														<stop offset="1" stop-color="#FFC700" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg width="17" height="20" viewBox="0 0 17 20" fill="rgb(172, 172, 172)"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
+												<path
+													d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
+													stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+												<defs>
+													<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
+														gradientUnits="userSpaceOnUse">
+														<stop offset="1" stop-color="#FFC700" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<p class="order-brand__rating">4.0</p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="order-item-inner__swiper ">
+								<div class="order-swiper">
+									<div class="order-swiper__buttons">
+										<button class="btn-slider btn-slider-prev-two"></button>
+										<button class="btn-slider btn-slider-next-two btn-slider_next"></button>
+									</div>
+									<div class=" order-swiper__slider-two">
+										<div class="swiper-wrapper ">
+											<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from"
+													class="swiper-slide__img"></div>
+											<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from"
+													class="swiper-slide__img"></div>
+											<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from"
+													class="swiper-slide__img"></div>
+											<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from"
+													class="swiper-slide__img"></div>
+											<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from"
+													class="swiper-slide__img"></div>
+											<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from"
+													class="swiper-slide__img"></div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="order-item__buttons">
+							<a href="/" class="order-item__btn order-item__btn_rotate  btn-detail">
+								<span>Перейти до магазину</span>
 							</a>
-						</div>
-						<div class="order-inner">
-							<h4 class='order-inner__name order-item-name'>Чому в нас</h4>
-							<ul class="order-inner__list">
-								<li class="order-inner__item order-item-desc">Індивідуальне виготовлення</li>
-								<li class="order-inner__item order-item-desc">Комплексний підхід</li>
-								<li class="order-inner__item order-item-desc">Виклик спеціаліста додому</li>
-							</ul>
-						</div>
-					</div>
-					<div class="order-item-inner">
-						<div class="order-item-inner__order">
-							<div class="order-brand">
-								<div class="order-brand__image">
-									<img src="./img/shops/7.png" alt="brand" class="order-brand__img">
-								</div>
-								<div class="order-brand__content">
-									<h5 class="order-brand__name order-item-name">Назва бренду</h5>
-									<div class="order-brand__stars">
-										<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
-											<path
-												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
-												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
-											<defs>
-												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
-													gradientUnits="userSpaceOnUse">
-													<stop offset="1" stop-color="#FFC700" />
-												</linearGradient>
-											</defs>
-										</svg>
-										<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
-											<path
-												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
-												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
-											<defs>
-												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
-													gradientUnits="userSpaceOnUse">
-													<stop offset="1" stop-color="#FFC700" />
-												</linearGradient>
-											</defs>
-										</svg>
-										<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
-											<path
-												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
-												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
-											<defs>
-												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
-													gradientUnits="userSpaceOnUse">
-													<stop offset="1" stop-color="#FFC700" />
-												</linearGradient>
-											</defs>
-										</svg>
-										<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
-											<path
-												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
-												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
-											<defs>
-												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
-													gradientUnits="userSpaceOnUse">
-													<stop offset="1" stop-color="#FFC700" />
-												</linearGradient>
-											</defs>
-										</svg>
-										<svg width="17" height="20" viewBox="0 0 17 20" fill="rgb(172, 172, 172)"
-											xmlns="http://www.w3.org/2000/svg">
-											<path d="M8.5 2L3.5 19L16 8.14894H1L13.5 19L8.5 2Z" fill="url(#paint0_linear_3_5812)" />
-											<path
-												d="M8.64391 1.95768L8.5 1.4684L8.3561 1.95768L6.57925 7.99894H1H0.598388L0.901669 8.26221L5.36281 12.1349L3.3561 18.9577L3.21159 19.449L3.59833 19.1133L8.5 14.8582L13.4017 19.1133L13.7884 19.449L13.6439 18.9577L11.6372 12.1349L16.0983 8.26221L16.4016 7.99894H16H10.4207L8.64391 1.95768Z"
-												stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
-											<defs>
-												<linearGradient id="paint0_linear_3_5812" x1="1" y1="2" x2="241" y2="2"
-													gradientUnits="userSpaceOnUse">
-													<stop offset="1" stop-color="#FFC700" />
-												</linearGradient>
-											</defs>
-										</svg>
-										<p class="order-brand__rating">4.0</p>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-						<div class="order-item-inner__swiper ">
-							<div class="order-swiper">
-								<div class="order-swiper__buttons">
-									<button class="btn-slider btn-slider-prev-two"></button>
-									<button class="btn-slider btn-slider-next-two btn-slider_next"></button>
-								</div>
-								<div class=" order-swiper__slider-two">
-									<div class="swiper-wrapper ">
-										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
-										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
-										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
-										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
-										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
-										<div class="swiper-slide"><img src="./img/order-from-swiper.jpg" alt="order-from" class="swiper-slide__img"></div>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-					<div class="order-item__buttons">
-						<a href="/" class="order-item__btn order-item__btn_rotate  btn-detail">
-							<span>Перейти до магазину</span>
-						</a>
 							<a href="/" class="order-item__btn  btn-detail">
 								<span>Відправити запит</span>
 							</a>
-					</div>
-				</li>
-			</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="order-from__footer">
+				<div class="pagination-adapt order-from-pagination"></div>
+				<div class="order-from__footer-buttons">
+					<button class="btn-slider order-from-prev-two"></button>
+					<button class="btn-slider order-from-next-two btn-slider_next"></button>
+				</div>
+			</div>
 		</section>
 	</main>
-	<footer class="footer">
+	<!--<footer class="footer">
 		<div class="footer__top">
 			<div class="footer__content min-container">
 				<div class="footer__inner">
@@ -640,7 +664,7 @@
 				<p class="footer-bottom__text">Створено в <a href="/">MAXOPEN</a></p>
 			</div>
 		</div>
-	</footer>
+	</footer> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	<script src='./js/library/lightbox.js'></script>
