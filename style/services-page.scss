@@ -468,4 +468,23 @@
 		height: 332px;
 		width: 310px;
 	}
+	.order-from-pagination{
+		margin: 0;
+	}
+	.btn-detail::after{
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.order-item__btn{
+		padding: 8px 13px;
+		column-gap: 10px;
+		max-width: 100%;
+		justify-content: space-between;
+		margin: 0;
+		width: 100%;
+		margin-bottom: 16px;
+	}
+	.order-item-inner{
+		margin-bottom: 42px;
+	}
 }
