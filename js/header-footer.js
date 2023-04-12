@@ -72,3 +72,14 @@ $('#header-accordion').accordion({
 	collapsible: true,
 	heightStyle: 'content',
 })
+
+const searchInputAdapt = document.querySelector('#search-input-adapt')
+const headerSearchAdapt = document.querySelector('#header-search-adapt')
+
+searchInputAdapt?.addEventListener('input', ()=>{
+	if(searchInputAdapt.value){
+		headerSearchAdapt?.classList.add('header-search-open')
+	}else{
+		headerSearchAdapt?.classList.remove('header-search-open')
+	}
+})

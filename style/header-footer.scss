@@ -181,13 +181,12 @@
 	column-gap: 20px;
 	&__item {
 		svg {
-			transition: 0.8s;
+			transition: 0.5s;
+			
 		}
 		&:hover {
 			svg {
-				path {
-					stroke: rgb(158, 9, 9);
-				}
+				stroke: #2c2c2c;
 			}
 		}
 	}
@@ -768,5 +767,18 @@
 		position: fixed;
 		width: 100%;
 		top: 0;
+	}
+}
+.search-header {
+	min-height: 100px;
+
+	.header-search {
+		transform: scale(0);
+		height: 0;
+		transition: 0.4s;
+	}
+	.header-search-open{
+		transform: scale(1);
+		height: 100%;
 	}
 }

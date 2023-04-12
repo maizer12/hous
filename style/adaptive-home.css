@@ -23,7 +23,7 @@
   }
   .about-item__content {
     order: 2;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
   }
 }
 @media (max-width: 1440px) {
@@ -115,7 +115,8 @@
   .advantages__item {
     margin: 0 auto;
   }
-  .promotion__swiper, .new-articles__inner {
+  .promotion__swiper,
+  .new-articles__inner {
     padding-left: 15px;
   }
 }
