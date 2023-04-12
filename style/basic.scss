@@ -80,8 +80,13 @@ body {
 	}
 	&_next {
 		transform: rotate(180deg);
-		background-color: rgba(#2f2f2f, 0.6);
+		//background-color: rgba(#2f2f2f, 0.6);
 	}
+	
+}
+.btn-slider + .swiper-button-disabled{
+	background-color: rgba(#2f2f2f, 0.6);
+	opacity: 1;
 }
 .name-item {
 	font-family: Montserrat;

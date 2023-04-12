@@ -114,7 +114,18 @@
 		overflow: hidden;
 	}
 }
+@media (max-width: 970px) {
+	.advantages__item{
+		margin: 0 auto;
+	}
+	.promotion__swiper, .new-articles__inner{
+		padding-left: 15px;
+	}
+}
 @media (max-width: 768px) {
+	.shops-swiper{
+		margin: 0 15px;
+	}
 	.about-us__name{
 		margin-bottom: 40px;
 	}

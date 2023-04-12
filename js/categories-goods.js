@@ -11,8 +11,14 @@ $('#accordion-categories').accordion({
 	heightStyle: 'content',
 })
 const test = document.querySelector('#test')
-const body = document.querySelector('body');
-test.addEventListener('click', ()=>{
-	body.classList.add('menu-open');
-  body.classList.add('filter-open');
+const searchBtnProduct = document.querySelector('#search-products')
+
+test?.addEventListener('click', ()=>{
+	addBodyClass('menu-open')
+	addBodyClass('filter-open')
+})
+
+searchBtnProduct?.addEventListener('click', ()=>{
+	addBodyClass('menu-open')
+	addBodyClass('search-open')
 })

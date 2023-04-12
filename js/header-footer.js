@@ -26,7 +26,7 @@ const labelSearch = document.querySelector('.header-content__label')
 labelSearch?.addEventListener('click', () => {
 	document
 		.querySelector('.header-search')
-		?.classList.toggle('header-search-open')
+		?.classList.add('header-search-open')
 })
 
 const burger = document.querySelector('.burger-menu')

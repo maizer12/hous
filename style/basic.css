@@ -87,7 +87,11 @@ body {
 }
 .btn-slider_next {
   transform: rotate(180deg);
+}
+
+.btn-slider + .swiper-button-disabled {
   background-color: rgba(47, 47, 47, 0.6);
+  opacity: 1;
 }
 
 .name-item {

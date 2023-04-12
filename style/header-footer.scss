@@ -185,7 +185,9 @@
 		}
 		&:hover {
 			svg {
-				stroke: rgb(158, 9, 9);
+				path {
+					stroke: rgb(158, 9, 9);
+				}
 			}
 		}
 	}
@@ -594,18 +596,18 @@
 		span,
 		&::before {
 			top: 50%;
-			transform: rotate(50deg);
+			transform: rotate(45deg);
 		}
 		&::before {
 			top: 50%;
-			transform: rotate(140deg);
+			transform: rotate(-45deg);
 		}
 	}
 }
 .header {
 	background-color: #fff;
 	position: relative;
-	z-index: 20;
+	z-index: 23;
 }
 .menu-catalog {
 	display: none;
@@ -641,9 +643,18 @@
 		color: #fff;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		column-gap: 18px;
+	}
+	&__arrow{
+		margin-left: auto;
+		transition: 0.7s;
 	}
 	&__item {
+	}
+}
+.ui-accordion-header-active{
+	.menu-catalog__arrow{
+		transform: rotate(180deg);
 	}
 }
 .search-header {
@@ -733,7 +744,7 @@
 	.search-header {
 		display: block;
 	}
-	.contacts-header{
+	.contacts-header {
 		display: block;
 	}
 }
@@ -747,8 +758,8 @@
 		transform: translate(0);
 	}
 }
-.contacts-open{
-	.contacts-header{
+.contacts-open {
+	.contacts-header {
 		transform: translate(0);
 	}
 }

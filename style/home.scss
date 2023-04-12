@@ -10,8 +10,7 @@
 	z-index: 5;
 	display: flex;
 	flex-direction: column;
-	row-gap: 11px;
-	padding: 31px 47px;
+	padding: 31px 0;
 	background-color: #fff;
 	&__item {
 		display: flex;
@@ -25,6 +24,7 @@
 		letter-spacing: 0em;
 		text-align: left;
 		transition: 0.6s;
+		padding: 11px 47px;
 		text-transform: uppercase;
 		svg {
 			path {
@@ -32,25 +32,94 @@
 			}
 		}
 		&:hover {
+			background-color: black;
 			svg {
 				path {
-					fill: red;
+					fill: #fff;
 				}
 			}
-			color: red;
+			color: #fff;
 		}
 	}
 	&__btn {
 		display: block;
 		width: 285px;
 		background-color: #2f2f2f;
-		margin-top: 38px;
 		color: #fff;
 		padding: 16px;
 		text-align: center;
+		margin: 0 auto;
+		margin-top: 38px;
 	}
 }
+.sub-menu {
+	background-color:  #ffffff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-wrap: wrap;
+	width: 1028px;
+	overflow: hidden;
+	transition: 0.6s;
+	transform: scale(0);
+	&__item {
+		width: 257px;
+		height: 192px;
+		overflow: hidden;
+		position: relative;
+		transition: 0.7s;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&::before {
+			content: '';
+			top: 0;
+			left: 0;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(#000000, 0.4);
+		}
+		&:hover{
+			&::before {
+				background-color: rgba(#000000, 0.7);
+			}
 
+		}
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	&__name {
+		font-size: 16px;
+		color: #fff;
+		position: absolute;
+		left: 20px;
+		bottom: 20px;
+	}
+	&__btn{
+		color: #fff;
+		padding: 16px;
+		display: inline-block;
+		height: 100%;
+		background-color: #2f2f2f;
+		margin-top: 50%;
+		margin-top: 71px;
+		margin-left: 43px;
+	}
+}
+.sidebar-slider {
+	&__item {
+		&:hover {
+			.sub-menu {
+				transform: translateX(100%);
+			}
+		}
+	}
+}
 .swiper-home {
 	overflow: hidden;
 	&__image {
@@ -213,7 +282,6 @@
 		justify-content: space-between;
 		align-items: center;
 		max-width: 462px;
-		margin: 0 auto;
 		width: 100%;
 		border: 2px solid rgba(#2f2f2f, 0.1);
 		padding: 22px;
@@ -226,6 +294,7 @@
 	}
 	&__title {
 		font-family: Days One;
+		text-transform: uppercase;
 		font-size: 24px;
 		font-weight: 400;
 		line-height: 1.1;
@@ -456,9 +525,6 @@
 		width: 100%;
 		height: 100%;
 	}
-	.swiper-button-disabled {
-		opacity: 0.3;
-	}
 }
 
 .articles-item {
@@ -556,9 +622,6 @@
 	.swiper-slide {
 		max-width: 174px;
 	}
-	.swiper-button-disabled {
-		opacity: 0.4;
-	}
 }
 .shop-link {
 	max-width: 100%;
@@ -608,5 +671,3 @@
 		max-width: 310px;
 	}
 }
-
-

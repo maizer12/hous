@@ -469,9 +469,9 @@
 		position: fixed;
 		background-color: #fff;
 		z-index: 20;
-		top: 0;
 		left: 0;
-		height: 70%;
+		top: 0;
+		padding-top: 100px;
 		transition: 0.7s;
 		transform: translateX(1000px);
 		overflow: auto;
@@ -491,5 +491,11 @@
 	}
 	.recommendation-item__img{
 		width: 100%;
+	}
+}
+.menu-adapt{
+	.search{
+		display: flex;
+		max-width: 100%;
 	}
 }

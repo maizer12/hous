@@ -193,7 +193,7 @@
 .social__item svg {
   transition: 0.8s;
 }
-.social__item:hover svg {
+.social__item:hover svg path {
   stroke: rgb(158, 9, 9);
 }
 
@@ -588,17 +588,17 @@
 }
 .menu-open .burger-menu span, .menu-open .burger-menu::before {
   top: 50%;
-  transform: rotate(50deg);
+  transform: rotate(45deg);
 }
 .menu-open .burger-menu::before {
   top: 50%;
-  transform: rotate(140deg);
+  transform: rotate(-45deg);
 }
 
 .header {
   background-color: #fff;
   position: relative;
-  z-index: 20;
+  z-index: 23;
 }
 
 .menu-catalog {
@@ -636,8 +636,17 @@
   color: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
 }
+.menu-catalog__arrow {
+  margin-left: auto;
+  transition: 0.7s;
+}
+.ui-accordion-header-active .menu-catalog__arrow {
+  transform: rotate(180deg);
+}
+
 .search-header {
   display: none;
   transform: translateX(-1500px);

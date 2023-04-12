@@ -57,7 +57,6 @@ new Swiper('.articles-slider', {
 })
 new Swiper('.shops-swiper', {
 	slidesPerView: 'auto',
-	loop: true,
 	navigation: {
 		nextEl: '.shops-btn-next',
 		prevEl: '.shops-btn-prev',
