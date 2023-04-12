@@ -47,6 +47,23 @@
 	column-gap: 20px;
 	align-items: center;
 	padding-bottom: 40px;
+	&__brand-link {
+		font-family: Montserrat;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 1.2;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #2F2F2F;
+		a{
+			color: #2F2F2F;
+			transition: 0.6s;
+			font-weight: 700;
+			&:hover{
+				color: #9A2C31;
+			}
+		}
+	}
 	&__image {
 		overflow: hidden;
 		width: 753px;
@@ -426,35 +443,39 @@
 	}
 }
 @media (max-width: 768px) {
-	.name{
+	.promotion__swiper{
+		padding-left: 15px;
+	}
+	.name {
 		font-size: 35px;
 	}
-	.breadcrumbs{
+	.breadcrumbs {
 		display: none;
 	}
-	.products-inner{
+	.products-inner {
 		padding-top: 20px;
 	}
 	.about-images {
 		display: flex;
 	}
-	.about-product__image, .about-brand{
+	.about-product__image,
+	.about-brand {
 		min-width: 100%;
 	}
-	.about-product__image{
+	.about-product__image {
 		height: 400px;
 	}
-	.product__title{
+	.product__title {
 		font-size: 40px;
 		margin-bottom: 20px;
 	}
-	.promotion{
+	.promotion {
 		padding-bottom: 0;
-		.btn-detail{
+		.btn-detail {
 			display: none;
 		}
 	}
-	.slider-header__content{
+	.slider-header__content {
 		width: 100%;
 		justify-content: space-between;
 	}
@@ -463,44 +484,45 @@
 	.promotion-item__img {
 		height: 26%;
 	}
-	
+
 	.promotion-item__name {
 		padding: 19px 24px 43px;
 	}
 	.promotion__swiper {
 		padding: 0 15px;
 	}
-	.promotion{
+	.promotion {
 		padding-bottom: 0;
 	}
 	.about-images__images {
 		max-width: 106px;
 		height: 77px;
 	}
-	.about-product__image{
+	.about-product__image {
 		height: 262px;
 	}
-	.products-inner{
+	.products-inner {
 		padding-top: 10px;
 	}
-	
-	.about-product__brand{
+
+	.about-product__brand {
 		margin-bottom: 32px;
 	}
-	.about-brand__text{
+	.about-brand__text {
 		font-size: 11px;
 	}
-	.desc-product{
+	.desc-product {
 		padding-bottom: 50px;
 	}
-	.name{
+	.name {
 		font-size: 20px;
 	}
-	.services-gallery__item, .services-gallery__item:nth-child(3){
+	.services-gallery__item,
+	.services-gallery__item:nth-child(3) {
 		height: 332px;
 		width: 310px;
 	}
-	.product__title{
+	.product__title {
 		font-size: 30px;
 		margin-bottom: 11px;
 	}

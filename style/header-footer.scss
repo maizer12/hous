@@ -645,15 +645,15 @@
 		align-items: center;
 		column-gap: 18px;
 	}
-	&__arrow{
+	&__arrow {
 		margin-left: auto;
 		transition: 0.7s;
 	}
 	&__item {
 	}
 }
-.ui-accordion-header-active{
-	.menu-catalog__arrow{
+.ui-accordion-header-active {
+	.menu-catalog__arrow {
 		transform: rotate(180deg);
 	}
 }
@@ -761,5 +761,12 @@
 .contacts-open {
 	.contacts-header {
 		transform: translate(0);
+	}
+}
+.menu-open {
+	.header {
+		position: fixed;
+		width: 100%;
+		top: 0;
 	}
 }

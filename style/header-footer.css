@@ -754,4 +754,10 @@
 
 .contacts-open .contacts-header {
   transform: translate(0);
+}
+
+.menu-open .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
 }/*# sourceMappingURL=header-footer.css.map */

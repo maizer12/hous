@@ -33,13 +33,16 @@ const burger = document.querySelector('.burger-menu')
 const body = document.querySelector('body')
 const btnSearch = document.querySelector('#search-btn')
 const btnContacts = document.querySelector('#btn-contacts')
+const header = document.querySelector('.header')
 const addBodyClass = text => {
 	body.classList.add(text)
+	body.style.paddingTop = header.clientHeight + "px"
 }
 
 burger?.addEventListener('click', () => {
 	if (body.classList.contains('menu-open')) {
 		body.classList = ''
+		body.style = ''
 	} else {
 		addBodyClass('menu-open')
 		addBodyClass('catalog-open')
