@@ -21,14 +21,25 @@ $(function () {
 	mq.addListener(checkBreakpoint)
 	checkBreakpoint(mq)
 })
-const labelSearch = document.querySelector('.header-content__label')
-
-labelSearch?.addEventListener('click', () => {
-	document
-		.querySelector('.header-search')
-		?.classList.add('header-search-open')
+const inputSearch = document.querySelector('.header-content__input')
+const inputLabel = document.querySelector('.header-content__label')
+const searchColumns = document.querySelector('.header-search')
+let openSearchCheck = false
+inputSearch?.addEventListener('input', () => {
+	if (inputSearch.value) {
+		searchColumns?.classList.add('header-search-open')
+		openSearchCheck = true
+	}else{
+		searchColumns?.classList.remove('header-search-open')
+	}
 })
-
+window.addEventListener('click', (event) => {
+  if (!inputLabel?.contains(event.target) && openSearchCheck) {
+    searchColumns?.classList.remove('header-search-open')
+		openSearchCheck = false
+  }
+});
+//adaptive
 const burger = document.querySelector('.burger-menu')
 const body = document.querySelector('body')
 const btnSearch = document.querySelector('#search-btn')
@@ -36,7 +47,7 @@ const btnContacts = document.querySelector('#btn-contacts')
 const header = document.querySelector('.header')
 const addBodyClass = text => {
 	body.classList.add(text)
-	body.style.paddingTop = header.clientHeight + "px"
+	body.style.paddingTop = header.clientHeight + 'px'
 }
 
 burger?.addEventListener('click', () => {
@@ -57,7 +68,7 @@ btnContacts?.addEventListener('click', () => {
 	addBodyClass('contacts-open')
 })
 $('#header-accordion').accordion({
-  active: null,
-  collapsible: true,
-  heightStyle: 'content',
+	active: null,
+	collapsible: true,
+	heightStyle: 'content',
 })
