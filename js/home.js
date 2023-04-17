@@ -16,7 +16,6 @@ new Swiper('.home-slider__swiper', {
 })
 new Swiper('.promotion__swiper', {
 	slidesPerView: 'auto',
-	loop: true,
 	speed: 1000,
 	navigation: {
 		nextEl: '.slider-header__button_next',
@@ -88,3 +87,26 @@ function checkBreakpoint(mq) {
 
 mq.addListener(checkBreakpoint);
 checkBreakpoint(mq);
+$(function () {
+	var mq = window.matchMedia('(min-width: 769px)')
+	var accordion = $('#accordion').accordion({
+		active: null,
+		collapsible: true,
+		heightStyle: 'content',
+	})
+
+	function checkBreakpoint(mq) {
+		if (mq.matches) {
+			accordion.accordion('destroy')
+		} else {
+			accordion = $('#accordion').accordion({
+				active: null,
+				collapsible: true,
+				heightStyle: 'content',
+			})
+		}
+	}
+
+	mq.addListener(checkBreakpoint)
+	checkBreakpoint(mq)
+})

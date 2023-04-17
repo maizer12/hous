@@ -316,12 +316,23 @@
   max-width: 110px;
   width: 100%;
   color: #fff;
+  transition: 0.7s;
+  border: #9a2c31 2px solid;
+}
+.categories-sidebar__reset:hover {
+  background-color: #fff;
+  color: #9a2c31;
 }
 .categories-sidebar__submit {
   border: #9a2c31 2px solid;
   max-width: 186px;
   width: 100%;
   color: #9a2c31;
+  transition: 0.7s;
+}
+.categories-sidebar__submit:hover {
+  background-color: #9a2c31;
+  color: #fff;
 }
 
 .recommendation-item {
@@ -362,9 +373,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transform: translateY(7px);
 }
 .recommendation-item__logo {
   max-width: 116px;
+  margin-bottom: 4px;
 }
 .recommendation-item .btn-detail {
   -moz-column-gap: 19px;
@@ -373,7 +386,7 @@
   border-bottom: none;
   border-right: none;
   transform: translateX(14px);
-  padding: 8px 14px;
+  padding: 12px 14px;
 }
 
 .categories-products__items {

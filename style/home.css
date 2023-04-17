@@ -34,7 +34,7 @@
   transition: 0.6s;
 }
 .sidebar-slider__item:hover {
-  background-color: black;
+  background-color: #9a2c31;
   color: #fff;
 }
 .sidebar-slider__item:hover svg path {
@@ -52,21 +52,27 @@
 }
 
 .sub-menu {
+  border-left: 2px #9a2c31 solid;
   background-color: #ffffff;
   position: absolute;
+  padding: 60px;
   top: 0;
   right: 0;
   display: flex;
   flex-wrap: wrap;
-  width: 1028px;
+  width: 940px;
   min-height: 384px;
   overflow: hidden;
   transition: 0.6s;
   transform: scale(0);
+  -moz-column-gap: 38px;
+       column-gap: 38px;
+  row-gap: 38px;
 }
 .sub-menu__item {
-  width: 257px;
-  height: 192px;
+  width: 175px;
+  height: 175px;
+  border: 1px solid rgba(0, 0, 0, 0);
   overflow: hidden;
   position: relative;
   transition: 0.7s;
@@ -74,17 +80,11 @@
   justify-content: center;
   align-items: center;
 }
-.sub-menu__item::before {
-  content: "";
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+.sub-menu__item:hover {
+  border-color: rgba(154, 44, 49, 0.8);
 }
-.sub-menu__item:hover::before {
-  background-color: rgba(0, 0, 0, 0.7);
+.sub-menu__item:hover .sub-menu__name {
+  background-color: #9a2c31;
 }
 .sub-menu__img {
   width: 100%;
@@ -96,8 +96,17 @@
   font-size: 16px;
   color: #fff;
   position: absolute;
-  left: 20px;
-  bottom: 20px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  font-family: Days One;
+  min-height: 51px;
+  width: 100%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.7s;
 }
 .sub-menu__btn {
   color: #fff;
@@ -265,6 +274,17 @@
   align-items: center;
   border: 2px solid #fff;
   border-radius: 50%;
+  transition: 0.6s;
+}
+.swiper-home-btn__arrow svg path {
+  transition: 0.6s;
+}
+.swiper-home-btn__arrow:hover {
+  border: 2px solid #9a2c31;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.swiper-home-btn__arrow:hover svg path {
+  fill: #9a2c31;
 }
 
 .advantages {
@@ -435,8 +455,11 @@
   border: 1px solid rgba(154, 44, 49, 0.4);
   border-bottom: none;
   border-right: none;
-  transform: translateX(14px);
-  padding: 8px 14px;
+  transform: translateX(16px) translateY(4px);
+  padding: 14px 14px;
+}
+.recommendation-item .btn-detail svg {
+  height: 15px;
 }
 
 .new-articles {
@@ -453,10 +476,6 @@
        column-gap: 38px;
 }
 
-.articles-slider {
-  flex: 1 1;
-}
-
 .new-banners-white {
   position: relative;
   flex: 1 1 auto;
@@ -464,26 +483,30 @@
 .new-banners-white__bg {
   position: absolute;
   background-color: #fff;
-  width: 105%;
   z-index: 2;
   height: 100%;
   top: 0;
   left: 0;
 }
 
+.articles-slider {
+  width: 60%;
+  overflow: hidden;
+  padding: 10px;
+}
+
 .new-banners {
   z-index: 3;
   position: relative;
-  max-width: 675px;
-  min-width: 675px;
-  height: 100%;
-  overflow: hidden;
+  height: -moz-fit-content;
+  height: fit-content;
   border: rgba(154, 44, 49, 0.3) 1px solid;
   border-radius: 0 12px 12px 0;
+  overflow: hidden;
 }
 .new-banners__image {
   width: 100%;
-  height: 100%;
+  height: 478px;
   overflow: hidden;
 }
 .new-banners__buttons {
@@ -511,6 +534,10 @@
   -moz-column-gap: 67px;
        column-gap: 67px;
   color: #fff;
+  transition: 0.6s;
+}
+.new-banners__btn:hover {
+  background-color: #9a2c31;
 }
 .new-banners__title {
   color: #fff;
@@ -539,8 +566,11 @@
 }
 
 .articles-item {
+  height: -moz-fit-content;
+  height: fit-content;
   max-width: 492px;
   border-radius: 12px;
+  position: relative;
   overflow: hidden;
   border: 1px solid rgba(154, 44, 49, 0.4);
 }
@@ -571,13 +601,11 @@
 .articles-item__content {
   padding: 0 33px;
 }
-.articles-item__name {
-  margin-bottom: 66px;
-}
 .articles-item__footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 54px;
 }
 .articles-item__date {
   font-family: Montserrat;
@@ -620,7 +648,10 @@
   border-right: none;
   -moz-column-gap: 19px;
        column-gap: 19px;
-  padding: 8px 14px;
+  padding: 12px 14px;
+}
+.articles-item .btn-detail svg {
+  height: 15px;
 }
 
 .shops {

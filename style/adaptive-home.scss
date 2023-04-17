@@ -113,8 +113,14 @@
 		width: 100%;
 		overflow: hidden;
 	}
+	.articles-slider {
+		width: 100%;
+	}
 }
 @media (max-width: 970px) {
+	.articles-slider {
+		padding: 0;
+	}
 	.advantages__item {
 		margin: 0 auto;
 	}

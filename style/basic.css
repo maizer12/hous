@@ -120,26 +120,33 @@ body {
   transition: 0.6s;
   color: #2f2f2f;
 }
-.btn-detail::after {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url("../img/detail.svg");
-  background-size: contain;
+.btn-detail svg path {
   transition: 0.6s;
 }
 .btn-detail:hover {
-  color: #9a2c31;
+  color: #fff;
+  background-color: #9a2c31;
+}
+.btn-detail:hover svg path {
+  fill: #fff;
 }
 .btn-detail:hover::after {
   transform: translateX(10px);
 }
 
-.item-hover {
+.item-hover .promotion-item__name,
+.item-hover .recommendation-item__name,
+.item-hover .catalog-item__name,
+.item-hover .articles-item__name,
+.item-hover .categories-type__text {
   transition: 0.6s;
 }
-.item-hover:hover {
-  transform: translate(-8px, -8px);
+.item-hover:hover .categories-type__text,
+.item-hover:hover .catalog-item__name,
+.item-hover:hover .promotion-item__name,
+.item-hover:hover .recommendation-item__name,
+.item-hover:hover .articles-item__name {
+  color: #9a2c31;
 }
 
 .pagination-adapt {
@@ -170,7 +177,7 @@ body {
   justify-content: space-between;
 }
 .pagination__btn {
-  padding: 8px 15px;
+  padding: 12px 15px;
   -moz-column-gap: 25px;
        column-gap: 25px;
 }
