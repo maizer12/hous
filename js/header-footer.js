@@ -33,12 +33,7 @@ inputSearch?.addEventListener('input', () => {
 		searchColumns?.classList.remove('header-search-open')
 	}
 })
-window.addEventListener('click', (event) => {
-  if (!inputLabel?.contains(event.target) && openSearchCheck) {
-    searchColumns?.classList.remove('header-search-open')
-		openSearchCheck = false
-  }
-});
+
 //adaptive
 const burger = document.querySelector('.burger-menu')
 const body = document.querySelector('body')
@@ -83,3 +78,18 @@ searchInputAdapt?.addEventListener('input', ()=>{
 		headerSearchAdapt?.classList.remove('header-search-open')
 	}
 })
+
+const btnSearchProduct = document.querySelector('.header-content__search')
+
+btnSearchProduct?.addEventListener('click', ()=>{
+	body?.classList.add('open-input')
+})
+window.addEventListener('click', (event) => {
+  if (!inputLabel?.contains(event.target) && openSearchCheck) {
+    searchColumns?.classList.remove('header-search-open')
+		openSearchCheck = false
+  } 
+	if(!inputLabel?.contains(event.target) && body.classList.contains('open-input')){
+		body.classList = ''
+	}
+});

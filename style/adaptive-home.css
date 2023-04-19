@@ -49,6 +49,9 @@
     max-width: 194px;
     height: auto;
   }
+  .swiper-home-btn {
+    bottom: 47px;
+  }
 }
 @media (max-width: 1232px) {
   .new-banners {
