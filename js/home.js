@@ -10,9 +10,9 @@ new Swiper('.home-slider__swiper', {
 	fadeEffect: {
 		crossFade: true,
 	},
-	autoplay: {
-		delay: 3000,
-	},
+	// autoplay: {
+	// 	delay: 3000,
+	// },
 })
 new Swiper('.promotion__swiper', {
 	slidesPerView: 'auto',
