@@ -24,6 +24,11 @@ new Swiper('.promotion__swiper', {
 	pagination: {
 		el: '.promotion-pagination',
 	},
+	breakpoints: {
+    479: {
+      slidesPerView: 1
+    }
+  },
 	spaceBetween: 38,
 })
 new Swiper('.recommendation__swiper', {
@@ -40,6 +45,11 @@ new Swiper('.recommendation__swiper', {
 	pagination: {
 		el: '.recommendation-pagination',
 	},
+	breakpoints: {
+    479: {
+      slidesPerView: 1
+    }
+  },
 	spaceBetween: 38,
 })
 new Swiper('.articles-slider', {
@@ -51,6 +61,11 @@ new Swiper('.articles-slider', {
 	pagination: {
 		el: '.new-pagination',
 	},
+	breakpoints: {
+    479: {
+      slidesPerView: 1
+    }
+  },
 	speed: 1000,
 	spaceBetween: 38,
 })
@@ -60,6 +75,12 @@ new Swiper('.shops-swiper', {
 		nextEl: '.shops-btn-next',
 		prevEl: '.shops-btn-prev',
 	},
+	breakpoints: {
+    479: {
+      slidesPerView: 2,
+			spaceBetween: 'auto',
+    }
+  },
 	pagination: {
 		el: '.shops-pagination',
 	},

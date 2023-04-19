@@ -308,6 +308,15 @@
 	.home-slider {
 		padding-bottom: 37px;
 	}
+	.recommendation-item{
+		max-width: 100%;
+	}
+	.shops .swiper-slide{
+		max-width: 50%;
+	}
+	.shop-link__icon{
+		max-width: 100px;
+	}
 }
 @media (max-width: 385px) {
 	.name_font {
