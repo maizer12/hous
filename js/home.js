@@ -24,11 +24,6 @@ new Swiper('.promotion__swiper', {
 	pagination: {
 		el: '.promotion-pagination',
 	},
-	breakpoints: {
-    479: {
-      slidesPerView: 1
-    }
-  },
 	spaceBetween: 38,
 })
 new Swiper('.recommendation__swiper', {
@@ -45,11 +40,6 @@ new Swiper('.recommendation__swiper', {
 	pagination: {
 		el: '.recommendation-pagination',
 	},
-	breakpoints: {
-    479: {
-      slidesPerView: 1
-    }
-  },
 	spaceBetween: 38,
 })
 new Swiper('.articles-slider', {
@@ -61,73 +51,46 @@ new Swiper('.articles-slider', {
 	pagination: {
 		el: '.new-pagination',
 	},
-	breakpoints: {
-    479: {
-      slidesPerView: 1
-    }
-  },
 	speed: 1000,
 	spaceBetween: 38,
 })
 new Swiper('.shops-swiper', {
-	slidesPerView: 'auto',
 	navigation: {
 		nextEl: '.shops-btn-next',
 		prevEl: '.shops-btn-prev',
 	},
-	breakpoints: {
-    479: {
-      slidesPerView: 2,
-			spaceBetween: 'auto',
-    }
-  },
 	pagination: {
 		el: '.shops-pagination',
 	},
+	slidesPerView: 2,
 	spaceBetween: 80,
+
+	breakpoints: {
+		500: {
+			spaceBetween: 80,
+			slidesPerView: 'auto',
+		},
+	},
 })
 
-const mq = window.matchMedia('(min-width: 1650px)');
-let swiper;
+const mq = window.matchMedia('(min-width: 1650px)')
+let swiper
 
 function checkBreakpoint(mq) {
-  if (mq.matches) {
-    if (swiper) {
-      swiper.destroy(true, true);
-    }
-  } else {
-    swiper = new Swiper('.about-us__swiper', {
-      pagination: {
-        el: '.about-us-pagination',
-      },
-      spaceBetween: 18,
-      slidesPerView: 'auto',
-    });
-  }
+	if (mq.matches) {
+		if (swiper) {
+			swiper.destroy(true, true)
+		}
+	} else {
+		swiper = new Swiper('.about-us__swiper', {
+			pagination: {
+				el: '.about-us-pagination',
+			},
+			spaceBetween: 18,
+			slidesPerView: 'auto',
+		})
+	}
 }
 
-mq.addListener(checkBreakpoint);
-checkBreakpoint(mq);
-$(function () {
-	var mq = window.matchMedia('(min-width: 769px)')
-	var accordion = $('#accordion').accordion({
-		active: null,
-		collapsible: true,
-		heightStyle: 'content',
-	})
-
-	function checkBreakpoint(mq) {
-		if (mq.matches) {
-			accordion.accordion('destroy')
-		} else {
-			accordion = $('#accordion').accordion({
-				active: null,
-				collapsible: true,
-				heightStyle: 'content',
-			})
-		}
-	}
-
-	mq.addListener(checkBreakpoint)
-	checkBreakpoint(mq)
-})
+mq.addListener(checkBreakpoint)
+checkBreakpoint(mq)

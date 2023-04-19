@@ -79,7 +79,7 @@
   .btn-detail {
     padding: 13px 22px;
     -moz-column-gap: 55px;
-         column-gap: 55px;
+    column-gap: 55px;
   }
   .new-banners {
     display: none;
@@ -230,7 +230,7 @@
   .shop-link__icon {
     max-width: 167px;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .promotion-item__img {
     height: 26%;
@@ -248,7 +248,7 @@
   .advantages__item {
     padding: 17px 13px;
     -moz-column-gap: 28px;
-         column-gap: 28px;
+    column-gap: 28px;
   }
   .advantages__icon {
     width: 65px;
@@ -275,7 +275,7 @@
   .name_font {
     font-size: 25px;
     -moz-column-gap: 5px;
-         column-gap: 5px;
+    column-gap: 5px;
   }
   .new-articles {
     max-width: 100%;
@@ -302,25 +302,17 @@
   .home-slider {
     padding-bottom: 37px;
   }
-  .recommendation-item {
+  .promotion-item {
     max-width: 100%;
-  }
-  .shops .swiper-slide {
-    max-width: 50%;
+    width: 100%;
+    margin: 0 auto;
   }
   .shop-link__icon {
     max-width: 100px;
-  }
-  .promotion-item {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  .promotion__swiper {
-    max-width: 100%;
   }
 }
 @media (max-width: 385px) {
   .name_font {
     font-size: 18px;
   }
-}/*# sourceMappingURL=adaptive-home.css.map */
+} /*# sourceMappingURL=adaptive-home.css.map */
