@@ -117,7 +117,119 @@ const mapOneInfo = {
 		link: '/',
 	},
 }
-
+const mapTwoInfo = {
+	item1: {
+		itemImg: './img/map-item.jpg',
+		logo: './img/logo-map.png',
+		title: 'елемент 1',
+		phone: [
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+		],
+		link: '/',
+	},
+	item2: {
+		itemImg: './img/map-item.jpg',
+		logo: './img/logo-map.png',
+		title: 'елемент 2',
+		phone: [
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+		],
+		link: '/',
+	},
+	item3: {
+		itemImg: './img/map-item.jpg',
+		logo: './img/logo-map.png',
+		title: 'елемент 3',
+		phone: [
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+		],
+		link: '/',
+	},
+	
+	item5: {
+		itemImg: './img/map-item.jpg',
+		logo: './img/logo-map.png',
+		title: 'елемент 4',
+		phone: [
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+		],
+		link: '/',
+	},
+	item6: {
+		itemImg: './img/map-item.jpg',
+		logo: './img/logo-map.png',
+		title: 'елемент 5',
+		phone: [
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+		],
+		link: '/',
+	},
+	item7: {
+		itemImg: './img/map-item.jpg',
+		logo: './img/logo-map.png',
+		title: 'елемент 8',
+		phone: [
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+		],
+		link: '/',
+	},
+	item8: {
+		itemImg: './img/map-item.jpg',
+		logo: './img/logo-map.png',
+		title: 'елемент 20',
+		phone: [
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+		],
+		link: '/',
+	},
+	item9: {
+		itemImg: './img/map-item.jpg',
+		logo: './img/logo-map.png',
+		title: 'елемент 30',
+		phone: [
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+		],
+		link: '/',
+	},
+	item10: {
+		itemImg: './img/map-item.jpg',
+		logo: './img/logo-map.png',
+		title: 'елемент 1',
+		phone: [
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+		],
+		link: '/',
+	},
+	item11: {
+		itemImg: './img/map-item.jpg',
+		logo: './img/logo-map.png',
+		title: 'елемент 1',
+		phone: [
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+		],
+		link: '/',
+	},
+}
 function getLink(ell) {
 	const itemsCont = document.querySelector('.map-item__cont')
 	const item = `
@@ -306,5 +418,8 @@ openNumber?.addEventListener('click', (event)=>{
 	}
 })
 $(function() {
-  $("#map-tab").tabs();
+  $("#map-tab").tabs({
+		active: 1
+	});
 });
+

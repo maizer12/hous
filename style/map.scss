@@ -81,14 +81,21 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
 		letter-spacing: 0em;
 		text-align: left;
 		color: #000000;
 		padding-left: 70px;
 		transition: 0.6s;
+		display: block;
+		height: auto;
+		width: 100%;
+		margin-top: 10px;
 		&:hover {
-			color: #9a2c31;
+			color:#fff;
+			background-color:#9A2C31;
+		}
+		&:first-child{
+			margin-right: 0;
 		}
 	}
 }
@@ -98,24 +105,53 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 75px;
+		max-width: 75px;
+		width: 100%;
 		height: 75px;
 		border: 1px solid rgba(#9a2c31, 0.4);
 		background-color: #fff;
-		font-family: Montserrat;
-		font-size: 64px;
-		font-weight: 600;
-		line-height: 1;
-		letter-spacing: 0em;
-		text-align: left;
 		span {
 			display: none;
 			font-family: Days One;
 			font-size: 40px;
 			font-weight: 400;
-			line-height: 20px;
+			line-height: 1;
 			letter-spacing: 0em;
 			text-align: left;
+			text-transform: uppercase;
+		}
+		transition: 0.6s;
+		a {
+			color: #000000;
+			font-family: Montserrat;
+			font-size: 64px;
+			font-weight: 600;
+			line-height: 1;
+			letter-spacing: 0em;
+			text-align: left;
+			column-gap:20px;
+		}
+		&:hover {
+			a {
+				color:  #9a2c31;
+			}
+			//background-color: #9a2c31;
+		}
+	}
+	.ui-tabs-active{
+		padding: 0 49px;
+		border:none;
+		border-top: 1px solid rgba(#9a2c31, 0.4);
+		max-width: 327px;
+		a{
+			display: flex;
+			width: 400px;
+			align-items:end;
+			color:#9A2C31;
+		}
+		span{
+			display: block;
+			color:#9A2C31;
 		}
 	}
 }
@@ -134,17 +170,7 @@
 		position: relative;
 	}
 }
-.map-controls-active {
-	width: auto;
-	column-gap: 20px;
-	color: #9a2c31;
-	padding-right: 41px;
-	padding-left: 39px;
-	border: none;
-	span {
-		display: block;
-	}
-}
+
 .map-item {
 	margin-right: 10px;
 	max-width: 433px;
@@ -284,12 +310,13 @@
 		}
 	}
 }
-
+#test-elem{
+	fill: green;
+}
 .map-image-item-one {
 	cursor: pointer;
 	transition: 0.6s;
 	position: relative;
-
 	&:hover {
 		fill: #9a2c31;
 	}
@@ -337,9 +364,8 @@
 		letter-spacing: 0em;
 		text-align: left;
 	}
-	
 }
-.remodal-close{
+.remodal-close {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -351,13 +377,13 @@
 	text-align: left;
 	width: 32px;
 	height: 32px;
-	background-color:#f4f4f4;
+	background-color: #f4f4f4;
 	display: flex;
-	align-items:center;
+	align-items: center;
 	justify-content: center;
 	transition: 0.6s;
-	&:hover{
-		background-color:#9a2c31;
-		color:#fff;
+	&:hover {
+		background-color: #9a2c31;
+		color: #fff;
 	}
 }
