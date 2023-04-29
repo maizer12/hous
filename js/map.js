@@ -305,20 +305,19 @@ function getLink(ell) {
 
 										</li>
 										<li class="map-item__stars-item">
-											<svg width="18" height="20" viewBox="0 0 18 20" fill="rgb(158, 158, 158)"
-												xmlns="http://www.w3.org/2000/svg">
-												<path d="M9 2L3.66667 19L17 8.14894H1L14.3333 19L9 2Z" fill="url(#paint0_linear_3_5816)" />
-												<path
-													d="M9.14312 1.9551L9 1.4989L8.85688 1.9551L6.96077 7.99894H1H0.578049L0.905318 8.26528L5.66259 12.1369L3.52354 18.9551L3.37408 19.4315L3.76135 19.1163L9 14.853L14.2387 19.1163L14.6259 19.4315L14.4765 18.9551L12.3374 12.1369L17.0947 8.26528L17.422 7.99894H17H11.0392L9.14312 1.9551Z"
-													stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
-												<defs>
-													<linearGradient id="paint0_linear_3_5816" x1="1" y1="2" x2="257" y2="2"
-														gradientUnits="userSpaceOnUse">
-														<stop offset="1" stop-color="#FFC700" />
-													</linearGradient>
-												</defs>
-											</svg>
-
+											
+										<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 2L3.66667 19L17 8.14894H1L14.3333 19L9 2Z" fill="url(#paint0_linear_3_5816)" />
+										<path
+											d="M9.14312 1.9551L9 1.4989L8.85688 1.9551L6.96077 7.99894H1H0.578049L0.905318 8.26528L5.66259 12.1369L3.52354 18.9551L3.37408 19.4315L3.76135 19.1163L9 14.853L14.2387 19.1163L14.6259 19.4315L14.4765 18.9551L12.3374 12.1369L17.0947 8.26528L17.422 7.99894H17H11.0392L9.14312 1.9551Z"
+											stroke="#2F2F2F" stroke-opacity="0.4" stroke-width="0.3" />
+										<defs>
+											<linearGradient id="paint0_linear_3_5816" x1="1" y1="2" x2="257" y2="2"
+												gradientUnits="userSpaceOnUse">
+												<stop offset="1" stop-color="#FFC700" />
+											</linearGradient>
+										</defs>
+									</svg>
 										</li>
 									</ul>
 									<h4 class="map-item__stars-num">5.0</h4>
@@ -382,15 +381,15 @@ function getLink(ell) {
 
 function getLogo(elem, logo) {
 	const mapLogo = document.querySelector('.logo-get')
-const imageBounds = document
-	.querySelector('.map__content')
-	.getBoundingClientRect()
+	const imageBounds = document
+		.querySelector('.map__content')
+		.getBoundingClientRect()
 	const eBounds = elem.getBoundingClientRect()
 	const x = eBounds.left - imageBounds.left
 	const y = eBounds.top - imageBounds.top
 	mapLogo.style.display = 'block'
 	mapLogo.src = logo
-	
+
 	mapLogo.style.top =
 		y +
 		(elem.getBoundingClientRect().height / 2 - mapLogo.offsetHeight / 2) +
@@ -427,6 +426,7 @@ $(function () {
 	})
 })
 const mapInner = document.querySelector('.map__content')
+
 mapInner?.addEventListener('click', e => {
 	const elem = e.target
 	if (elem.classList.contains('map-image-item')) {
@@ -440,5 +440,82 @@ mapInner?.addEventListener('click', e => {
 		elem.classList.add('active-map-item')
 		getLogo(elem, elemNew.logo)
 		getLink(elemNew)
+	}
+})
+//відкрити за допомогою сайдбара
+const elemSidebar = {
+	item1: {
+		elem: {
+			itemImg: './img/map-item.jpg',
+			logo: './img/logo-map.png',
+			title: 'елемент 1',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+		}, //елемент для вивода картки
+		roms: [1, 2, 3], //елементи карти
+		over: 1, //поверх
+	},
+	item3: {
+		elem: {
+			itemImg: './img/map-item.jpg',
+			logo: './img/logo-map.png',
+			title: 'елемент 1',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+		}, //елемент для вивода картки
+		roms: [4, 3], //елементи карти
+		over: 1, //поверх
+	},
+	item4: {
+		elem: {
+			itemImg: './img/map-item.jpg',
+			logo: './img/logo-map.png',
+			title: 'елемент 1',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+		}, //елемент для вивода картки
+		roms: [1, 6, 3], //елементи карти
+		over: 1, //поверх
+	},
+}
+
+const mapSideBar = document.querySelector('.map-sidebar')
+
+mapSideBar?.addEventListener('click', event => {
+	const elemNum = event.target.dataset.elemNum
+	const elemChange = event.target
+	const elemAct = document.querySelector('.active-elem-over')
+	if (elemNum) {
+		elemAct?.classList.remove('active-elem-over')
+		elemChange.classList.add('active-elem-over')
+		const elemChose = elemSidebar['item' + elemNum].elem
+		const over = elemSidebar['item' + elemNum].over
+		const roms = elemSidebar['item' + elemNum].roms
+		getLink(elemChose)
+		if (over == 1) {
+			const activeItems = document.querySelectorAll('.active-map-item')
+			if(activeItems){
+				activeItems.forEach(e => 
+					e.classList.remove('active-map-item'))
+			}
+			roms.forEach((e)=>{
+				const id = 'element-one:' + e
+				const item = document.getElementById(id)
+				item.classList.add('active-map-item')
+			})
+			console.log()
+		}
 	}
 })

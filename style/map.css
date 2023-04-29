@@ -84,21 +84,17 @@
   letter-spacing: 0em;
   text-align: left;
   color: #000000;
+  padding: 15px;
   padding-left: 70px;
   transition: 0.6s;
   display: block;
   height: auto;
   width: 100%;
-  margin-top: 10px;
 }
 .map-sidebar-item__link:hover {
   color: #fff;
   background-color: #9a2c31;
 }
-.map-sidebar-item__link:first-child {
-  margin-right: 0;
-}
-
 .map-controls {
   display: flex;
 }
@@ -545,4 +541,8 @@
     width: 22px;
     height: 22px;
   }
+}
+.active-elem-over {
+  background-color: #9a2c31;
+  color: #fff;
 }/*# sourceMappingURL=map.css.map */

@@ -84,18 +84,19 @@
 		letter-spacing: 0em;
 		text-align: left;
 		color: #000000;
+		padding: 15px;
 		padding-left: 70px;
 		transition: 0.6s;
 		display: block;
 		height: auto;
 		width: 100%;
-		margin-top: 10px;
+		
 		&:hover {
 			color: #fff;
 			background-color: #9a2c31;
 		}
 		&:first-child {
-			margin-right: 0;
+			
 		}
 	}
 }
@@ -550,4 +551,8 @@
 		width: 22px;
 		height: 22px;
 	}
+}
+.active-elem-over{
+	background-color:#9a2c31;
+	color:#fff;
 }
