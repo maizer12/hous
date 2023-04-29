@@ -233,6 +233,7 @@ function getLink(ell) {
 	const itemsCont = document.querySelector('.map-item__cont')
 	const item = `
 					<div class="map-item">
+						<button class="map-item-btn">x</button>
 						<div class="map-item__images">
 							<img src=${ell?.itemImg} alt="map-item" class="map-item__img">
 						</div>
@@ -375,6 +376,7 @@ function getLink(ell) {
 	`
 	if (itemsCont) {
 		itemsCont.innerHTML = item
+		itemsCont.classList.add('active-add-popup')
 	}
 }
 

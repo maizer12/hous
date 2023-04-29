@@ -85,11 +85,19 @@ btnSearchProduct?.addEventListener('click', ()=>{
 	body?.classList.add('open-input')
 })
 window.addEventListener('click', (event) => {
+	const ell = event.target
+	const logoTest = document.querySelector('.logo-get')
   if (!inputLabel?.contains(event.target) && openSearchCheck) {
     searchColumns?.classList.remove('header-search-open')
 		openSearchCheck = false
   } 
 	if(!inputLabel?.contains(event.target) && body.classList.contains('open-input')){
 		body.classList = ''
+	}
+	if(ell.classList.contains('map-item-btn')){
+		ell.parentElement.parentElement.classList.remove('active-add-popup')
+	}
+	if(ell.classList.contains('ui-tabs-anchor')  && logoTest){
+		logoTest.style.display = 'none'
 	}
 });
