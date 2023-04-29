@@ -19,6 +19,7 @@ const mapOneInfo = {
 		itemImg: './img/map-item.jpg',
 		logo: './img/logo-map.png',
 		title: 'елемент 2',
+		categories: ['ct-3', 'ct-4'],
 		phone: [
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
@@ -30,6 +31,7 @@ const mapOneInfo = {
 		itemImg: './img/map-item.jpg',
 		logo: './img/logo-map.png',
 		title: 'елемент 3',
+		categories: ['ct-6', 'ct-9'],
 		phone: [
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
@@ -37,11 +39,11 @@ const mapOneInfo = {
 		],
 		link: '/',
 	},
-
 	item5: {
 		itemImg: './img/map-item.jpg',
 		logo: './img/logo-map.png',
 		title: 'елемент 4',
+		categories: ['ct-1', 'ct-2', 'ct-4'],
 		phone: [
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
@@ -53,6 +55,7 @@ const mapOneInfo = {
 		itemImg: './img/map-item.jpg',
 		logo: './img/logo-map.png',
 		title: 'елемент 5',
+		categories: ['ct-1', 'ct-3', 'ct-4'],
 		phone: [
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
@@ -378,7 +381,10 @@ function getLink(ell) {
 		itemsCont.classList.add('active-add-popup')
 	}
 }
-
+function removeClassActive() {
+	const itemAct = document.querySelectorAll('.active-map-item')
+	itemAct.forEach(e => e.classList.remove('active-map-item'))
+}
 function getLogo(elem, logo) {
 	const mapLogo = document.querySelector('.logo-get')
 	const imageBounds = document
@@ -389,7 +395,6 @@ function getLogo(elem, logo) {
 	const y = eBounds.top - imageBounds.top
 	mapLogo.style.display = 'block'
 	mapLogo.src = logo
-
 	mapLogo.style.top =
 		y +
 		(elem.getBoundingClientRect().height / 2 - mapLogo.offsetHeight / 2) +
@@ -431,12 +436,11 @@ mapInner?.addEventListener('click', e => {
 	const elem = e.target
 	if (elem.classList.contains('map-image-item')) {
 		const elemNew = getElement(elem.id)
-		const itemAct = document.querySelector('.active-map-item')
 		if (!elemNew) {
 			remodalWindow.open()
 			return
 		}
-		itemAct?.classList.remove('active-map-item')
+		removeClassActive()
 		elem.classList.add('active-map-item')
 		getLogo(elem, elemNew.logo)
 		getLink(elemNew)
@@ -506,16 +510,14 @@ mapSideBar?.addEventListener('click', event => {
 		getLink(elemChose)
 		if (over == 1) {
 			const activeItems = document.querySelectorAll('.active-map-item')
-			if(activeItems){
-				activeItems.forEach(e => 
-					e.classList.remove('active-map-item'))
+			if (activeItems) {
+				removeClassActive()
 			}
-			roms.forEach((e)=>{
+			roms.forEach(e => {
 				const id = 'element-one:' + e
 				const item = document.getElementById(id)
 				item.classList.add('active-map-item')
 			})
-			console.log()
 		}
 	}
 })
