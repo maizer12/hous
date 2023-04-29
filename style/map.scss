@@ -166,9 +166,6 @@
 		column-gap: 42px;
 		position: relative;
 	}
-	&__image {
-		position: relative;
-	}
 }
 
 .map-item {
@@ -310,10 +307,9 @@
 		}
 	}
 }
-#test-elem{
-	fill: green;
-}
-.map-image-item-one {
+
+
+.map-image-item {
 	cursor: pointer;
 	transition: 0.6s;
 	position: relative;

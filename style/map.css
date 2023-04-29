@@ -167,9 +167,6 @@
        column-gap: 42px;
   position: relative;
 }
-.map__image {
-  position: relative;
-}
 
 .map-item {
   margin-right: 10px;
@@ -309,19 +306,15 @@
   fill: #fff;
 }
 
-#test-elem {
-  fill: green;
-}
-
-.map-image-item-one {
+.map-image-item {
   cursor: pointer;
   transition: 0.6s;
   position: relative;
 }
-.map-image-item-one:hover {
+.map-image-item:hover {
   fill: #9a2c31;
 }
-.map-image-item-one::after {
+.map-image-item::after {
   content: "123";
   background-color: rgb(60, 255, 0);
   width: 100px;

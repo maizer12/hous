@@ -3,7 +3,6 @@ let accordion = $('#accordion-map').accordion({
 	collapsible: true,
 	heightStyle: 'content',
 })
-const images = document.querySelectorAll('.map-image-item-one')
 const mapOneInfo = {
 	item1: {
 		itemImg: './img/map-item.jpg',
@@ -38,7 +37,7 @@ const mapOneInfo = {
 		],
 		link: '/',
 	},
-	
+
 	item5: {
 		itemImg: './img/map-item.jpg',
 		logo: './img/logo-map.png',
@@ -151,7 +150,7 @@ const mapTwoInfo = {
 		],
 		link: '/',
 	},
-	
+
 	item5: {
 		itemImg: './img/map-item.jpg',
 		logo: './img/logo-map.png',
@@ -328,10 +327,14 @@ function getLink(ell) {
 						<div class="map-item__contact">
 							<div class="map-item__numbers">
 							
-								${
-									ell.phone?.filter(e => e).map(e => `<a href="tel:${e.tel}" class="map-item__number">${e.num}</a>`).join('').toString()
-
-							}
+								${ell.phone
+									?.filter(e => e)
+									.map(
+										e =>
+											`<a href="tel:${e.tel}" class="map-item__number">${e.num}</a>`
+									)
+									.join('')
+									.toString()}
 							
 							</div>
 							<button class="map-item__btn">
@@ -375,51 +378,65 @@ function getLink(ell) {
 	}
 }
 
-images.forEach((e, i) => {
-	e.addEventListener('click', () => {
-		const logo = document.querySelector('.logo-get')
-		const itemAct = document.querySelector('.active-map-item')
-		const elem = mapOneInfo['item' + (i + 1)]
-		if(!elem){
-			remodalWindow.open();
-			return
-		}
-		itemAct?.classList.remove('active-map-item')
-		e.classList.add('active-map-item')
-		getLink(elem)
-		const eBounds = e.getBoundingClientRect()
-		const imageBounds = document
-			.querySelector('.map__image')
-			.getBoundingClientRect()
-		const x = eBounds.left - imageBounds.left
-		const y = eBounds.top - imageBounds.top
-		logo.style.display = 'block'
-		logo.src = elem?.logo
-		logo.style.top =
-			y + (e.getBoundingClientRect().height / 2 - logo.offsetHeight / 2) + 'px'
-		logo.style.left =
-			x + (e.getBoundingClientRect().width / 2 - logo.offsetWidth / 2) + 'px'
-		if (e.id === 'dz-cos') {
-			logo.style.top = y + (e.getBoundingClientRect().height / 2 + 20) + 'px'
-		}
-	})
-})
-var remodalWindow = $('[data-remodal-id=modal]').remodal();
-const openNumber = document.querySelector('.map__content');
-
-openNumber?.addEventListener('click', (event)=>{
+function getLogo(elem, logo) {
+	const mapLogo = document.querySelector('.logo-get')
+const imageBounds = document
+	.querySelector('.map__content')
+	.getBoundingClientRect()
+	const eBounds = elem.getBoundingClientRect()
+	const x = eBounds.left - imageBounds.left
+	const y = eBounds.top - imageBounds.top
+	mapLogo.style.display = 'block'
+	mapLogo.src = logo
+	
+	mapLogo.style.top =
+		y +
+		(elem.getBoundingClientRect().height / 2 - mapLogo.offsetHeight / 2) +
+		'px'
+	mapLogo.style.left =
+		x +
+		(elem.getBoundingClientRect().width / 2 - mapLogo.offsetWidth / 2) +
+		'px'
+}
+function getElement(id) {
+	const elemType = id.replace(/\d+/g, '')
+	const numberEl = id.match(/\d+/g)
+	if (elemType === 'element-one:') {
+		return mapOneInfo['item' + numberEl]
+	} else if (elemType === 'elem-two:') {
+		return mapTwoInfo['item' + numberEl]
+	}
+}
+var remodalWindow = $('[data-remodal-id=modal]').remodal()
+const openNumber = document.querySelector('.map__content')
+openNumber?.addEventListener('click', event => {
 	const element = event.target
-	if(element.classList.contains('map-item__btn')){
+	if (element.classList.contains('map-item__btn')) {
 		const items = document.querySelectorAll('.map-item__number')
-		items.forEach((e)=>{
+		items.forEach(e => {
 			e.innerHTML = e.href.replace(/^tel:/, '')
 			element.style.display = 'none'
 		})
 	}
 })
-$(function() {
-  $("#map-tab").tabs({
-		active: 1
-	});
-});
-
+$(function () {
+	$('#map-tab').tabs({
+		active: 0,
+	})
+})
+const mapInner = document.querySelector('.map__content')
+mapInner?.addEventListener('click', e => {
+	const elem = e.target
+	if (elem.classList.contains('map-image-item')) {
+		const elemNew = getElement(elem.id)
+		const itemAct = document.querySelector('.active-map-item')
+		if (!elemNew) {
+			remodalWindow.open()
+			return
+		}
+		itemAct?.classList.remove('active-map-item')
+		elem.classList.add('active-map-item')
+		getLogo(elem, elemNew.logo)
+		getLink(elemNew)
+	}
+})
