@@ -14,112 +14,58 @@ const mapOneInfo = {
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
+		categories:['1', '4', '3']
 	},
 	item2: {
 		itemImg: './img/map-item.jpg',
 		logo: './img/logo-map.png',
 		title: 'елемент 2',
-		categories: ['ct-3', 'ct-4'],
 		phone: [
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
+		categories:['1', '5', ],
 	},
 	item3: {
 		itemImg: './img/map-item.jpg',
 		logo: './img/logo-map.png',
 		title: 'елемент 3',
-		categories: ['ct-6', 'ct-9'],
 		phone: [
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
+		categories:['1', '5', '6'],
 	},
 	item5: {
 		itemImg: './img/map-item.jpg',
 		logo: './img/logo-map.png',
 		title: 'елемент 4',
-		categories: ['ct-1', 'ct-2', 'ct-4'],
 		phone: [
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
+		categories:['2', '5'],
 	},
-	item6: {
+	item5: {
 		itemImg: './img/map-item.jpg',
 		logo: './img/logo-map.png',
-		title: 'елемент 5',
-		categories: ['ct-1', 'ct-3', 'ct-4'],
+		title: 'елемент 4',
 		phone: [
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
-	},
-	item7: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 8',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-	},
-	item8: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 20',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-	},
-	item9: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 30',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-	},
-	item10: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 1',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-	},
-	item11: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 1',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
+		categories:['2', '5'],
 	},
 }
-const mapTwoInfo = {
+const mapTwoInfo ={
 	item1: {
 		itemImg: './img/map-item.jpg',
 		logo: './img/logo-map.png',
@@ -130,6 +76,7 @@ const mapTwoInfo = {
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
+		categories:['1', '4', '3']
 	},
 	item2: {
 		itemImg: './img/map-item.jpg',
@@ -141,6 +88,7 @@ const mapTwoInfo = {
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
+		categories:['1', '5', ],
 	},
 	item3: {
 		itemImg: './img/map-item.jpg',
@@ -152,8 +100,8 @@ const mapTwoInfo = {
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
+		categories:['1', '5', '6'],
 	},
-
 	item5: {
 		itemImg: './img/map-item.jpg',
 		logo: './img/logo-map.png',
@@ -164,72 +112,7 @@ const mapTwoInfo = {
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
-	},
-	item6: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 5',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-	},
-	item7: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 8',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-	},
-	item8: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 20',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-	},
-	item9: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 30',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-	},
-	item10: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 1',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-	},
-	item11: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 1',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
+		categories:['2', '5'],
 	},
 }
 function getLink(ell) {
@@ -387,6 +270,8 @@ function removeClassActive() {
 }
 function getLogo(elem, logo) {
 	const mapLogo = document.querySelector('.logo-get')
+	const logoHere = document.querySelector('.logo-here-p')
+	console.log(123)
 	const imageBounds = document
 		.querySelector('.map__content')
 		.getBoundingClientRect()
@@ -394,6 +279,7 @@ function getLogo(elem, logo) {
 	const x = eBounds.left - imageBounds.left
 	const y = eBounds.top - imageBounds.top
 	mapLogo.style.display = 'block'
+
 	mapLogo.src = logo
 	mapLogo.style.top =
 		y +
@@ -447,77 +333,31 @@ mapInner?.addEventListener('click', e => {
 	}
 })
 //відкрити за допомогою сайдбара
-const elemSidebar = {
-	item1: {
-		elem: {
-			itemImg: './img/map-item.jpg',
-			logo: './img/logo-map.png',
-			title: 'елемент 1',
-			phone: [
-				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			],
-			link: '/',
-		}, //елемент для вивода картки
-		roms: [1, 2, 3], //елементи карти
-		over: 1, //поверх
-	},
-	item3: {
-		elem: {
-			itemImg: './img/map-item.jpg',
-			logo: './img/logo-map.png',
-			title: 'елемент 1',
-			phone: [
-				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			],
-			link: '/',
-		}, //елемент для вивода картки
-		roms: [4, 3], //елементи карти
-		over: 1, //поверх
-	},
-	item4: {
-		elem: {
-			itemImg: './img/map-item.jpg',
-			logo: './img/logo-map.png',
-			title: 'елемент 1',
-			phone: [
-				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			],
-			link: '/',
-		}, //елемент для вивода картки
-		roms: [1, 6, 3], //елементи карти
-		over: 1, //поверх
-	},
+function activeElementID(e, text){
+	const element = document.getElementById(text + e)
+	element.classList.add('active-map-item')
 }
-
 const mapSideBar = document.querySelector('.map-sidebar')
 
 mapSideBar?.addEventListener('click', event => {
-	const elemNum = event.target.dataset.elemNum
-	const elemChange = event.target
-	const elemAct = document.querySelector('.active-elem-over')
+	removeClassActive()
+	const elemNum = event.target.dataset.cat
 	if (elemNum) {
-		elemAct?.classList.remove('active-elem-over')
-		elemChange.classList.add('active-elem-over')
-		const elemChose = elemSidebar['item' + elemNum].elem
-		const over = elemSidebar['item' + elemNum].over
-		const roms = elemSidebar['item' + elemNum].roms
-		getLink(elemChose)
-		if (over == 1) {
-			const activeItems = document.querySelectorAll('.active-map-item')
-			if (activeItems) {
-				removeClassActive()
-			}
-			roms.forEach(e => {
-				const id = 'element-one:' + e
-				const item = document.getElementById(id)
-				item.classList.add('active-map-item')
-			})
+		let one = []
+		let two = []
+		for (let prop in mapTwoInfo) {
+			mapOneInfo[prop].categories.filter(e => e == elemNum).length? one.push(prop):'' ;
+		}
+		for (let prop in mapTwoInfo) {
+			mapTwoInfo[prop].categories.filter(e => e == elemNum).length? two.push(prop):'' ;
+		}
+		for(let i = 0; i < one.length; i++){
+			const num = one[i].replace(/[a-zA-Z]/g, "")
+			activeElementID(num, 'element-one:')
+		}
+		for(let i = 0; i < two.length; i++){
+			const num = one[i].replace(/[a-zA-Z]/g, "")
+			activeElementID(num, 'elem-two:')
 		}
 	}
 })
