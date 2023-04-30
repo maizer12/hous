@@ -86,7 +86,6 @@ btnSearchProduct?.addEventListener('click', ()=>{
 })
 window.addEventListener('click', (event) => {
 	const ell = event.target
-	const logoTest = document.querySelector('.logo-get')
   if (!inputLabel?.contains(event.target) && openSearchCheck) {
     searchColumns?.classList.remove('header-search-open')
 		openSearchCheck = false
@@ -97,7 +96,7 @@ window.addEventListener('click', (event) => {
 	if(ell.classList.contains('map-item-btn')){
 		ell.parentElement.parentElement.classList.remove('active-add-popup')
 	}
-	if(ell.classList.contains('ui-tabs-anchor')  && logoTest){
-		logoTest.style.display = 'none'
+	if(ell.classList.contains('ui-tabs-anchor')){
+		removeLogo()
 	}
 });

@@ -264,19 +264,27 @@ function getLink(ell) {
 		itemsCont.classList.add('active-add-popup')
 	}
 }
+
 function removeClassActive() {
 	const itemAct = document.querySelectorAll('.active-map-item')
 	itemAct.forEach(e => e.classList.remove('active-map-item'))
 }
-function getLogo(elem, logo) {
-	console.log(elem)
+function removeLogo() {
 	const logoHere = document.querySelector('.logo-here-p')
 	logoHere.innerHTML = ''
-	logoHere.innerHTML += `<img src="./img/logo-map.png" alt="logo" class="logo-get">`
-	const mapLogo = document.querySelector('.logo-get')
+	removeClassActive()
+}
+function getLogo(elem, logo) {
+	console.log(elem)
+	elem
+	const logoHere = document.querySelector('.logo-here-p')
+	const idNew = 'logo' + Math.floor(Math.random() * 10000) + 1
+	logoHere.innerHTML += `<img src="./img/logo-map.png" alt="logo" id="${idNew}" class="logo-get">`
+	const mapLogo = document.getElementById(idNew)
 	const imageBounds = document
 		.querySelector('.map__content')
 		.getBoundingClientRect()
+
 	const eBounds = elem.getBoundingClientRect()
 	const x = eBounds.left - imageBounds.left
 	const y = eBounds.top - imageBounds.top
@@ -300,7 +308,7 @@ function getElement(id) {
 		return mapTwoInfo['item' + numberEl]
 	}
 }
-var remodalWindow = $('[data-remodal-id=modal]').remodal()
+
 const openNumber = document.querySelector('.map__content')
 openNumber?.addEventListener('click', event => {
 	const element = event.target
@@ -312,11 +320,7 @@ openNumber?.addEventListener('click', event => {
 		})
 	}
 })
-$(function () {
-	$('#map-tab').tabs({
-		active: 0,
-	})
-})
+
 const mapInner = document.querySelector('.map__content')
 
 mapInner?.addEventListener('click', e => {
@@ -327,7 +331,7 @@ mapInner?.addEventListener('click', e => {
 			remodalWindow.open()
 			return
 		}
-		removeClassActive()
+		removeLogo()
 		elem.classList.add('active-map-item')
 		getLogo(elem, elemNew.logo)
 		getLink(elemNew)
@@ -339,12 +343,12 @@ function activeElementID(e, text) {
 	element.classList.add('active-map-item')
 	if (text === 'elem-two:') {
 		getLogo(element, mapTwoInfo['item' + e].logo)
-	}else if(text === 'elem-one:'){
+	}
+	if (text === 'element-one:') {
 		getLogo(element, mapOneInfo['item' + e].logo)
 	}
 }
 const mapSideBar = document.querySelector('.map-sidebar')
-
 
 mapSideBar?.addEventListener('click', event => {
 	removeClassActive()
@@ -352,6 +356,7 @@ mapSideBar?.addEventListener('click', event => {
 	const elem = event.target
 	const activeEll = document.querySelector('.active-elem-over')
 	if (elemNum) {
+		removeLogo()
 		activeEll?.classList.remove('active-elem-over')
 		elem.classList.add('active-elem-over')
 		let one = []
@@ -376,3 +381,11 @@ mapSideBar?.addEventListener('click', event => {
 		}
 	}
 })
+//tabs
+$(function () {
+	$('#map-tab').tabs({
+		active: 0,
+	})
+})
+//modal
+var remodalWindow = $('[data-remodal-id=modal]').remodal()
