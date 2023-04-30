@@ -394,6 +394,10 @@
   display: none;
 }
 
+.map-image-item {
+  background-image: url("../img/logo-map.png");
+}
+
 @media (max-width: 1550px) {
   .map-item__cont {
     background-color: rgba(0, 0, 0, 0.6);

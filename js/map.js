@@ -14,7 +14,7 @@ const mapOneInfo = {
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
-		categories:['1', '4', '3']
+		categories: ['1', '4', '3'],
 	},
 	item2: {
 		itemImg: './img/map-item.jpg',
@@ -26,7 +26,7 @@ const mapOneInfo = {
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
-		categories:['1', '5', ],
+		categories: ['1', '5'],
 	},
 	item3: {
 		itemImg: './img/map-item.jpg',
@@ -38,7 +38,7 @@ const mapOneInfo = {
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
-		categories:['1', '5', '6'],
+		categories: ['1', '5', '6'],
 	},
 	item5: {
 		itemImg: './img/map-item.jpg',
@@ -50,7 +50,7 @@ const mapOneInfo = {
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
-		categories:['2', '5'],
+		categories: ['2', '5'],
 	},
 	item5: {
 		itemImg: './img/map-item.jpg',
@@ -62,10 +62,10 @@ const mapOneInfo = {
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
-		categories:['2', '5'],
+		categories: ['2', '5'],
 	},
 }
-const mapTwoInfo ={
+const mapTwoInfo = {
 	item1: {
 		itemImg: './img/map-item.jpg',
 		logo: './img/logo-map.png',
@@ -76,7 +76,7 @@ const mapTwoInfo ={
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
-		categories:['1', '4', '3']
+		categories: ['1', '4', '3'],
 	},
 	item2: {
 		itemImg: './img/map-item.jpg',
@@ -88,7 +88,7 @@ const mapTwoInfo ={
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
-		categories:['1', '5', ],
+		categories: ['1', '5'],
 	},
 	item3: {
 		itemImg: './img/map-item.jpg',
@@ -100,7 +100,7 @@ const mapTwoInfo ={
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
-		categories:['1', '5', '6'],
+		categories: ['1', '5', '6'],
 	},
 	item5: {
 		itemImg: './img/map-item.jpg',
@@ -112,7 +112,7 @@ const mapTwoInfo ={
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
-		categories:['2', '5'],
+		categories: ['2', '5'],
 	},
 }
 function getLink(ell) {
@@ -269,9 +269,11 @@ function removeClassActive() {
 	itemAct.forEach(e => e.classList.remove('active-map-item'))
 }
 function getLogo(elem, logo) {
-	const mapLogo = document.querySelector('.logo-get')
+	console.log(elem)
 	const logoHere = document.querySelector('.logo-here-p')
-	console.log(123)
+	logoHere.innerHTML = ''
+	logoHere.innerHTML += `<img src="./img/logo-map.png" alt="logo" class="logo-get">`
+	const mapLogo = document.querySelector('.logo-get')
 	const imageBounds = document
 		.querySelector('.map__content')
 		.getBoundingClientRect()
@@ -279,7 +281,6 @@ function getLogo(elem, logo) {
 	const x = eBounds.left - imageBounds.left
 	const y = eBounds.top - imageBounds.top
 	mapLogo.style.display = 'block'
-
 	mapLogo.src = logo
 	mapLogo.style.top =
 		y +
@@ -333,30 +334,44 @@ mapInner?.addEventListener('click', e => {
 	}
 })
 //відкрити за допомогою сайдбара
-function activeElementID(e, text){
+function activeElementID(e, text) {
 	const element = document.getElementById(text + e)
 	element.classList.add('active-map-item')
+	if (text === 'elem-two:') {
+		getLogo(element, mapTwoInfo['item' + e].logo)
+	}else if(text === 'elem-one:'){
+		getLogo(element, mapOneInfo['item' + e].logo)
+	}
 }
 const mapSideBar = document.querySelector('.map-sidebar')
+
 
 mapSideBar?.addEventListener('click', event => {
 	removeClassActive()
 	const elemNum = event.target.dataset.cat
+	const elem = event.target
+	const activeEll = document.querySelector('.active-elem-over')
 	if (elemNum) {
+		activeEll?.classList.remove('active-elem-over')
+		elem.classList.add('active-elem-over')
 		let one = []
 		let two = []
-		for (let prop in mapTwoInfo) {
-			mapOneInfo[prop].categories.filter(e => e == elemNum).length? one.push(prop):'' ;
+		for (let prop in mapOneInfo) {
+			mapOneInfo[prop].categories.filter(e => e == elemNum).length
+				? one.push(prop)
+				: ''
 		}
 		for (let prop in mapTwoInfo) {
-			mapTwoInfo[prop].categories.filter(e => e == elemNum).length? two.push(prop):'' ;
+			mapTwoInfo[prop].categories.filter(e => e == elemNum).length
+				? two.push(prop)
+				: ''
 		}
-		for(let i = 0; i < one.length; i++){
-			const num = one[i].replace(/[a-zA-Z]/g, "")
+		for (let i = 0; i < one.length; i++) {
+			const num = one[i].replace(/[a-zA-Z]/g, '')
 			activeElementID(num, 'element-one:')
 		}
-		for(let i = 0; i < two.length; i++){
-			const num = one[i].replace(/[a-zA-Z]/g, "")
+		for (let i = 0; i < two.length; i++) {
+			const num = two[i].replace(/[a-zA-Z]/g, '')
 			activeElementID(num, 'elem-two:')
 		}
 	}
