@@ -275,8 +275,8 @@ function removeLogo() {
 	removeClassActive()
 }
 function getLogo(elem, logo) {
-	console.log(elem)
-	elem
+	const elemWidth = elem.getBoundingClientRect().width
+	//elem 
 	const logoHere = document.querySelector('.logo-here-p')
 	const idNew = 'logo' + Math.floor(Math.random() * 10000) + 1
 	logoHere.innerHTML += `<img src="./img/logo-map.png" alt="logo" id="${idNew}" class="logo-get">`
@@ -284,7 +284,9 @@ function getLogo(elem, logo) {
 	const imageBounds = document
 		.querySelector('.map__content')
 		.getBoundingClientRect()
-
+	if(elemWidth < mapLogo.width){
+		mapLogo.style.width = elemWidth + 'px'
+	}
 	const eBounds = elem.getBoundingClientRect()
 	const x = eBounds.left - imageBounds.left
 	const y = eBounds.top - imageBounds.top
