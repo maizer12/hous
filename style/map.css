@@ -331,7 +331,6 @@
 
 .logo-get {
   position: absolute;
-  display: none;
   top: 0;
   left: 0;
 }
@@ -542,6 +541,10 @@
     height: 22px;
   }
 }
+#test {
+  fill: green;
+}
+
 .active-elem-over {
   background-color: #9a2c31;
   color: #fff;

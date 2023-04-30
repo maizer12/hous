@@ -115,6 +115,56 @@ const mapTwoInfo = {
 		categories: ['2', '5'],
 	},
 }
+const mapThreeInfo = {
+	item1: {
+		itemImg: './img/map-item.jpg',
+		logo: './img/logo-map.png',
+		title: 'елемент 1',
+		phone: [
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+		],
+		link: '/',
+		categories: ['1', '4', '3'],
+	},
+	item2: {
+		itemImg: './img/map-item.jpg',
+		logo: './img/logo-map.png',
+		title: 'елемент 2',
+		phone: [
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+		],
+		link: '/',
+		categories: ['1', '5'],
+	},
+	item3: {
+		itemImg: './img/map-item.jpg',
+		logo: './img/logo-map.png',
+		title: 'елемент 3',
+		phone: [
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+		],
+		link: '/',
+		categories: ['1', '5', '6'],
+	},
+	item5: {
+		itemImg: './img/map-item.jpg',
+		logo: './img/logo-map.png',
+		title: 'елемент 4',
+		phone: [
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+		],
+		link: '/',
+		categories: ['2', '5'],
+	},
+}
 function getLink(ell) {
 	const itemsCont = document.querySelector('.map-item__cont')
 	const item = `
@@ -276,7 +326,7 @@ function removeLogo() {
 }
 function getLogo(elem, logo) {
 	const elemWidth = elem.getBoundingClientRect().width
-	//elem 
+	//elem
 	const logoHere = document.querySelector('.logo-here-p')
 	const idNew = 'logo' + Math.floor(Math.random() * 10000) + 1
 	logoHere.innerHTML += `<img src="./img/logo-map.png" alt="logo" id="${idNew}" class="logo-get">`
@@ -284,7 +334,7 @@ function getLogo(elem, logo) {
 	const imageBounds = document
 		.querySelector('.map__content')
 		.getBoundingClientRect()
-	if(elemWidth < mapLogo.width){
+	if (elemWidth < mapLogo.width) {
 		mapLogo.style.width = elemWidth + 'px'
 	}
 	const eBounds = elem.getBoundingClientRect()
@@ -308,6 +358,8 @@ function getElement(id) {
 		return mapOneInfo['item' + numberEl]
 	} else if (elemType === 'elem-two:') {
 		return mapTwoInfo['item' + numberEl]
+	}else if(elemType === 'elem-three:'){
+		return mapThreeInfo['item' + numberEl]
 	}
 }
 
@@ -349,6 +401,9 @@ function activeElementID(e, text) {
 	if (text === 'element-one:') {
 		getLogo(element, mapOneInfo['item' + e].logo)
 	}
+	if (text === 'elem-three:') {
+		getLogo(element, mapThreeInfo['item' + e].logo)
+	}
 }
 const mapSideBar = document.querySelector('.map-sidebar')
 
@@ -363,6 +418,7 @@ mapSideBar?.addEventListener('click', event => {
 		elem.classList.add('active-elem-over')
 		let one = []
 		let two = []
+		let three = []
 		for (let prop in mapOneInfo) {
 			mapOneInfo[prop].categories.filter(e => e == elemNum).length
 				? one.push(prop)
@@ -373,6 +429,11 @@ mapSideBar?.addEventListener('click', event => {
 				? two.push(prop)
 				: ''
 		}
+		for (let prop in mapThreeInfo) {
+			mapTwoInfo[prop].categories.filter(e => e == elemNum).length
+				? three.push(prop)
+				: ''
+		}
 		for (let i = 0; i < one.length; i++) {
 			const num = one[i].replace(/[a-zA-Z]/g, '')
 			activeElementID(num, 'element-one:')
@@ -381,12 +442,16 @@ mapSideBar?.addEventListener('click', event => {
 			const num = two[i].replace(/[a-zA-Z]/g, '')
 			activeElementID(num, 'elem-two:')
 		}
+		for (let i = 0; i < three.length; i++) {
+			const num = three[i].replace(/[a-zA-Z]/g, '')
+			activeElementID(num, 'elem-three:')
+		}
 	}
 })
 //tabs
 $(function () {
 	$('#map-tab').tabs({
-		active: 0,
+		active: 2,
 	})
 })
 //modal
