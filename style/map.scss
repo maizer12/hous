@@ -337,7 +337,6 @@
 	}
 }
 .logo-get {
-	width: 93px;
 	position: absolute;
 	display: none;
 	top: 0;
@@ -460,9 +459,6 @@
 @media (max-width: 740px) {
 	.map__content {
 		padding-left: 0;
-	}
-	.logo-get {
-		width: 60px;
 	}
 
 	.map-controls__btn {
