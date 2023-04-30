@@ -74,6 +74,22 @@
   height: 100%;
   height: 818px;
   overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.promotion-content__images::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  transition: 0.6s;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.promotion-content__images:hover::after {
+  opacity: 1;
 }
 .promotion-content__img {
   width: 100%;
@@ -175,4 +191,77 @@
   width: 113px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.remodal-is-opened .remodal-promotion {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 1550px) {
+  .promotion-content__title {
+    font-size: 26px;
+  }
+  .promotion-content__sub-title {
+    margin-bottom: 20px;
+  }
+  .promotion-content__name_mb {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1124px) {
+  .promotion-content {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .promotion-content__items {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 850px) {
+  .promotion-content__images {
+    height: 574px;
+  }
+  .promotion-content__title {
+    font-size: 23px;
+  }
+}
+@media (max-width: 768px) {
+  .breadcrumbs {
+    display: none;
+  }
+  .promotion-content__images {
+    min-height: 320px;
+    height: auto;
+  }
+  .promotion-content__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .promotion-content__brand img {
+    width: 61px;
+  }
+  .promotion-content__brand {
+    width: 80px;
+    height: 80px;
+  }
+  .promotion-content__btn {
+    padding: 3px 4px;
+    font-size: 12px;
+  }
+  .promotion-content__btn svg {
+    width: 18px;
+  }
+  .promotion-content__desc {
+    margin-bottom: 32px;
+  }
+  .promotion-content {
+    padding-bottom: 50px;
+  }
 }/*# sourceMappingURL=promotion-page.css.map */
