@@ -197,11 +197,10 @@ $mainColor: #2f2f2f;
 		}
 	}
 }
-.re
+
 .remodal-is-opened{
-	
 	.remodal-promotion{
-		//background-color:rgba(#000, 0.6);
+		background-color:rgba(#000, 0.6);
 		width: 100%;
 		height: 100%;
 		position: fixed;
@@ -210,9 +209,29 @@ $mainColor: #2f2f2f;
 		display: flex;
 		justify-content: center;
 		align-items:center;
-		position: relative;
+		
+		&__content{
+			position: relative;
+		}
+		&__img{
+			border:1px solid #fff;
+		}
 		&__close{
-	
+			color:#9A2C31;
+			font-weight: 500;
+			font-family: Montserrat;
+			font-size: 21px;
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			background-color:#fff;
+			top: 0;
+			right: 0;
+			transition: 0.7s;
+			&:hover{
+				background-color:#9A2C31;
+				color:#fff;
+			}
 		}
 	}
 }
@@ -250,7 +269,7 @@ $mainColor: #2f2f2f;
 		display: none;
 	}
 	.promotion-content__images {
-		min-height: 320px;
+		min-height: 300px;
 		height: auto;
 	}
 	.promotion-content__title {
@@ -276,5 +295,11 @@ $mainColor: #2f2f2f;
 	}
 	.promotion-content {
 		padding-bottom: 50px;
+	}
+	.remodal-promotion__img{
+		width: 100%;
+	}
+	.remodal-promotion__content{
+		margin: 0 15px;
 	}
 }

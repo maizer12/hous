@@ -194,6 +194,7 @@
 }
 
 .remodal-is-opened .remodal-promotion {
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -202,8 +203,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.remodal-is-opened .remodal-promotion__content {
   position: relative;
 }
+.remodal-is-opened .remodal-promotion__img {
+  border: 1px solid #fff;
+}
+.remodal-is-opened .remodal-promotion__close {
+  color: #9A2C31;
+  font-weight: 500;
+  font-family: Montserrat;
+  font-size: 21px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  transition: 0.7s;
+}
+.remodal-is-opened .remodal-promotion__close:hover {
+  background-color: #9A2C31;
+  color: #fff;
+}
+
 @media (max-width: 1550px) {
   .promotion-content__title {
     font-size: 26px;
@@ -237,7 +261,7 @@
     display: none;
   }
   .promotion-content__images {
-    min-height: 320px;
+    min-height: 300px;
     height: auto;
   }
   .promotion-content__title {
@@ -263,5 +287,11 @@
   }
   .promotion-content {
     padding-bottom: 50px;
+  }
+  .remodal-promotion__img {
+    width: 100%;
+  }
+  .remodal-promotion__content {
+    margin: 0 15px;
   }
 }/*# sourceMappingURL=promotion-page.css.map */
