@@ -1,3 +1,7 @@
+.news__inner {
+	display: flex;
+	justify-content: space-between;
+}
 .breadcrumbs {
 	padding: 16px 0;
 	background-color: rgba(#000, 0.6);
@@ -114,7 +118,7 @@
 		padding-bottom: 16px;
 		margin-bottom: 34px;
 	}
-	.socials{
+	.socials {
 		padding-top: 0;
 	}
 	&__button__item {
@@ -122,9 +126,9 @@
 		flex-direction: column;
 		align-items: center;
 	}
-	&__button__item-min{
+	&__button__item-min {
 		flex-direction: row-reverse;
-		column-gap:8px;
+		column-gap: 8px;
 	}
 	&__logo {
 		max-width: 473px;
@@ -163,10 +167,10 @@
 		letter-spacing: 0em;
 		text-align: center;
 	}
-	&__footer{
+	&__footer {
 		display: flex;
 		justify-content: space-between;
-		align-items:center;
+		align-items: center;
 	}
 }
 .socials {
@@ -254,5 +258,107 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+	}
+}
+.sidebar-news {
+	margin-top: 40px;
+	&__title {
+		font-family: Montserrat;
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 1.3;
+		margin-bottom: 60px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+	&__items{
+		display: flex;
+		flex-direction: column;
+		row-gap: 62px;
+	}
+}
+.articles-item {
+	height: fit-content;
+	max-width: 492px;
+	border-radius: 12px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid rgba(#9a2c31, 0.4);
+	&__image {
+		margin-bottom: 40px;
+		position: relative;
+		width: 100%;
+		height: 297px;
+
+		&-container {
+			overflow: hidden;
+			width: 100%;
+			height: 297px;
+		}
+		&::before {
+			content: '';
+			width: 100%;
+			height: 100%;
+			background-color: rgba(black, 0.2);
+			position: absolute;
+		}
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	&__content {
+		padding: 0 33px;
+	}
+	&__footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 54px;
+	}
+	&__date {
+		font-family: Montserrat;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 1.4;
+		color: #9a2c31;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+	&__tags {
+		position: absolute;
+		column-gap: 20px;
+		display: flex;
+		align-items: center;
+		bottom: 28px;
+		right: 11px;
+	}
+	&__logo {
+		position: absolute;
+		bottom: 0;
+		left: 20px;
+		transform: translateY(50%);
+		overflow: visible;
+		z-index: 2;
+		background-color: #fff;
+		padding: 7px 11px;
+		border-radius: 13px;
+	}
+	&__tag {
+		background-color: rgba(#2f2f2f, 0.8);
+		padding: 7px 15px;
+		border-radius: 13px;
+	}
+	.btn-detail {
+		transform: translateX(33px);
+		border: #9a2c31 solid 1px;
+		border-bottom: none;
+		border-right: none;
+		column-gap: 19px;
+		padding: 12px 14px;
+		svg {
+			height: 15px;
+		}
 	}
 }
