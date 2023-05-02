@@ -203,6 +203,13 @@
 		text-align: left;
 		color: #9a2c31;
 	}
+	&__items{
+		display: grid;
+		row-gap: 49px;
+		column-gap:114px;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-bottom: 64px;
+	}
 }
 .shops-catalog-item {
 	max-width: 465px;
@@ -226,7 +233,28 @@
 		}
 		
 	}
-	
+	&__brand{
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		border:rgba(#9A2C31, 0.3) 1px solid; 
+		border-top: 0;
+		border-right: 0;
+		width: 157px;
+		height: 80px;
+		overflow: hidden;  
+		z-index: 2; 
+		background-color:#fff;
+		display: flex;
+		align-items:center;
+		justify-content: center;
+	}
+	&__brand-icon{
+		width: 80%;
+		background-size:contain;
+		height: 80%;
+	}
 	&__img {
 		transition: 0.6s;
 		width: 100%;
