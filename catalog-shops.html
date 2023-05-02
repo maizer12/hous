@@ -10,11 +10,13 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
 		rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="./style/null.css">
 	<link rel="stylesheet" href="./style/basic.css">
 	<link rel="stylesheet" href="./style/header-footer.css">
 	<link rel="stylesheet" href="./style/catalog-shops.css">
 </head>
+
 <body>
 	<header class="header">
 		<div class="header__inner">
@@ -525,65 +527,75 @@
 						Скинути фільтри
 					</button>
 				</div>
-				<ul class="filter__items">
-					<li class="filter-item">
-						<p class="filter-item__name">Список ТЦ</p>
-						<div class="filter-item__wrapper">
-							<select name="" id="" class="filter-item__select">
-								<option value disabled selected>Всі ТЦ</option>
-								<option value="">Всі ТЦ1</option>
-								<option value="">Всі ТЦ2</option>
-								<option value="">Всі ТЦ3</option>
-							</select>
+				<div class="filter-wrapper">
+					<div class="filter-wrapper__inner">
+						<div class="filter-wrapper__adapt">
+							<button class="filter-wrapper__close">x</button>
+							<h3 class="filter-wrapper__name">Фільтр</h3>
+							<button type='reset' class="filter-wrapper__btn">Очистити фільтр* </button>
 						</div>
-					</li>
-					<li class="filter-item">
-						<p class="filter-item__name">Список ТЦ</p>
-						<div class="filter-item__wrapper">
-							<select name="" id="" class="filter-item__select">
-								<option value disabled selected>Всі ТЦ</option>
-								<option value="">Всі ТЦ1</option>
-								<option value="">Всі ТЦ2</option>
-								<option value="">Всі ТЦ3</option>
-							</select>
-						</div>
-					</li>
-					<li class="filter-item">
-						<p class="filter-item__name">Список ТЦ</p>
-						<div class="filter-item__wrapper">
-							<select name="" id="" class="filter-item__select">
-								<option value disabled selected>Всі ТЦ</option>
-								<option value="">Всі ТЦ1</option>
-								<option value="">Всі ТЦ2</option>
-								<option value="">Всі ТЦ3</option>
-							</select>
-						</div>
-					</li>
-					<li class="filter-item">
-						<p class="filter-item__name">Список ТЦ</p>
-						<div class="filter-item__wrapper">
-							<select name="" id="" class="filter-item__select">
-								<option value disabled selected>Всі ТЦ</option>
-								<option value="">Всі ТЦ1</option>
-								<option value="">Всі ТЦ2</option>
-								<option value="">Всі ТЦ3</option>
-							</select>
-						</div>
-					</li>
-					<li class="filter-item filter-item_flex">
-						<p class="filter-item__name">Введіть пошуковий запит</p>
-						<label for="#" class="filter-item__search">
-							<input type="text" class="filter-item__input" placeholder='Ведіть пошуковий запит'>
-							<button class="filter-item__btn">
-								<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M19.7825 18.6042L14.8083 13.63C16.1639 11.9722 16.8303 9.85675 16.6699 7.72131C16.5094 5.58587 15.5344 3.59378 13.9463 2.15711C12.3583 0.720433 10.2788 -0.050916 8.13804 0.00261049C5.99725 0.056137 3.95893 0.930443 2.44468 2.44468C0.930443 3.95893 0.056137 5.99725 0.00261049 8.13804C-0.050916 10.2788 0.720433 12.3583 2.15711 13.9463C3.59378 15.5344 5.58587 16.5094 7.72131 16.6699C9.85675 16.8303 11.9722 16.1639 13.63 14.8083L18.6042 19.7825C18.7613 19.9343 18.9718 20.0183 19.1903 20.0164C19.4088 20.0145 19.6179 19.9269 19.7724 19.7724C19.9269 19.6179 20.0145 19.4088 20.0164 19.1903C20.0183 18.9718 19.9343 18.7613 19.7825 18.6042ZM8.36001 15.0267C7.04147 15.0267 5.75253 14.6357 4.65621 13.9031C3.55988 13.1706 2.70539 12.1294 2.20081 10.9112C1.69623 9.69306 1.5642 8.35261 1.82144 7.05941C2.07867 5.7662 2.71361 4.57831 3.64596 3.64596C4.57831 2.71361 5.7662 2.07867 7.05941 1.82144C8.35261 1.5642 9.69306 1.69623 10.9112 2.20081C12.1294 2.70539 13.1706 3.55988 13.9031 4.65621C14.6357 5.75253 15.0267 7.04147 15.0267 8.36001C15.0247 10.1275 14.3217 11.822 13.0719 13.0719C11.822 14.3217 10.1275 15.0247 8.36001 15.0267Z"
-										fill="#A7464B" />
-								</svg>
-							</button>
-						</label>
-					</li>
-				</ul>
+						<ul class="filter__items">
+							<li class="filter-item">
+								<p class="filter-item__name">Список ТЦ</p>
+								<div class="filter-item__wrapper">
+									<select name="" id="" class="filter-item__select">
+										<option value disabled selected>Всі ТЦ</option>
+										<option value="">Всі ТЦ1</option>
+										<option value="">Всі ТЦ2</option>
+										<option value="">Всі ТЦ3</option>
+									</select>
+								</div>
+							</li>
+							<li class="filter-item">
+								<p class="filter-item__name">Список ТЦ</p>
+								<div class="filter-item__wrapper">
+									<select name="" id="" class="filter-item__select">
+										<option value disabled selected>Всі ТЦ</option>
+										<option value="">Всі ТЦ1</option>
+										<option value="">Всі ТЦ2</option>
+										<option value="">Всі ТЦ3</option>
+									</select>
+								</div>
+							</li>
+							<li class="filter-item">
+								<p class="filter-item__name">Список ТЦ</p>
+								<div class="filter-item__wrapper">
+									<select name="" id="" class="filter-item__select">
+										<option value disabled selected>Всі ТЦ</option>
+										<option value="">Всі ТЦ1</option>
+										<option value="">Всі ТЦ2</option>
+										<option value="">Всі ТЦ3</option>
+									</select>
+								</div>
+							</li>
+							<li class="filter-item">
+								<p class="filter-item__name">Список ТЦ</p>
+								<div class="filter-item__wrapper">
+									<select name="" id="" class="filter-item__select">
+										<option value disabled selected>Всі ТЦ</option>
+										<option value="">Всі ТЦ1</option>
+										<option value="">Всі ТЦ2</option>
+										<option value="">Всі ТЦ3</option>
+									</select>
+								</div>
+							</li>
+							<li class="filter-item filter-item_flex">
+								<p class="filter-item__name">Введіть пошуковий запит</p>
+								<label for="#" class="filter-item__search">
+									<input type="text" class="filter-item__input" placeholder='Ведіть пошуковий запит'>
+									<button class="filter-item__btn">
+										<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M19.7825 18.6042L14.8083 13.63C16.1639 11.9722 16.8303 9.85675 16.6699 7.72131C16.5094 5.58587 15.5344 3.59378 13.9463 2.15711C12.3583 0.720433 10.2788 -0.050916 8.13804 0.00261049C5.99725 0.056137 3.95893 0.930443 2.44468 2.44468C0.930443 3.95893 0.056137 5.99725 0.00261049 8.13804C-0.050916 10.2788 0.720433 12.3583 2.15711 13.9463C3.59378 15.5344 5.58587 16.5094 7.72131 16.6699C9.85675 16.8303 11.9722 16.1639 13.63 14.8083L18.6042 19.7825C18.7613 19.9343 18.9718 20.0183 19.1903 20.0164C19.4088 20.0145 19.6179 19.9269 19.7724 19.7724C19.9269 19.6179 20.0145 19.4088 20.0164 19.1903C20.0183 18.9718 19.9343 18.7613 19.7825 18.6042ZM8.36001 15.0267C7.04147 15.0267 5.75253 14.6357 4.65621 13.9031C3.55988 13.1706 2.70539 12.1294 2.20081 10.9112C1.69623 9.69306 1.5642 8.35261 1.82144 7.05941C2.07867 5.7662 2.71361 4.57831 3.64596 3.64596C4.57831 2.71361 5.7662 2.07867 7.05941 1.82144C8.35261 1.5642 9.69306 1.69623 10.9112 2.20081C12.1294 2.70539 13.1706 3.55988 13.9031 4.65621C14.6357 5.75253 15.0267 7.04147 15.0267 8.36001C15.0247 10.1275 14.3217 11.822 13.0719 13.0719C11.822 14.3217 10.1275 15.0247 8.36001 15.0267Z"
+												fill="#A7464B" />
+										</svg>
+									</button>
+								</label>
+							</li>
+						</ul>
+						<button class="filter-wrapper__submit">Показати</button>
+					</div>
+				</div>
 			</form>
 		</section>
 		<section class="shops-catalog">
@@ -1180,10 +1192,13 @@
 					</li>
 				</ul>
 				<div class="promotion-footer__pagination  pagination">
-					<button class="pagination__btn pagination__prev btn-detail"><span>Попередня</span> <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M28.8999 10.6126L24.0624 15.5001C23.9462 15.6173 23.8079 15.7103 23.6556 15.7737C23.5033 15.8372 23.3399 15.8699 23.1749 15.8699C23.0099 15.8699 22.8465 15.8372 22.6942 15.7737C22.5418 15.7103 22.4036 15.6173 22.2874 15.5001C22.1702 15.3839 22.0772 15.2457 22.0138 15.0933C21.9503 14.941 21.9176 14.7776 21.9176 14.6126C21.9176 14.4476 21.9503 14.2842 22.0138 14.1319C22.0772 13.9796 22.1702 13.8413 22.2874 13.7251L26.7374 9.25012L1.24988 9.25012C0.918357 9.25012 0.600413 9.11842 0.365995 8.884C0.131574 8.64958 -0.00012088 8.33164 -0.000120851 8.00012C-0.000120822 7.6686 0.131574 7.35065 0.365995 7.11623C0.600414 6.88181 0.918357 6.75012 1.24988 6.75012L26.8124 6.75012L22.2874 2.22512C22.0658 1.99265 21.9421 1.68379 21.9421 1.36262C21.9421 1.04144 22.0658 0.732589 22.2874 0.500118C22.4036 0.382958 22.5418 0.289965 22.6942 0.226504C22.8465 0.163043 23.0099 0.13037 23.1749 0.13037C23.3399 0.130371 23.5033 0.163043 23.6556 0.226504C23.8079 0.289965 23.9462 0.382958 24.0624 0.500118L28.8999 5.31262C29.6021 6.01575 29.9966 6.96887 29.9966 7.96262C29.9966 8.95637 29.6021 9.90949 28.8999 10.6126Z" fill="#9A2C31"/>
+					<button class="pagination__btn pagination__prev btn-detail"><span>Попередня</span> <svg width="30" height="16"
+							viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M28.8999 10.6126L24.0624 15.5001C23.9462 15.6173 23.8079 15.7103 23.6556 15.7737C23.5033 15.8372 23.3399 15.8699 23.1749 15.8699C23.0099 15.8699 22.8465 15.8372 22.6942 15.7737C22.5418 15.7103 22.4036 15.6173 22.2874 15.5001C22.1702 15.3839 22.0772 15.2457 22.0138 15.0933C21.9503 14.941 21.9176 14.7776 21.9176 14.6126C21.9176 14.4476 21.9503 14.2842 22.0138 14.1319C22.0772 13.9796 22.1702 13.8413 22.2874 13.7251L26.7374 9.25012L1.24988 9.25012C0.918357 9.25012 0.600413 9.11842 0.365995 8.884C0.131574 8.64958 -0.00012088 8.33164 -0.000120851 8.00012C-0.000120822 7.6686 0.131574 7.35065 0.365995 7.11623C0.600414 6.88181 0.918357 6.75012 1.24988 6.75012L26.8124 6.75012L22.2874 2.22512C22.0658 1.99265 21.9421 1.68379 21.9421 1.36262C21.9421 1.04144 22.0658 0.732589 22.2874 0.500118C22.4036 0.382958 22.5418 0.289965 22.6942 0.226504C22.8465 0.163043 23.0099 0.13037 23.1749 0.13037C23.3399 0.130371 23.5033 0.163043 23.6556 0.226504C23.8079 0.289965 23.9462 0.382958 24.0624 0.500118L28.8999 5.31262C29.6021 6.01575 29.9966 6.96887 29.9966 7.96262C29.9966 8.95637 29.6021 9.90949 28.8999 10.6126Z"
+								fill="#9A2C31" />
 						</svg>
-						</button>
+					</button>
 					<ul class="pagination-number">
 						<li class="pagination-number__num pagination-number-active">1</li>
 						<li class="pagination-number__num">2</li>
@@ -1193,9 +1208,11 @@
 					</ul>
 					<button class="pagination__btn btn-detail">Наступна
 						<svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M28.8999 10.6126L24.0624 15.5001C23.9462 15.6173 23.8079 15.7103 23.6556 15.7737C23.5033 15.8372 23.3399 15.8699 23.1749 15.8699C23.0099 15.8699 22.8465 15.8372 22.6942 15.7737C22.5418 15.7103 22.4036 15.6173 22.2874 15.5001C22.1702 15.3839 22.0772 15.2457 22.0138 15.0933C21.9503 14.941 21.9176 14.7776 21.9176 14.6126C21.9176 14.4476 21.9503 14.2842 22.0138 14.1319C22.0772 13.9796 22.1702 13.8413 22.2874 13.7251L26.7374 9.25012L1.24988 9.25012C0.918357 9.25012 0.600413 9.11842 0.365995 8.884C0.131574 8.64958 -0.00012088 8.33164 -0.000120851 8.00012C-0.000120822 7.6686 0.131574 7.35065 0.365995 7.11623C0.600414 6.88181 0.918357 6.75012 1.24988 6.75012L26.8124 6.75012L22.2874 2.22512C22.0658 1.99265 21.9421 1.68379 21.9421 1.36262C21.9421 1.04144 22.0658 0.732589 22.2874 0.500118C22.4036 0.382958 22.5418 0.289965 22.6942 0.226504C22.8465 0.163043 23.0099 0.13037 23.1749 0.13037C23.3399 0.130371 23.5033 0.163043 23.6556 0.226504C23.8079 0.289965 23.9462 0.382958 24.0624 0.500118L28.8999 5.31262C29.6021 6.01575 29.9966 6.96887 29.9966 7.96262C29.9966 8.95637 29.6021 9.90949 28.8999 10.6126Z" fill="#9A2C31"/>
-							</svg>
-							
+							<path
+								d="M28.8999 10.6126L24.0624 15.5001C23.9462 15.6173 23.8079 15.7103 23.6556 15.7737C23.5033 15.8372 23.3399 15.8699 23.1749 15.8699C23.0099 15.8699 22.8465 15.8372 22.6942 15.7737C22.5418 15.7103 22.4036 15.6173 22.2874 15.5001C22.1702 15.3839 22.0772 15.2457 22.0138 15.0933C21.9503 14.941 21.9176 14.7776 21.9176 14.6126C21.9176 14.4476 21.9503 14.2842 22.0138 14.1319C22.0772 13.9796 22.1702 13.8413 22.2874 13.7251L26.7374 9.25012L1.24988 9.25012C0.918357 9.25012 0.600413 9.11842 0.365995 8.884C0.131574 8.64958 -0.00012088 8.33164 -0.000120851 8.00012C-0.000120822 7.6686 0.131574 7.35065 0.365995 7.11623C0.600414 6.88181 0.918357 6.75012 1.24988 6.75012L26.8124 6.75012L22.2874 2.22512C22.0658 1.99265 21.9421 1.68379 21.9421 1.36262C21.9421 1.04144 22.0658 0.732589 22.2874 0.500118C22.4036 0.382958 22.5418 0.289965 22.6942 0.226504C22.8465 0.163043 23.0099 0.13037 23.1749 0.13037C23.3399 0.130371 23.5033 0.163043 23.6556 0.226504C23.8079 0.289965 23.9462 0.382958 24.0624 0.500118L28.8999 5.31262C29.6021 6.01575 29.9966 6.96887 29.9966 7.96262C29.9966 8.95637 29.6021 9.90949 28.8999 10.6126Z"
+								fill="#9A2C31" />
+						</svg>
+
 					</button>
 				</div>
 			</div>
@@ -1380,7 +1397,9 @@
 	</footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="./js/header-footer.js"></script>
 <script src="./js/catalog-shops.js"></script>
+
 </html>

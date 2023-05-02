@@ -107,6 +107,9 @@
   outline: none;
   cursor: pointer;
 }
+.filter-item__select .select2-selection__rendered {
+  display: none;
+}
 .filter-item__select:active, .filter-item__select:hover, .filter-item__select:focus {
   outline: 0;
   outline-offset: 0;
@@ -363,6 +366,11 @@
     font-size: 48px;
   }
 }
+.filter-wrapper__adapt,
+.filter-wrapper__submit {
+  display: none;
+}
+
 @media (max-width: 1180px) {
   .shops-catalog__items {
     grid-template-columns: 1fr 1fr;
@@ -371,9 +379,6 @@
   }
   .shops-catalog-item {
     max-width: 100%;
-  }
-  .filter__items {
-    display: none;
   }
   .filter__reset {
     display: none;
@@ -389,6 +394,76 @@
   }
   .shops-catalog__title {
     font-size: 26px;
+  }
+  .filter-wrapper {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .filter-wrapper__inner {
+    max-width: 420px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 30px;
+    position: relative;
+  }
+  .filter-wrapper__close {
+    background-color: rgba(217, 217, 217, 0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #000;
+    width: 35px;
+    height: 35px;
+    font-weight: 600;
+    font-family: Montserrat;
+    font-size: 22px;
+  }
+  .filter-wrapper__name {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .filter-wrapper__btn {
+    margin-bottom: 15px;
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #da0510;
+  }
+  .filter-wrapper__submit {
+    margin-top: 20px;
+    padding: 15px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 22px;
+    border: #9A2C31 2px solid;
+    width: 100%;
+  }
+  .filter-item__select {
+    max-width: 360px;
+  }
+  .filter-item__select option {
+    border: 2px solid red;
+  }
+  .filter__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+  }
+  .filter-wrapper__adapt,
+  .filter-wrapper__submit {
+    display: block;
   }
 }
 @media (max-width: 1000px) {
@@ -426,7 +501,8 @@
   .shops-catalog-item__tags {
     font-size: 12px;
   }
-  .shops-catalog-item__header, .shops-catalog-item__tags {
+  .shops-catalog-item__header,
+  .shops-catalog-item__tags {
     padding: 0 10px;
   }
   .filter__title {
