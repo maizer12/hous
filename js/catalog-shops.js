@@ -1,5 +1,15 @@
 $(document).ready(function() {
-	$('.filter-item__select').select2();
+  // Ініціалізувати Select2
+  $('.filter-item__select').select2();
+
+  // Додати обробник подій для кнопки reset
+  $('.filter-wrapper__btn').on('click', function() {
+    // Отримати всі елементи Select2
+    var select2Elements = $('.filter-item__select');
+
+    // Скинути значення всіх Select2 до null
+    select2Elements.val(null).trigger('change');
+  });
 });
 const closeBtnFil = document.querySelector('.filter-wrapper__close')
 const btnOpenFil = document.querySelector('.shops-filter-open')
