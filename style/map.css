@@ -549,3 +549,6 @@
   background-color: #9a2c31;
   color: #fff;
 }/*# sourceMappingURL=map.css.map */
+.logo-get{
+	object-fit: scale-down;
+}

@@ -118,7 +118,7 @@ const mapTwoInfo = {
 const mapThreeInfo = {
 	item1: {
 		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
+		logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Edgar_Allan_Poe_portrait_B.jpg/212px-Edgar_Allan_Poe_portrait_B.jpg',
 		title: 'елемент 1',
 		phone: [
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
@@ -130,7 +130,7 @@ const mapThreeInfo = {
 	},
 	item2: {
 		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
+		logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/2048px-BMW_logo_%28gray%29.svg.png',
 		title: 'елемент 2',
 		phone: [
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
@@ -152,17 +152,29 @@ const mapThreeInfo = {
 		link: '/',
 		categories: ['1', '5', '6'],
 	},
-	item5: {
+	item4: {
 		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 4',
+		logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/2048px-BMW_logo_%28gray%29.svg.png',
+		title: 'елемент 2',
 		phone: [
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
 		],
 		link: '/',
-		categories: ['2', '5'],
+		categories: ['1', '8'],
+	},
+	item7: {
+		itemImg: './img/map-item.jpg',
+		logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/2048px-BMW_logo_%28gray%29.svg.png',
+		title: 'елемент 2',
+		phone: [
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+		],
+		link: '/',
+		categories: ['1', '8'],
 	},
 }
 function getLink(ell) {
@@ -326,15 +338,32 @@ function removeLogo() {
 }
 function getLogo(elem, logo) {
 	const elemWidth = elem.getBoundingClientRect().width
+	const elemHeight = elem.getBoundingClientRect().height
 	//elem
 	const logoHere = document.querySelector('.logo-here-p')
 	const idNew = 'logo' + Math.floor(Math.random() * 10000) + 1
 	logoHere.innerHTML += `<img src="./img/logo-map.png" alt="logo" id="${idNew}" class="logo-get">`
 	const mapLogo = document.getElementById(idNew)
+	if (
+		!mapLogo.getBoundingClientRect().width ||
+		!mapLogo.getBoundingClientRect().height
+	) {
+		mapLogo.style.opacity = 0
+		setTimeout(() => {
+			getLogo(elem, logo)
+		}, 500)
+		return
+	}
 	const imageBounds = document
 		.querySelector('.map__content')
 		.getBoundingClientRect()
+	
+	if (elemHeight > mapLogo.height) {
+		console.log('високо')
+		mapLogo.style.height = elemHeight + 'px'
+	}
 	if (elemWidth < mapLogo.width) {
+		console.log('довга')
 		mapLogo.style.width = elemWidth + 'px'
 	}
 	const eBounds = elem.getBoundingClientRect()
@@ -358,7 +387,7 @@ function getElement(id) {
 		return mapOneInfo['item' + numberEl]
 	} else if (elemType === 'elem-two:') {
 		return mapTwoInfo['item' + numberEl]
-	}else if(elemType === 'elem-three:'){
+	} else if (elemType === 'elem-three:') {
 		return mapThreeInfo['item' + numberEl]
 	}
 }
@@ -420,6 +449,7 @@ mapSideBar?.addEventListener('click', event => {
 		let two = []
 		let three = []
 		for (let prop in mapOneInfo) {
+			console.log(prop)
 			mapOneInfo[prop].categories.filter(e => e == elemNum).length
 				? one.push(prop)
 				: ''
@@ -430,7 +460,7 @@ mapSideBar?.addEventListener('click', event => {
 				: ''
 		}
 		for (let prop in mapThreeInfo) {
-			mapTwoInfo[prop].categories.filter(e => e == elemNum).length
+			mapThreeInfo[prop].categories.filter(e => e == elemNum).length
 				? three.push(prop)
 				: ''
 		}
