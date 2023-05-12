@@ -1,4 +1,4 @@
-new Swiper('.home-slider__swiper', {
+const homeSwiper = new Swiper('.home-slider__swiper', {
 	// Navigation arrows
 	loop: true,
 	navigation: {
@@ -10,10 +10,66 @@ new Swiper('.home-slider__swiper', {
 	fadeEffect: {
 		crossFade: true,
 	},
-	// autoplay: {
-	// 	delay: 3000,
-	// },
+	 autoplay: {
+	 	delay: 3000,
+	 },
 })
+//swiper home logic
+//const prevHome = document.querySelector('.swiper-home-btn_prev');
+//const nextHome = document.querySelector('.swiper-home-btn_next');
+//
+//function getActiveSwipe() {
+//  const nImg = nextHome.querySelector('.swiper-home-btn__img');
+//  const pImg = prevHome.querySelector('.swiper-home-btn__img');
+//  const allImages = document.querySelectorAll('.swiper-home__img');
+//  const id = homeSwiper.realIndex;
+//  const numNext = id + 1;
+//  const numPrev = id - 1;
+//
+//  if (numNext < allImages.length) {
+//    nImg.src = allImages[numNext].src;
+//  } else {
+//    nImg.src = allImages[0].src;
+//  }
+//
+//  if (numPrev >= 0) {
+//    pImg.src = allImages[numPrev].src;
+//  } else {
+//    pImg.src = allImages[allImages.length - 1].src;
+//  }
+//}
+//
+//getActiveSwipe();
+//prevHome?.addEventListener('click', getActiveSwipe);
+//nextHome?.addEventListener('click', getActiveSwipe);
+const prevHome = document.querySelector('.swiper-home-btn_prev')
+const nextHome = document.querySelector('.swiper-home-btn_next')
+const nImg = nextHome.querySelector('.swiper-home-btn__img')
+const pImg = prevHome.querySelector('.swiper-home-btn__img')
+const allImages = document.querySelectorAll('.swiper-home__img')
+const sum = allImages.length
+
+function getActiveSwipe() {
+	const id = homeSwiper.realIndex
+	const numNext = id + 1
+	const numPrev = id - 1
+
+	if (sum > numNext) {
+		nImg.src = allImages[numNext].src
+	} else {
+		nImg.src = allImages[0].src
+	}
+	if (numPrev >= 0) {
+		pImg.src = allImages[numPrev].src
+	} else {
+		pImg.src = allImages[allImages.length - 1].src
+	}
+}
+getActiveSwipe()
+homeSwiper.on('slideChange', getActiveSwipe)
+//prevHome?.addEventListener('click', getActiveSwipe)
+//nextHome?.addEventListener('click', getActiveSwipe)
+
 new Swiper('.promotion__swiper', {
 	slidesPerView: 'auto',
 	speed: 1000,

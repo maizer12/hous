@@ -346,6 +346,45 @@
   width: 100%;
 }
 
+.header-content__btn {
+  position: relative;
+  padding-right: 45px;
+}
+.header-content__btn .btn-bur {
+  position: absolute;
+  width: 20px;
+  top: 50%;
+  transform: translateY(-100%);
+  right: 10px;
+  height: 2px;
+  background-color: black;
+  transition: 0.6s;
+}
+.header-content__btn .btn-bur::after, .header-content__btn .btn-bur::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 5px;
+  background-color: black;
+  transition: 0.7s;
+}
+.header-content__btn .btn-bur::before {
+  top: -5px;
+}
+.header-content__btn:hover .btn-bur {
+  background-color: #fff;
+}
+.header-content__btn:hover .btn-bur::after, .header-content__btn:hover .btn-bur::before {
+  background-color: #fff;
+}
+
+.swiper-home-btn__buttons {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+}
+
 @media (max-width: 1780px) {
   .logo {
     max-width: 204px;
