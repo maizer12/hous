@@ -1,185 +1,198 @@
-let accordion = $('#accordion-map').accordion({
-	active: null,
-	collapsible: true,
-	heightStyle: 'content',
-})
-const mapOneInfo = {
-	item1: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 1',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-		categories: ['1', '4', '3'],
-	},
-	item2: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 2',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-		categories: ['1', '5'],
-	},
-	item3: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 3',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-		categories: ['1', '5', '6'],
-	},
-	item5: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 4',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-		categories: ['2', '5'],
-	},
-	item5: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 4',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-		categories: ['2', '5'],
-	},
-}
-const mapTwoInfo = {
-	item1: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 1',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-		categories: ['1', '4', '3'],
-	},
-	item2: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 2',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-		categories: ['1', '5'],
-	},
-	item3: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 3',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-		categories: ['1', '5', '6'],
-	},
-	item5: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 4',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-		categories: ['2', '5'],
-	},
-}
-const mapThreeInfo = {
-	item1: {
-		itemImg: './img/map-item.jpg',
-		logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Edgar_Allan_Poe_portrait_B.jpg/212px-Edgar_Allan_Poe_portrait_B.jpg',
-		title: 'елемент 1',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-		categories: ['1', '4', '3'],
-	},
-	item2: {
-		itemImg: './img/map-item.jpg',
-		logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/2048px-BMW_logo_%28gray%29.svg.png',
-		title: 'елемент 2',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-		categories: ['1', '5'],
-	},
-	item3: {
-		itemImg: './img/map-item.jpg',
-		logo: './img/logo-map.png',
-		title: 'елемент 3',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-		categories: ['1', '5', '6'],
-	},
-	item4: {
-		itemImg: './img/map-item.jpg',
-		logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/2048px-BMW_logo_%28gray%29.svg.png',
-		title: 'елемент 2',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-		categories: ['1', '8'],
-	},
-	item7: {
-		itemImg: './img/map-item.jpg',
-		logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/2048px-BMW_logo_%28gray%29.svg.png',
-		title: 'елемент 2',
-		phone: [
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-			{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
-		],
-		link: '/',
-		categories: ['1', '8'],
-	},
-}
-function getLink(ell) {
-	const itemsCont = document.querySelector('.map-item__cont')
-	const item = `
+window.addEventListener('load', () => {
+	let accordion = $('#accordion-map').accordion({
+		active: null,
+		collapsible: true,
+		heightStyle: 'content',
+	})
+	const mapOneInfo = {
+		item1: {
+			itemImg: './img/map-item.jpg',
+			logo: './img/logo-map.png',
+			title: 'елемент 1',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+			categories: ['1', '4', '3'],
+		},
+		item2: {
+			itemImg: './img/map-item.jpg',
+			logo: './img/logo-map.png',
+			title: 'елемент 2',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+			categories: ['1', '5'],
+		},
+		item3: {
+			itemImg: './img/map-item.jpg',
+			logo: './img/logo-map.png',
+			title: 'елемент 3',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+			categories: ['1', '5', '6'],
+		},
+		item5: {
+			itemImg: './img/map-item.jpg',
+			logo: './img/logo-map.png',
+			title: 'елемент 4',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+			categories: ['2', '5'],
+		},
+		item5: {
+			itemImg: './img/map-item.jpg',
+			logo: './img/logo-map.png',
+			title: 'елемент 4',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+			categories: ['2', '5'],
+		},
+	}
+	const mapTwoInfo = {
+		item1: {
+			itemImg: './img/map-item.jpg',
+			logo: './img/logo-map.png',
+			title: 'елемент 1',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+			categories: ['1', '4', '3'],
+		},
+		item2: {
+			itemImg: './img/map-item.jpg',
+			logo: './img/logo-map.png',
+			title: 'елемент 2',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+			categories: ['1', '5'],
+		},
+		item3: {
+			itemImg: './img/map-item.jpg',
+			logo: './img/logo-map.png',
+			title: 'елемент 3',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+			categories: ['1', '5', '6'],
+		},
+		item5: {
+			itemImg: './img/map-item.jpg',
+			logo: './img/logo-map.png',
+			title: 'елемент 4',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+			categories: ['2', '5'],
+		},
+	}
+	const mapThreeInfo = {
+		item1: {
+			itemImg: './img/map-item.jpg',
+			logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Edgar_Allan_Poe_portrait_B.jpg/212px-Edgar_Allan_Poe_portrait_B.jpg',
+			title: 'елемент 1',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+			categories: ['1', '4', '3'],
+		},
+		item2: {
+			itemImg: './img/map-item.jpg',
+			logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/2048px-BMW_logo_%28gray%29.svg.png',
+			title: 'елемент 2',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+			categories: ['1', '5'],
+		},
+		item3: {
+			itemImg: './img/map-item.jpg',
+			logo: 'https://cdn.logo.com/hotlink-ok/logo-social.png',
+			title: 'елемент 3',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+			categories: ['1', '5', '6'],
+		},
+		item4: {
+			itemImg: './img/map-item.jpg',
+			logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/2048px-BMW_logo_%28gray%29.svg.png',
+			title: 'елемент 2',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+			categories: ['1', '8'],
+		},
+		item5: {
+			itemImg: './img/map-item.jpg',
+			logo: 'https://upload.wikimed/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/2048px-BMW_logo_%28gray%29.svg.png',
+			title: 'елемент 2',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+			categories: ['1', '8'],
+		},
+		item7: {
+			itemImg: './img/map-item.jpg',
+			logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/2048px-BMW_logo_%28gray%29.svg.png',
+			title: 'елемент 2',
+			phone: [
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+				{ num: '+38 (050) ХХХ-ХХ-ХХ', tel: '+380509564646846' },
+			],
+			link: '/',
+			categories: ['1', '8'],
+		},
+	}
+	function getLink(ell) {
+		const itemsCont = document.querySelector('.map-item__cont')
+		const item = `
 					<div class="map-item">
 						<button class="map-item-btn">x</button>
 						<div class="map-item__images">
@@ -321,168 +334,175 @@ function getLink(ell) {
 						</a>
 						</div>
 	`
-	if (itemsCont) {
-		itemsCont.innerHTML = item
-		itemsCont.classList.add('active-add-popup')
+		if (itemsCont) {
+			itemsCont.innerHTML = item
+			itemsCont.classList.add('active-add-popup')
+		}
 	}
-}
 
-function removeClassActive() {
-	const itemAct = document.querySelectorAll('.active-map-item')
-	itemAct.forEach(e => e.classList.remove('active-map-item'))
-}
-function removeLogo() {
-	const logoHere = document.querySelector('.logo-here-p')
-	logoHere.innerHTML = ''
-	removeClassActive()
-}
-function getLogo(elem, logo) {
-	const elemWidth = elem.getBoundingClientRect().width
-	const elemHeight = elem.getBoundingClientRect().height
-	//elem
-	const logoHere = document.querySelector('.logo-here-p')
-	const idNew = 'logo' + Math.floor(Math.random() * 10000) + 1
-	logoHere.innerHTML += `<img src="./img/logo-map.png" alt="logo" id="${idNew}" class="logo-get">`
-	const mapLogo = document.getElementById(idNew)
-	if (
-		!mapLogo.getBoundingClientRect().width ||
-		!mapLogo.getBoundingClientRect().height
-	) {
-		mapLogo.style.opacity = 0
-		setTimeout(() => {
-			getLogo(elem, logo)
-		}, 500)
-		return
+	function removeClassActive() {
+		const itemAct = document.querySelectorAll('.active-map-item')
+		itemAct.forEach(e => e.classList.remove('active-map-item'))
 	}
-	const imageBounds = document
-		.querySelector('.map__content')
-		.getBoundingClientRect()
-	
-	if (elemHeight > mapLogo.height) {
-		console.log('високо')
-		mapLogo.style.height = elemHeight + 'px'
+	function removeLogo() {
+		const logoHere = document.querySelector('.logo-here-p')
+		logoHere.innerHTML = ''
+		removeClassActive()
 	}
-	if (elemWidth < mapLogo.width) {
-		console.log('довга')
-		mapLogo.style.width = elemWidth + 'px'
-	}
-	const eBounds = elem.getBoundingClientRect()
-	const x = eBounds.left - imageBounds.left
-	const y = eBounds.top - imageBounds.top
-	mapLogo.style.display = 'block'
-	mapLogo.src = logo
-	mapLogo.style.top =
-		y +
-		(elem.getBoundingClientRect().height / 2 - mapLogo.offsetHeight / 2) +
-		'px'
-	mapLogo.style.left =
-		x +
-		(elem.getBoundingClientRect().width / 2 - mapLogo.offsetWidth / 2) +
-		'px'
-}
-function getElement(id) {
-	const elemType = id.replace(/\d+/g, '')
-	const numberEl = id.match(/\d+/g)
-	if (elemType === 'element-one:') {
-		return mapOneInfo['item' + numberEl]
-	} else if (elemType === 'elem-two:') {
-		return mapTwoInfo['item' + numberEl]
-	} else if (elemType === 'elem-three:') {
-		return mapThreeInfo['item' + numberEl]
-	}
-}
-
-const openNumber = document.querySelector('.map__content')
-openNumber?.addEventListener('click', event => {
-	const element = event.target
-	if (element.classList.contains('map-item__btn')) {
-		const items = document.querySelectorAll('.map-item__number')
-		items.forEach(e => {
-			e.innerHTML = e.href.replace(/^tel:/, '')
-			element.style.display = 'none'
+	function getLogo(elem, logo) {
+		const elemWidth = elem.getBoundingClientRect().width
+		const elemHeight = elem.getBoundingClientRect().height
+		const logoHere = document.querySelector('.logo-here-p')
+		const idNew = 'logo' + Math.floor(Math.random() * 10000) + 1
+		const mapLogo = document.createElement('img')
+		mapLogo.alt = 'logo'
+		mapLogo.id = idNew
+		mapLogo.classList.add('logo-get')
+		mapLogo.addEventListener('load', () => {
+			if (elemHeight < mapLogo.height) {
+				console.log('високо')
+				mapLogo.style.height = elemHeight + 'px'
+			}
+			if (elemWidth < mapLogo.width) {
+				console.log('довга')
+				mapLogo.style.width = elemWidth + 'px'
+			}
+			const imageBounds = document
+				.querySelector('.map__content')
+				.getBoundingClientRect()
+			const eBounds = elem.getBoundingClientRect()
+			const x = eBounds.left - imageBounds.left
+			const y = eBounds.top - imageBounds.top
+			mapLogo.style.display = 'block'
+			mapLogo.style.top =
+				y +
+				(elem.getBoundingClientRect().height / 2 - mapLogo.offsetHeight / 2) +
+				'px'
+			mapLogo.style.left =
+				x +
+				(elem.getBoundingClientRect().width / 2 - mapLogo.offsetWidth / 2) +
+				'px'
 		})
+		mapLogo.addEventListener('error', () => {
+			console.error('Помилка завантаження зображення')
+			logoHere.removeChild(mapLogo) // видаляємо зображення з DOM в разі помилки завантаження
+		})
+		mapLogo.src = logo
+		if (!mapLogo.complete) {
+			setTimeout(() => {
+				if (!mapLogo.complete) {
+					console.error('Помилка завантаження зображення')
+					logoHere.removeChild(mapLogo) // видаляємо зображення з DOM в разі помилки завантаження
+				}
+			}, 5000) // 5 секунд таймаут
+		}
+		logoHere.appendChild(mapLogo)
 	}
-})
 
-const mapInner = document.querySelector('.map__content')
+	function getElement(id) {
+		const elemType = id.replace(/\d+/g, '')
+		const numberEl = id.match(/\d+/g)
+		if (elemType === 'element-one:') {
+			return mapOneInfo['item' + numberEl]
+		} else if (elemType === 'elem-two:') {
+			return mapTwoInfo['item' + numberEl]
+		} else if (elemType === 'elem-three:') {
+			return mapThreeInfo['item' + numberEl]
+		}
+	}
 
-mapInner?.addEventListener('click', e => {
-	const elem = e.target
-	if (elem.classList.contains('map-image-item')) {
-		const elemNew = getElement(elem.id)
-		if (!elemNew) {
-			remodalWindow.open()
-			return
+	const openNumber = document.querySelector('.map__content')
+	openNumber?.addEventListener('click', event => {
+		const element = event.target
+		if (element.classList.contains('map-item__btn')) {
+			const items = document.querySelectorAll('.map-item__number')
+			items.forEach(e => {
+				e.innerHTML = e.href.replace(/^tel:/, '')
+				element.style.display = 'none'
+			})
 		}
-		removeLogo()
-		elem.classList.add('active-map-item')
-		getLogo(elem, elemNew.logo)
-		getLink(elemNew)
-	}
-})
-//відкрити за допомогою сайдбара
-function activeElementID(e, text) {
-	const element = document.getElementById(text + e)
-	element.classList.add('active-map-item')
-	if (text === 'elem-two:') {
-		getLogo(element, mapTwoInfo['item' + e].logo)
-	}
-	if (text === 'element-one:') {
-		getLogo(element, mapOneInfo['item' + e].logo)
-	}
-	if (text === 'elem-three:') {
-		getLogo(element, mapThreeInfo['item' + e].logo)
-	}
-}
-const mapSideBar = document.querySelector('.map-sidebar')
-
-mapSideBar?.addEventListener('click', event => {
-	removeClassActive()
-	const elemNum = event.target.dataset.cat
-	const elem = event.target
-	const activeEll = document.querySelector('.active-elem-over')
-	if (elemNum) {
-		removeLogo()
-		activeEll?.classList.remove('active-elem-over')
-		elem.classList.add('active-elem-over')
-		let one = []
-		let two = []
-		let three = []
-		for (let prop in mapOneInfo) {
-			console.log(prop)
-			mapOneInfo[prop].categories.filter(e => e == elemNum).length
-				? one.push(prop)
-				: ''
-		}
-		for (let prop in mapTwoInfo) {
-			mapTwoInfo[prop].categories.filter(e => e == elemNum).length
-				? two.push(prop)
-				: ''
-		}
-		for (let prop in mapThreeInfo) {
-			mapThreeInfo[prop].categories.filter(e => e == elemNum).length
-				? three.push(prop)
-				: ''
-		}
-		for (let i = 0; i < one.length; i++) {
-			const num = one[i].replace(/[a-zA-Z]/g, '')
-			activeElementID(num, 'element-one:')
-		}
-		for (let i = 0; i < two.length; i++) {
-			const num = two[i].replace(/[a-zA-Z]/g, '')
-			activeElementID(num, 'elem-two:')
-		}
-		for (let i = 0; i < three.length; i++) {
-			const num = three[i].replace(/[a-zA-Z]/g, '')
-			activeElementID(num, 'elem-three:')
-		}
-	}
-})
-//tabs
-$(function () {
-	$('#map-tab').tabs({
-		active: 2,
 	})
+
+	const mapInner = document.querySelector('.map__content')
+
+	mapInner?.addEventListener('click', e => {
+		const elem = e.target
+		if (elem.classList.contains('map-image-item')) {
+			const elemNew = getElement(elem.id)
+			if (!elemNew) {
+				remodalWindow.open()
+				return
+			}
+			removeLogo()
+			elem.classList.add('active-map-item')
+			getLogo(elem, elemNew.logo)
+			getLink(elemNew)
+		}
+	})
+	//відкрити за допомогою сайдбара
+	function activeElementID(e, text) {
+		const element = document.getElementById(text + e)
+		element.classList.add('active-map-item')
+		if (text === 'elem-two:') {
+			getLogo(element, mapTwoInfo['item' + e].logo)
+		}
+		if (text === 'element-one:') {
+			getLogo(element, mapOneInfo['item' + e].logo)
+		}
+		if (text === 'elem-three:') {
+			getLogo(element, mapThreeInfo['item' + e].logo)
+		}
+	}
+	const mapSideBar = document.querySelector('.map-sidebar')
+
+	mapSideBar?.addEventListener('click', event => {
+		removeClassActive()
+		const elemNum = event.target.dataset.cat
+		const elem = event.target
+		const activeEll = document.querySelector('.active-elem-over')
+		if (elemNum) {
+			removeLogo()
+			activeEll?.classList.remove('active-elem-over')
+			elem.classList.add('active-elem-over')
+			let one = []
+			let two = []
+			let three = []
+			for (let prop in mapOneInfo) {
+				console.log(prop)
+				mapOneInfo[prop].categories.filter(e => e == elemNum).length
+					? one.push(prop)
+					: ''
+			}
+			for (let prop in mapTwoInfo) {
+				mapTwoInfo[prop].categories.filter(e => e == elemNum).length
+					? two.push(prop)
+					: ''
+			}
+			for (let prop in mapThreeInfo) {
+				mapThreeInfo[prop].categories.filter(e => e == elemNum).length
+					? three.push(prop)
+					: ''
+			}
+			for (let i = 0; i < one.length; i++) {
+				const num = one[i].replace(/[a-zA-Z]/g, '')
+				activeElementID(num, 'element-one:')
+			}
+			for (let i = 0; i < two.length; i++) {
+				const num = two[i].replace(/[a-zA-Z]/g, '')
+				activeElementID(num, 'elem-two:')
+			}
+			for (let i = 0; i < three.length; i++) {
+				const num = three[i].replace(/[a-zA-Z]/g, '')
+				activeElementID(num, 'elem-three:')
+			}
+		}
+	})
+	//tabs
+	$(function () {
+		$('#map-tab').tabs({
+			active: 2,
+		})
+	})
+	//modal
+	var remodalWindow = $('[data-remodal-id=modal]').remodal()
 })
-//modal
-var remodalWindow = $('[data-remodal-id=modal]').remodal()
